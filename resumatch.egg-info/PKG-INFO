@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: resumatch
+Version: 0.1.0
+Summary: A semantic CV and job description matching engine
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pypdf>=3.0.0
+Requires-Dist: scikit-learn>=1.2.0
+Requires-Dist: matplotlib>=3.6.0
+Requires-Dist: seaborn>=0.12.0
+Provides-Extra: dev
+Requires-Dist: ruff>=0.1.0; extra == "dev"
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: jupyter>=1.0.0; extra == "dev"
+
+### Core Idea
+Python library concept for assessing the alignment between resumes and job descriptions.
+
+Will be using NLP and semantic similarity to analyze resumes and job postings, identify relevant technical and soft skills, and highlight potential skill gaps.
+
+##### Planned Features ( As of now )
+- Resume and job description analysis
+- Semantic similarity-based matching
+- Technical and soft skill extraction
+- Skill-gap identification
+- Candidate–position alignment analysis
+- Exportable visual reports ( maybe challenging)
+
+The primary target audience: HR professionals and recruiters, and hopefully more. 
