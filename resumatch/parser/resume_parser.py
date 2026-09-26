@@ -6,8 +6,7 @@ import argparse
 
 # Document Reader for parsing text from Pdf/docs/md/txt files
 class DocumentParser:
-    """Parses text content from local document files."""
-
+    # read the file first and return text content
     def parse(self, file_path: str | Path) -> str:
         path = Path(file_path)
         if not path.exists():
