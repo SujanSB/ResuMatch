@@ -1,0 +1,421 @@
+{
+  "mode": "batch_ranking",
+  "total_jobs_evaluated": 5,
+  "jobs": [
+    {
+      "job_id": "JOB_1_Python_Developer",
+      "job_title": "JOB_1_Python_Developer",
+      "total_candidates_evaluated": 2,
+      "recommended_candidates": [
+        {
+          "rank": 1,
+          "candidate_id": "IT_professional_clean_resume_preview",
+          "candidate_details": {
+            "name": "IT_professional_clean_resume_preview",
+            "email": "N/A",
+            "phone": "2011",
+            "total_experience_years": 0.0,
+            "extracted_skills_count": 36,
+            "top_skills": [
+              "AND",
+              "Accreditations",
+              "Collecting",
+              "Currently Working On 4 New",
+              "Customer-experience Data",
+              "Data Backup",
+              "Each Leading To",
+              "Education And Training",
+              "Experience",
+              "Frequency And Range"
+            ]
+          },
+          "recommendation_tier": "Not Recommended",
+          "match_scores": {
+            "overall_fit_percentage": 39.95,
+            "semantic_context_score": 57.07,
+            "skill_coverage_score": 0.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 0,
+            "missing_skills_count": 2,
+            "matched_skills": [],
+            "missing_skills": [
+              "Docker, Aws, Postgresql, Redis, Celery",
+              "Python, Django, Flask, Rest Apis, Sql, Git"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "candidate_id": "Resume_Sujan_Sharma_WS",
+          "candidate_details": {
+            "name": "Resume_Sujan_Sharma_WS",
+            "email": "ersujansharma@gmail.com",
+            "phone": "2025",
+            "total_experience_years": 0.0,
+            "extracted_skills_count": 93,
+            "top_skills": [
+              "Agile",
+              "Analysis",
+              "AppliedSHAPandLIMEfor",
+              "Artificial Intelligence",
+              "Aws",
+              "Aws (ec2",
+              "Bash",
+              "C",
+              "C++",
+              "CNN"
+            ]
+          },
+          "recommendation_tier": "Not Recommended",
+          "match_scores": {
+            "overall_fit_percentage": 35.04,
+            "semantic_context_score": 50.05,
+            "skill_coverage_score": 0.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 0,
+            "missing_skills_count": 2,
+            "matched_skills": [],
+            "missing_skills": [
+              "Docker, Aws, Postgresql, Redis, Celery",
+              "Python, Django, Flask, Rest Apis, Sql, Git"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "job_id": "JOB_2_Senior_Python_Developer",
+      "job_title": "JOB_2_Senior_Python_Developer",
+      "total_candidates_evaluated": 2,
+      "recommended_candidates": [
+        {
+          "rank": 1,
+          "candidate_id": "IT_professional_clean_resume_preview",
+          "candidate_details": {
+            "name": "IT_professional_clean_resume_preview",
+            "email": "N/A",
+            "phone": "2011",
+            "total_experience_years": 0.0,
+            "extracted_skills_count": 36,
+            "top_skills": [
+              "AND",
+              "Accreditations",
+              "Collecting",
+              "Currently Working On 4 New",
+              "Customer-experience Data",
+              "Data Backup",
+              "Each Leading To",
+              "Education And Training",
+              "Experience",
+              "Frequency And Range"
+            ]
+          },
+          "recommendation_tier": "Not Recommended",
+          "match_scores": {
+            "overall_fit_percentage": 40.77,
+            "semantic_context_score": 58.25,
+            "skill_coverage_score": 0.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 0,
+            "missing_skills_count": 2,
+            "matched_skills": [],
+            "missing_skills": [
+              "Graphql, Kafka, Terraform, Machine Learning",
+              "Python, Django, Flask, Fastapi, Postgresql, Docker, Kubernetes, Aws, Ci/Cd, System Design"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "candidate_id": "Resume_Sujan_Sharma_WS",
+          "candidate_details": {
+            "name": "Resume_Sujan_Sharma_WS",
+            "email": "ersujansharma@gmail.com",
+            "phone": "2025",
+            "total_experience_years": 0.0,
+            "extracted_skills_count": 93,
+            "top_skills": [
+              "Agile",
+              "Analysis",
+              "AppliedSHAPandLIMEfor",
+              "Artificial Intelligence",
+              "Aws",
+              "Aws (ec2",
+              "Bash",
+              "C",
+              "C++",
+              "CNN"
+            ]
+          },
+          "recommendation_tier": "Not Recommended",
+          "match_scores": {
+            "overall_fit_percentage": 35.18,
+            "semantic_context_score": 50.26,
+            "skill_coverage_score": 0.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 0,
+            "missing_skills_count": 2,
+            "matched_skills": [],
+            "missing_skills": [
+              "Graphql, Kafka, Terraform, Machine Learning",
+              "Python, Django, Flask, Fastapi, Postgresql, Docker, Kubernetes, Aws, Ci/Cd, System Design"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "job_id": "JOB_3_Java_Developer",
+      "job_title": "JOB_3_Java_Developer",
+      "total_candidates_evaluated": 2,
+      "recommended_candidates": [
+        {
+          "rank": 1,
+          "candidate_id": "IT_professional_clean_resume_preview",
+          "candidate_details": {
+            "name": "IT_professional_clean_resume_preview",
+            "email": "N/A",
+            "phone": "2011",
+            "total_experience_years": 0.0,
+            "extracted_skills_count": 36,
+            "top_skills": [
+              "AND",
+              "Accreditations",
+              "Collecting",
+              "Currently Working On 4 New",
+              "Customer-experience Data",
+              "Data Backup",
+              "Each Leading To",
+              "Education And Training",
+              "Experience",
+              "Frequency And Range"
+            ]
+          },
+          "recommendation_tier": "Not Recommended",
+          "match_scores": {
+            "overall_fit_percentage": 44.28,
+            "semantic_context_score": 63.26,
+            "skill_coverage_score": 0.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 0,
+            "missing_skills_count": 2,
+            "matched_skills": [],
+            "missing_skills": [
+              "Java, Spring Boot, Hibernate, Rest Apis, Mysql, Maven, Git",
+              "Microservices, Docker, Jenkins, Kafka"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "candidate_id": "Resume_Sujan_Sharma_WS",
+          "candidate_details": {
+            "name": "Resume_Sujan_Sharma_WS",
+            "email": "ersujansharma@gmail.com",
+            "phone": "2025",
+            "total_experience_years": 0.0,
+            "extracted_skills_count": 93,
+            "top_skills": [
+              "Agile",
+              "Analysis",
+              "AppliedSHAPandLIMEfor",
+              "Artificial Intelligence",
+              "Aws",
+              "Aws (ec2",
+              "Bash",
+              "C",
+              "C++",
+              "CNN"
+            ]
+          },
+          "recommendation_tier": "Not Recommended",
+          "match_scores": {
+            "overall_fit_percentage": 35.05,
+            "semantic_context_score": 50.08,
+            "skill_coverage_score": 0.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 0,
+            "missing_skills_count": 2,
+            "matched_skills": [],
+            "missing_skills": [
+              "Java, Spring Boot, Hibernate, Rest Apis, Mysql, Maven, Git",
+              "Microservices, Docker, Jenkins, Kafka"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "job_id": "JOB_4_Senior_Java_Developer",
+      "job_title": "JOB_4_Senior_Java_Developer",
+      "total_candidates_evaluated": 2,
+      "recommended_candidates": [
+        {
+          "rank": 1,
+          "candidate_id": "IT_professional_clean_resume_preview",
+          "candidate_details": {
+            "name": "IT_professional_clean_resume_preview",
+            "email": "N/A",
+            "phone": "2011",
+            "total_experience_years": 0.0,
+            "extracted_skills_count": 36,
+            "top_skills": [
+              "AND",
+              "Accreditations",
+              "Collecting",
+              "Currently Working On 4 New",
+              "Customer-experience Data",
+              "Data Backup",
+              "Each Leading To",
+              "Education And Training",
+              "Experience",
+              "Frequency And Range"
+            ]
+          },
+          "recommendation_tier": "Not Recommended",
+          "match_scores": {
+            "overall_fit_percentage": 44.63,
+            "semantic_context_score": 63.75,
+            "skill_coverage_score": 0.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 0,
+            "missing_skills_count": 2,
+            "matched_skills": [],
+            "missing_skills": [
+              "Java, Spring Boot, Spring Cloud, Microservices, Kafka, Kubernetes, Aws, Oracle, Design Patterns",
+              "Reactive Programming, Graphql, Terraform, Machine Learning"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "candidate_id": "Resume_Sujan_Sharma_WS",
+          "candidate_details": {
+            "name": "Resume_Sujan_Sharma_WS",
+            "email": "ersujansharma@gmail.com",
+            "phone": "2025",
+            "total_experience_years": 0.0,
+            "extracted_skills_count": 93,
+            "top_skills": [
+              "Agile",
+              "Analysis",
+              "AppliedSHAPandLIMEfor",
+              "Artificial Intelligence",
+              "Aws",
+              "Aws (ec2",
+              "Bash",
+              "C",
+              "C++",
+              "CNN"
+            ]
+          },
+          "recommendation_tier": "Not Recommended",
+          "match_scores": {
+            "overall_fit_percentage": 35.14,
+            "semantic_context_score": 50.2,
+            "skill_coverage_score": 0.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 0,
+            "missing_skills_count": 2,
+            "matched_skills": [],
+            "missing_skills": [
+              "Java, Spring Boot, Spring Cloud, Microservices, Kafka, Kubernetes, Aws, Oracle, Design Patterns",
+              "Reactive Programming, Graphql, Terraform, Machine Learning"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "job_id": "JOB_5_Frontend_Developer",
+      "job_title": "JOB_5_Frontend_Developer",
+      "total_candidates_evaluated": 2,
+      "recommended_candidates": [
+        {
+          "rank": 1,
+          "candidate_id": "IT_professional_clean_resume_preview",
+          "candidate_details": {
+            "name": "IT_professional_clean_resume_preview",
+            "email": "N/A",
+            "phone": "2011",
+            "total_experience_years": 0.0,
+            "extracted_skills_count": 36,
+            "top_skills": [
+              "AND",
+              "Accreditations",
+              "Collecting",
+              "Currently Working On 4 New",
+              "Customer-experience Data",
+              "Data Backup",
+              "Each Leading To",
+              "Education And Training",
+              "Experience",
+              "Frequency And Range"
+            ]
+          },
+          "recommendation_tier": "Not Recommended",
+          "match_scores": {
+            "overall_fit_percentage": 40.73,
+            "semantic_context_score": 58.19,
+            "skill_coverage_score": 0.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 0,
+            "missing_skills_count": 2,
+            "matched_skills": [],
+            "missing_skills": [
+              "Javascript, Html5, Css3, React, Git, Responsive Design",
+              "Typescript, Next.Js, Graphql, Testing Library"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "candidate_id": "Resume_Sujan_Sharma_WS",
+          "candidate_details": {
+            "name": "Resume_Sujan_Sharma_WS",
+            "email": "ersujansharma@gmail.com",
+            "phone": "2025",
+            "total_experience_years": 0.0,
+            "extracted_skills_count": 93,
+            "top_skills": [
+              "Agile",
+              "Analysis",
+              "AppliedSHAPandLIMEfor",
+              "Artificial Intelligence",
+              "Aws",
+              "Aws (ec2",
+              "Bash",
+              "C",
+              "C++",
+              "CNN"
+            ]
+          },
+          "recommendation_tier": "Not Recommended",
+          "match_scores": {
+            "overall_fit_percentage": 35.03,
+            "semantic_context_score": 50.05,
+            "skill_coverage_score": 0.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 0,
+            "missing_skills_count": 2,
+            "matched_skills": [],
+            "missing_skills": [
+              "Javascript, Html5, Css3, React, Git, Responsive Design",
+              "Typescript, Next.Js, Graphql, Testing Library"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

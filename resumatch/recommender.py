@@ -45,9 +45,9 @@ class CandidateRecommender:
                 "name": candidate_input.get("name", profile_meta.get("name", candidate_id)),
                 "email": candidate_input.get("email", profile_meta.get("email", "N/A")),
                 "phone": candidate_input.get("phone", profile_meta.get("phone", "N/A")),
-                "total_experience_years": candidate_input.get(
-                    "experience_years", profile_meta.get("experience_years", "N/A")
-                ),
+                # "total_experience_years": candidate_input.get(
+                #     "experience_years", profile_meta.get("experience_years", "N/A")
+                # ), # This can be only  in use if we use the LLM extractor in extracting details form cvs. 
                 "extracted_skills_count": len(extracted_skills),
                 "top_skills": sorted(extracted_skills)[:10],
             },
@@ -109,7 +109,7 @@ class CandidateRecommender:
             jobs=job_list,
             top_k_retrieval=len(candidates),
         )
-
+        # now testing the candidate per job
         job_reports = []
         for job in job_list:
             job_id = job["id"]

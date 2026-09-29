@@ -114,7 +114,8 @@ class Visualizer:
         ax4.axis("off")  # text-based profile summary card
 
         cand_name = candidate.get("name", candidate.get("id", match.cv_id))
-        experience = candidate.get("experience_years", "N/A")
+        # for dummy data only 
+        # experience = candidate.get("experience_years", "N/A") 
         tier = "Strongly Recommended" if match.overall_score >= 75 else ("Consider" if match.overall_score >= 55 else "Not Recommended")
         
         matched_str = ", ".join(sorted(list(match.matched_skills))[:6]) or "None"
@@ -124,7 +125,6 @@ class Visualizer:
             f"CANDIDATE SUMMARY CARD\n"
             f"----------------------------------------\n"
             f"Name:               {cand_name}\n"
-            f"Experience:         {experience} Years\n"
             f"Recommendation:     {tier}\n"
             f"Overall Match:      {match.overall_score}%\n\n"
             f"Matched Skills ({len(match.matched_skills)}):\n"

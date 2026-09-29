@@ -5,7 +5,7 @@ def load_jobs_from_csv(csv_path: str) -> list[dict]:
     df = pd.read_csv(csv_path)
     jobs = []
 
-    for _, row in df.iloc[1:3].iterrows():
+    for _, row in df.iloc[0:5].iterrows():
         raw_skills = f"{row.get('Skills', '')};{row.get('PreferredSkills', '')}"
 
         skills_set = {

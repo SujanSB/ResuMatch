@@ -1,13 +1,12 @@
 # Data models for resume extraction details
 # & matched evaluation results.
 from typing import Any, Dict, List, Set
-from dataclasses import dataclass, field
-
+from dataclasses import asdict, dataclass, field
 
 @dataclass
 # keep major things like: metadata, contact details, and skills extracted from the docs
 class ExtractedProfile:
-    raw_text: str
+    raw_text: str = ""
     email: str | None = None
     phone: str | None = None
     github: str | None = None
@@ -19,9 +18,8 @@ class ExtractedProfile:
     skills_with_sources: dict[str, str] = field(default_factory=dict)
     
     def to_dict(self) -> Dict[str, Any]:
-        if hasattr(self, "model_dump"):  
-            return self.model_dump()
-        return self.dict()  
+        # instance into dict
+        return asdict(self) 
 @dataclass
 # result of matching a cv details for a job description ( with scores and skills )
 class MatchResult:

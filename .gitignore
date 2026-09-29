@@ -1,4 +1,5 @@
 data/data_preparation/raw/
+data/data_preparation/processed/processed_sample_pdfs/
 .venv
 .vscode
 .cache/
