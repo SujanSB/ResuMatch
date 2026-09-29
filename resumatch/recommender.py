@@ -141,6 +141,24 @@ class CandidateRecommender:
 if __name__ == "__main__":
     recommender = CandidateRecommender()
 
+    sample_candidates = [
+        {
+            "id": "CV_002_Sujan_Sharma",
+            "name": "Sujan Sharma",
+            "email": "ersujansharma@gmail.com",
+            "experience_years": 3.5,
+            "text": "M.Sc. Data Science student skilled in Python, PyTorch, LangChain, RAG, Docker, AWS, SQL.",
+            "skills": {"Python", "PyTorch", "LangChain", "RAG", "Docker", "AWS", "SQL", "FastAPI"},
+        },
+        {
+            "id": "CV_003_Alice_Johnson",
+            "name": "Alice Johnson",
+            "email": "alice.johnson@example.com",
+            "experience_years": 5,
+            "text": "Experienced Data Scientist with expertise in Python, Machine Learning, and Deep Learning.",
+            "skills": {"Python", "Machine Learning", "Deep Learning", "SQL"},
+        }
+    ]
     sample_jobs = [
         {
             "id": "JOB_101_AI_Engineer",
