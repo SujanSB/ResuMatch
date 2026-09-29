@@ -1,6 +1,6 @@
 # Data models for resume extraction details
 # & matched evaluation results.
-
+from typing import Any, Dict, List, Set
 from dataclasses import dataclass, field
 
 
@@ -17,7 +17,11 @@ class ExtractedProfile:
     taxonomy_skills: set[str] = field(default_factory=set)
     dynamic_skills: set[str] = field(default_factory=set)
     skills_with_sources: dict[str, str] = field(default_factory=dict)
-
+    
+    def to_dict(self) -> Dict[str, Any]:
+        if hasattr(self, "model_dump"):  
+            return self.model_dump()
+        return self.dict()  
 @dataclass
 # result of matching a cv details for a job description ( with scores and skills )
 class MatchResult:
