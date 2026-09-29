@@ -1,9 +1,12 @@
 data/data_preparation/raw/
 .venv
 .vscode
-resumatch/__pycache__
+.cache/
+__pycache__/
 *__pycache__
+*.pyc
 *.DS_Store
 .ipynb_checkpoints
-resumatch.egg-info
+*.egg-info/
+.eggs/
 uv.lock

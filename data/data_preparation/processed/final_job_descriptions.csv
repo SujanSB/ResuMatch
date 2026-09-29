@@ -1,0 +1,1302 @@
+JobID,Title,Category,ExperienceLevel,YearsOfExperience,Skills,Responsibilities,PreferredSkills,Education,Location,FullProcessedDescription
+1,Python Developer,INFORMATION-TECHNOLOGY,Junior,1-3,"Python, Django, Flask, REST APIs, SQL, Git",Design and develop backend services. Write clean maintainable code. Collaborate with frontend developers. Participate in code reviews. Debug and fix production issues,"Docker, AWS, PostgreSQL, Redis, Celery",Bachelor's in CS or related,Remote,"Job Title: Python Developer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        Python, Django, Flask, REST APIs, SQL, Git
+
+        Preferred Skills:
+        Docker, AWS, PostgreSQL, Redis, Celery
+
+        Key Responsibilities:
+        Design and develop backend services. Write clean maintainable code. Collaborate with frontend developers. Participate in code reviews. Debug and fix production issues"
+2,Senior Python Developer,INFORMATION-TECHNOLOGY,Senior,5+,"Python, Django, Flask, FastAPI, PostgreSQL, Docker, Kubernetes, AWS, CI/CD, System Design",Lead backend architecture decisions. Mentor junior developers. Design scalable microservices. Optimize database performance. Implement security best practices. Conduct technical interviews,"GraphQL, Kafka, Terraform, Machine Learning",Bachelor's or Master's in CS,San Francisco CA,"Job Title: Senior Python Developer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Senior (5+ years)
+
+        Education Required: Bachelor's or Master's in CS
+
+        Required Skills:
+        Python, Django, Flask, FastAPI, PostgreSQL, Docker, Kubernetes, AWS, CI/CD, System Design
+
+        Preferred Skills:
+        GraphQL, Kafka, Terraform, Machine Learning
+
+        Key Responsibilities:
+        Lead backend architecture decisions. Mentor junior developers. Design scalable microservices. Optimize database performance. Implement security best practices. Conduct technical interviews"
+3,Java Developer,INFORMATION-TECHNOLOGY,Junior,1-3,"Java, Spring Boot, Hibernate, REST APIs, MySQL, Maven, Git",Develop enterprise applications. Write unit and integration tests. Participate in agile ceremonies. Troubleshoot application issues. Document technical specifications,"Microservices, Docker, Jenkins, Kafka",Bachelor's in CS or IT,New York NY,"Job Title: Java Developer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in CS or IT
+
+        Required Skills:
+        Java, Spring Boot, Hibernate, REST APIs, MySQL, Maven, Git
+
+        Preferred Skills:
+        Microservices, Docker, Jenkins, Kafka
+
+        Key Responsibilities:
+        Develop enterprise applications. Write unit and integration tests. Participate in agile ceremonies. Troubleshoot application issues. Document technical specifications"
+4,Senior Java Developer,INFORMATION-TECHNOLOGY,Senior,5+,"Java, Spring Boot, Spring Cloud, Microservices, Kafka, Kubernetes, AWS, Oracle, Design Patterns",Architect enterprise solutions. Lead development teams. Define coding standards. Conduct performance tuning. Integrate third-party systems. Drive technical roadmap,"Reactive Programming, GraphQL, Terraform, Machine Learning",Bachelor's or Master's in CS,Austin TX,"Job Title: Senior Java Developer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Senior (5+ years)
+
+        Education Required: Bachelor's or Master's in CS
+
+        Required Skills:
+        Java, Spring Boot, Spring Cloud, Microservices, Kafka, Kubernetes, AWS, Oracle, Design Patterns
+
+        Preferred Skills:
+        Reactive Programming, GraphQL, Terraform, Machine Learning
+
+        Key Responsibilities:
+        Architect enterprise solutions. Lead development teams. Define coding standards. Conduct performance tuning. Integrate third-party systems. Drive technical roadmap"
+5,Frontend Developer,INFORMATION-TECHNOLOGY,Junior,1-3,"JavaScript, HTML5, CSS3, React, Git, Responsive Design",Build responsive user interfaces. Implement designs from Figma. Optimize web performance. Collaborate with designers. Write reusable components,"TypeScript, Next.js, GraphQL, Testing Library",Bachelor's in CS or Design,Remote,"Job Title: Frontend Developer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in CS or Design
+
+        Required Skills:
+        JavaScript, HTML5, CSS3, React, Git, Responsive Design
+
+        Preferred Skills:
+        TypeScript, Next.js, GraphQL, Testing Library
+
+        Key Responsibilities:
+        Build responsive user interfaces. Implement designs from Figma. Optimize web performance. Collaborate with designers. Write reusable components"
+6,Senior Frontend Developer,INFORMATION-TECHNOLOGY,Senior,5+,"JavaScript, TypeScript, React, Vue.js, Angular, Webpack, Performance Optimization, Accessibility",Lead frontend architecture. Mentor team members. Establish coding standards. Optimize bundle size. Implement design systems. Drive accessibility initiatives,"Node.js, GraphQL, Three.js, WebGL",Bachelor's in CS or related,Seattle WA,"Job Title: Senior Frontend Developer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Senior (5+ years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        JavaScript, TypeScript, React, Vue.js, Angular, Webpack, Performance Optimization, Accessibility
+
+        Preferred Skills:
+        Node.js, GraphQL, Three.js, WebGL
+
+        Key Responsibilities:
+        Lead frontend architecture. Mentor team members. Establish coding standards. Optimize bundle size. Implement design systems. Drive accessibility initiatives"
+7,Full Stack Developer,INFORMATION-TECHNOLOGY,Experienced,3-5,"JavaScript, React, Node.js, Express, MongoDB, PostgreSQL, REST APIs, Git, Docker",Develop end-to-end features. Build RESTful APIs. Create responsive UIs. Manage database schemas. Deploy applications. Write automated tests,"GraphQL, AWS, Redis, Kubernetes",Bachelor's in CS or related,Remote,"Job Title: Full Stack Developer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        JavaScript, React, Node.js, Express, MongoDB, PostgreSQL, REST APIs, Git, Docker
+
+        Preferred Skills:
+        GraphQL, AWS, Redis, Kubernetes
+
+        Key Responsibilities:
+        Develop end-to-end features. Build RESTful APIs. Create responsive UIs. Manage database schemas. Deploy applications. Write automated tests"
+8,DevOps Engineer,INFORMATION-TECHNOLOGY,Experienced,3-5,"AWS, Docker, Kubernetes, Terraform, Jenkins, CI/CD, Linux, Bash, Python",Build and maintain CI/CD pipelines. Automate infrastructure provisioning. Monitor system health. Implement security controls. Manage cloud costs. Respond to incidents,"Ansible, Prometheus, Grafana, Istio",Bachelor's in CS or IT,Denver CO,"Job Title: DevOps Engineer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or IT
+
+        Required Skills:
+        AWS, Docker, Kubernetes, Terraform, Jenkins, CI/CD, Linux, Bash, Python
+
+        Preferred Skills:
+        Ansible, Prometheus, Grafana, Istio
+
+        Key Responsibilities:
+        Build and maintain CI/CD pipelines. Automate infrastructure provisioning. Monitor system health. Implement security controls. Manage cloud costs. Respond to incidents"
+9,Site Reliability Engineer,INFORMATION-TECHNOLOGY,Senior,5+,"Kubernetes, Prometheus, Grafana, Terraform, Go, Python, Linux, Networking, Incident Management",Ensure system reliability and uptime. Design scalable infrastructure. Lead incident response. Implement SLOs and SLIs. Automate operational tasks. Conduct post-mortems,"Istio, Envoy, Chaos Engineering, Machine Learning",Bachelor's in CS or related,San Francisco CA,"Job Title: Site Reliability Engineer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Senior (5+ years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        Kubernetes, Prometheus, Grafana, Terraform, Go, Python, Linux, Networking, Incident Management
+
+        Preferred Skills:
+        Istio, Envoy, Chaos Engineering, Machine Learning
+
+        Key Responsibilities:
+        Ensure system reliability and uptime. Design scalable infrastructure. Lead incident response. Implement SLOs and SLIs. Automate operational tasks. Conduct post-mortems"
+10,Data Scientist,INFORMATION-TECHNOLOGY,Experienced,3-5,"Python, R, SQL, Machine Learning, Statistics, Pandas, Scikit-learn, TensorFlow, Data Visualization",Build predictive models. Analyze large datasets. Communicate findings to stakeholders. Design experiments. Deploy ML models. Collaborate with engineering teams,"Deep Learning, NLP, Spark, Airflow",Master's or PhD in related field,Boston MA,"Job Title: Data Scientist
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Master's or PhD in related field
+
+        Required Skills:
+        Python, R, SQL, Machine Learning, Statistics, Pandas, Scikit-learn, TensorFlow, Data Visualization
+
+        Preferred Skills:
+        Deep Learning, NLP, Spark, Airflow
+
+        Key Responsibilities:
+        Build predictive models. Analyze large datasets. Communicate findings to stakeholders. Design experiments. Deploy ML models. Collaborate with engineering teams"
+11,Machine Learning Engineer,INFORMATION-TECHNOLOGY,Senior,5+,"Python, TensorFlow, PyTorch, MLflow, Kubernetes, Docker, SQL, Feature Engineering, Model Deployment",Design ML pipelines. Deploy models to production. Optimize model performance. Build feature stores. Collaborate with data scientists. Monitor model drift,"Ray, Kubeflow, Spark, Deep Learning",Master's or PhD in CS or related,Seattle WA,"Job Title: Machine Learning Engineer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Senior (5+ years)
+
+        Education Required: Master's or PhD in CS or related
+
+        Required Skills:
+        Python, TensorFlow, PyTorch, MLflow, Kubernetes, Docker, SQL, Feature Engineering, Model Deployment
+
+        Preferred Skills:
+        Ray, Kubeflow, Spark, Deep Learning
+
+        Key Responsibilities:
+        Design ML pipelines. Deploy models to production. Optimize model performance. Build feature stores. Collaborate with data scientists. Monitor model drift"
+12,Data Engineer,INFORMATION-TECHNOLOGY,Experienced,3-5,"Python, SQL, Spark, Airflow, Kafka, ETL, Data Warehousing, AWS, Snowflake",Build data pipelines. Design data models. Ensure data quality. Optimize query performance. Collaborate with analysts. Maintain data infrastructure,"dbt, Databricks, Redshift, Terraform",Bachelor's in CS or related,Remote,"Job Title: Data Engineer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        Python, SQL, Spark, Airflow, Kafka, ETL, Data Warehousing, AWS, Snowflake
+
+        Preferred Skills:
+        dbt, Databricks, Redshift, Terraform
+
+        Key Responsibilities:
+        Build data pipelines. Design data models. Ensure data quality. Optimize query performance. Collaborate with analysts. Maintain data infrastructure"
+13,Cloud Architect,INFORMATION-TECHNOLOGY,Lead,7+,"AWS, Azure, GCP, Terraform, Kubernetes, Networking, Security, Cost Optimization, System Design",Design cloud architectures. Lead migration projects. Define cloud standards. Mentor engineering teams. Evaluate new technologies. Ensure compliance,"Multi-cloud, Serverless, FinOps, Machine Learning",Bachelor's or Master's in CS,New York NY,"Job Title: Cloud Architect
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Lead (7+ years)
+
+        Education Required: Bachelor's or Master's in CS
+
+        Required Skills:
+        AWS, Azure, GCP, Terraform, Kubernetes, Networking, Security, Cost Optimization, System Design
+
+        Preferred Skills:
+        Multi-cloud, Serverless, FinOps, Machine Learning
+
+        Key Responsibilities:
+        Design cloud architectures. Lead migration projects. Define cloud standards. Mentor engineering teams. Evaluate new technologies. Ensure compliance"
+14,Cybersecurity Analyst,INFORMATION-TECHNOLOGY,Experienced,3-5,"SIEM, Splunk, IDS/IPS, Firewalls, Incident Response, Vulnerability Assessment, Python, Networking",Monitor security events. Investigate incidents. Conduct vulnerability scans. Implement security controls. Document procedures. Train employees,"Threat Hunting, Forensics, Cloud Security, CISSP",Bachelor's in Cybersecurity or CS,Washington DC,"Job Title: Cybersecurity Analyst
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Cybersecurity or CS
+
+        Required Skills:
+        SIEM, Splunk, IDS/IPS, Firewalls, Incident Response, Vulnerability Assessment, Python, Networking
+
+        Preferred Skills:
+        Threat Hunting, Forensics, Cloud Security, CISSP
+
+        Key Responsibilities:
+        Monitor security events. Investigate incidents. Conduct vulnerability scans. Implement security controls. Document procedures. Train employees"
+15,Security Engineer,INFORMATION-TECHNOLOGY,Senior,5+,"Penetration Testing, SAST/DAST, OWASP, Python, Burp Suite, Metasploit, Cryptography, PKI",Conduct security assessments. Build security tools. Review code for vulnerabilities. Design secure architectures. Lead security initiatives. Mentor team,"Red Team, Cloud Security, DevSecOps, OSCP",Bachelor's in Cybersecurity or CS,Remote,"Job Title: Security Engineer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Senior (5+ years)
+
+        Education Required: Bachelor's in Cybersecurity or CS
+
+        Required Skills:
+        Penetration Testing, SAST/DAST, OWASP, Python, Burp Suite, Metasploit, Cryptography, PKI
+
+        Preferred Skills:
+        Red Team, Cloud Security, DevSecOps, OSCP
+
+        Key Responsibilities:
+        Conduct security assessments. Build security tools. Review code for vulnerabilities. Design secure architectures. Lead security initiatives. Mentor team"
+16,Database Administrator,INFORMATION-TECHNOLOGY,Experienced,3-5,"PostgreSQL, MySQL, Oracle, SQL Server, Backup Recovery, Performance Tuning, Replication, Linux",Manage database systems. Optimize query performance. Implement backup strategies. Ensure data integrity. Plan capacity. Support developers,"MongoDB, Redis, Cloud Databases, Automation",Bachelor's in CS or IT,Dallas TX,"Job Title: Database Administrator
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or IT
+
+        Required Skills:
+        PostgreSQL, MySQL, Oracle, SQL Server, Backup Recovery, Performance Tuning, Replication, Linux
+
+        Preferred Skills:
+        MongoDB, Redis, Cloud Databases, Automation
+
+        Key Responsibilities:
+        Manage database systems. Optimize query performance. Implement backup strategies. Ensure data integrity. Plan capacity. Support developers"
+17,System Administrator,INFORMATION-TECHNOLOGY,Junior,1-3,"Windows Server, Linux, Active Directory, DNS, DHCP, PowerShell, Networking, Virtualization",Maintain server infrastructure. Manage user accounts. Perform backups. Monitor system health. Troubleshoot issues. Document procedures,"AWS, Azure, Ansible, Docker",Bachelor's in IT or CS,Chicago IL,"Job Title: System Administrator
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in IT or CS
+
+        Required Skills:
+        Windows Server, Linux, Active Directory, DNS, DHCP, PowerShell, Networking, Virtualization
+
+        Preferred Skills:
+        AWS, Azure, Ansible, Docker
+
+        Key Responsibilities:
+        Maintain server infrastructure. Manage user accounts. Perform backups. Monitor system health. Troubleshoot issues. Document procedures"
+18,Network Engineer,INFORMATION-TECHNOLOGY,Experienced,3-5,"Cisco, Routing, Switching, BGP, OSPF, VLANs, Firewalls, VPN, Network Monitoring",Design network solutions. Configure routers and switches. Troubleshoot connectivity issues. Implement security policies. Document network topology. Capacity planning,"SD-WAN, Python, Ansible, CCNP",Bachelor's in Networking or CS,Atlanta GA,"Job Title: Network Engineer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Networking or CS
+
+        Required Skills:
+        Cisco, Routing, Switching, BGP, OSPF, VLANs, Firewalls, VPN, Network Monitoring
+
+        Preferred Skills:
+        SD-WAN, Python, Ansible, CCNP
+
+        Key Responsibilities:
+        Design network solutions. Configure routers and switches. Troubleshoot connectivity issues. Implement security policies. Document network topology. Capacity planning"
+19,QA Engineer,INFORMATION-TECHNOLOGY,Junior,1-3,"Manual Testing, Selenium, TestNG, JIRA, SQL, API Testing, Test Cases, Bug Reporting",Write test plans and cases. Execute manual tests. Automate regression tests. Report bugs. Collaborate with developers. Participate in release planning,"Cypress, Performance Testing, CI/CD, Mobile Testing",Bachelor's in CS or related,Remote,"Job Title: QA Engineer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        Manual Testing, Selenium, TestNG, JIRA, SQL, API Testing, Test Cases, Bug Reporting
+
+        Preferred Skills:
+        Cypress, Performance Testing, CI/CD, Mobile Testing
+
+        Key Responsibilities:
+        Write test plans and cases. Execute manual tests. Automate regression tests. Report bugs. Collaborate with developers. Participate in release planning"
+20,Senior QA Engineer,INFORMATION-TECHNOLOGY,Senior,5+,"Test Automation, Selenium, Cypress, API Testing, Performance Testing, CI/CD, Test Strategy, Team Leadership",Define test strategy. Build automation frameworks. Lead QA team. Improve testing processes. Collaborate with product. Report metrics,"Security Testing, Mobile Automation, AI Testing, ISTQB",Bachelor's in CS or related,San Jose CA,"Job Title: Senior QA Engineer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Senior (5+ years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        Test Automation, Selenium, Cypress, API Testing, Performance Testing, CI/CD, Test Strategy, Team Leadership
+
+        Preferred Skills:
+        Security Testing, Mobile Automation, AI Testing, ISTQB
+
+        Key Responsibilities:
+        Define test strategy. Build automation frameworks. Lead QA team. Improve testing processes. Collaborate with product. Report metrics"
+21,Product Manager,INFORMATION-TECHNOLOGY,Experienced,3-5,"Product Strategy, Roadmapping, User Research, Agile, JIRA, Analytics, A/B Testing, Stakeholder Management",Define product vision. Prioritize features. Conduct user research. Write PRDs. Collaborate with engineering. Analyze metrics. Present to executives,"SQL, Technical Background, B2B SaaS, AI Products",Bachelor's in Business or CS,San Francisco CA,"Job Title: Product Manager
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Business or CS
+
+        Required Skills:
+        Product Strategy, Roadmapping, User Research, Agile, JIRA, Analytics, A/B Testing, Stakeholder Management
+
+        Preferred Skills:
+        SQL, Technical Background, B2B SaaS, AI Products
+
+        Key Responsibilities:
+        Define product vision. Prioritize features. Conduct user research. Write PRDs. Collaborate with engineering. Analyze metrics. Present to executives"
+22,Technical Product Manager,INFORMATION-TECHNOLOGY,Senior,5+,"API Design, System Design, Product Strategy, Agile, SQL, Data Analysis, Stakeholder Management, Roadmapping",Lead technical product initiatives. Define API specifications. Collaborate with architects. Prioritize engineering work. Drive platform strategy. Mentor PMs,"Kubernetes, Machine Learning, Developer Tools, B2B SaaS",Bachelor's or Master's in CS,Seattle WA,"Job Title: Technical Product Manager
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Senior (5+ years)
+
+        Education Required: Bachelor's or Master's in CS
+
+        Required Skills:
+        API Design, System Design, Product Strategy, Agile, SQL, Data Analysis, Stakeholder Management, Roadmapping
+
+        Preferred Skills:
+        Kubernetes, Machine Learning, Developer Tools, B2B SaaS
+
+        Key Responsibilities:
+        Lead technical product initiatives. Define API specifications. Collaborate with architects. Prioritize engineering work. Drive platform strategy. Mentor PMs"
+23,UX Designer,INFORMATION-TECHNOLOGY,Experienced,3-5,"Figma, Sketch, User Research, Wireframing, Prototyping, Usability Testing, Design Systems, Accessibility",Conduct user research. Create wireframes and prototypes. Design user flows. Collaborate with developers. Conduct usability tests. Maintain design system,"Motion Design, HTML/CSS, Design Leadership, AI Tools",Bachelor's in Design or HCI,Remote,"Job Title: UX Designer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Design or HCI
+
+        Required Skills:
+        Figma, Sketch, User Research, Wireframing, Prototyping, Usability Testing, Design Systems, Accessibility
+
+        Preferred Skills:
+        Motion Design, HTML/CSS, Design Leadership, AI Tools
+
+        Key Responsibilities:
+        Conduct user research. Create wireframes and prototypes. Design user flows. Collaborate with developers. Conduct usability tests. Maintain design system"
+24,UI Developer,INFORMATION-TECHNOLOGY,Junior,1-3,"HTML5, CSS3, JavaScript, React, Figma, Responsive Design, Git, Accessibility",Implement UI designs. Build reusable components. Ensure cross-browser compatibility. Optimize performance. Collaborate with designers. Write documentation,"TypeScript, Storybook, Testing, Animation",Bachelor's in CS or Design,New York NY,"Job Title: UI Developer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in CS or Design
+
+        Required Skills:
+        HTML5, CSS3, JavaScript, React, Figma, Responsive Design, Git, Accessibility
+
+        Preferred Skills:
+        TypeScript, Storybook, Testing, Animation
+
+        Key Responsibilities:
+        Implement UI designs. Build reusable components. Ensure cross-browser compatibility. Optimize performance. Collaborate with designers. Write documentation"
+25,Technical Writer,INFORMATION-TECHNOLOGY,Experienced,3-5,"Technical Writing, API Documentation, Markdown, Git, Confluence, Information Architecture, Editing",Write API documentation. Create user guides. Maintain style guides. Collaborate with engineers. Review technical content. Manage documentation projects,"Developer Experience, Video Creation, Docs-as-Code, OpenAPI",Bachelor's in English or Technical Communication,Remote,"Job Title: Technical Writer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in English or Technical Communication
+
+        Required Skills:
+        Technical Writing, API Documentation, Markdown, Git, Confluence, Information Architecture, Editing
+
+        Preferred Skills:
+        Developer Experience, Video Creation, Docs-as-Code, OpenAPI
+
+        Key Responsibilities:
+        Write API documentation. Create user guides. Maintain style guides. Collaborate with engineers. Review technical content. Manage documentation projects"
+26,Scrum Master,INFORMATION-TECHNOLOGY,Experienced,3-5,"Agile, Scrum, Kanban, JIRA, Confluence, Facilitation, Coaching, Metrics",Facilitate scrum ceremonies. Remove blockers. Coach teams on agile. Track team metrics. Facilitate retrospectives. Shield team from distractions,"SAFe, LeSS, Technical Background, CSM",Bachelor's in any field,Remote,"Job Title: Scrum Master
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in any field
+
+        Required Skills:
+        Agile, Scrum, Kanban, JIRA, Confluence, Facilitation, Coaching, Metrics
+
+        Preferred Skills:
+        SAFe, LeSS, Technical Background, CSM
+
+        Key Responsibilities:
+        Facilitate scrum ceremonies. Remove blockers. Coach teams on agile. Track team metrics. Facilitate retrospectives. Shield team from distractions"
+27,Engineering Manager,INFORMATION-TECHNOLOGY,Lead,7+,"Team Leadership, System Design, Agile, Code Review, Hiring, Performance Management, Technical Strategy",Lead engineering team. Define technical roadmap. Hire and mentor engineers. Conduct performance reviews. Collaborate with product. Drive technical excellence,"Distributed Systems, Machine Learning, Platform Engineering, MBA",Bachelor's or Master's in CS,San Francisco CA,"Job Title: Engineering Manager
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Lead (7+ years)
+
+        Education Required: Bachelor's or Master's in CS
+
+        Required Skills:
+        Team Leadership, System Design, Agile, Code Review, Hiring, Performance Management, Technical Strategy
+
+        Preferred Skills:
+        Distributed Systems, Machine Learning, Platform Engineering, MBA
+
+        Key Responsibilities:
+        Lead engineering team. Define technical roadmap. Hire and mentor engineers. Conduct performance reviews. Collaborate with product. Drive technical excellence"
+28,Director of Engineering,INFORMATION-TECHNOLOGY,Lead,10+,"Engineering Leadership, Strategic Planning, Budget Management, Team Building, System Architecture, Stakeholder Management",Lead multiple engineering teams. Define technical strategy. Manage engineering budget. Build engineering culture. Collaborate with executives. Drive innovation,"Platform Strategy, M&A, International Teams, Public Speaking",Bachelor's or Master's in CS,New York NY,"Job Title: Director of Engineering
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Lead (10+ years)
+
+        Education Required: Bachelor's or Master's in CS
+
+        Required Skills:
+        Engineering Leadership, Strategic Planning, Budget Management, Team Building, System Architecture, Stakeholder Management
+
+        Preferred Skills:
+        Platform Strategy, M&A, International Teams, Public Speaking
+
+        Key Responsibilities:
+        Lead multiple engineering teams. Define technical strategy. Manage engineering budget. Build engineering culture. Collaborate with executives. Drive innovation"
+29,Software Architect,INFORMATION-TECHNOLOGY,Lead,8+,"System Design, Microservices, Cloud Architecture, Design Patterns, Technical Leadership, Code Review, Documentation",Define system architecture. Lead technical design. Review critical code. Mentor engineers. Evaluate technologies. Drive technical standards,"Domain-Driven Design, Event Sourcing, ML Systems, Security",Bachelor's or Master's in CS,Seattle WA,"Job Title: Software Architect
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Lead (8+ years)
+
+        Education Required: Bachelor's or Master's in CS
+
+        Required Skills:
+        System Design, Microservices, Cloud Architecture, Design Patterns, Technical Leadership, Code Review, Documentation
+
+        Preferred Skills:
+        Domain-Driven Design, Event Sourcing, ML Systems, Security
+
+        Key Responsibilities:
+        Define system architecture. Lead technical design. Review critical code. Mentor engineers. Evaluate technologies. Drive technical standards"
+30,Mobile Developer iOS,INFORMATION-TECHNOLOGY,Experienced,3-5,"Swift, iOS SDK, UIKit, SwiftUI, Core Data, REST APIs, Git, App Store Deployment",Develop iOS applications. Implement UI designs. Integrate with backend APIs. Write unit tests. Optimize app performance. Handle app store submissions,"Objective-C, Combine, ARKit, WidgetKit",Bachelor's in CS or related,Cupertino CA,"Job Title: Mobile Developer iOS
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        Swift, iOS SDK, UIKit, SwiftUI, Core Data, REST APIs, Git, App Store Deployment
+
+        Preferred Skills:
+        Objective-C, Combine, ARKit, WidgetKit
+
+        Key Responsibilities:
+        Develop iOS applications. Implement UI designs. Integrate with backend APIs. Write unit tests. Optimize app performance. Handle app store submissions"
+31,Mobile Developer Android,INFORMATION-TECHNOLOGY,Experienced,3-5,"Kotlin, Android SDK, Jetpack Compose, Room, REST APIs, Git, Play Store Deployment, MVVM",Develop Android applications. Implement UI designs. Integrate with backend APIs. Write unit tests. Optimize app performance. Handle play store submissions,"Java, Coroutines, Firebase, Wear OS",Bachelor's in CS or related,Remote,"Job Title: Mobile Developer Android
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        Kotlin, Android SDK, Jetpack Compose, Room, REST APIs, Git, Play Store Deployment, MVVM
+
+        Preferred Skills:
+        Java, Coroutines, Firebase, Wear OS
+
+        Key Responsibilities:
+        Develop Android applications. Implement UI designs. Integrate with backend APIs. Write unit tests. Optimize app performance. Handle play store submissions"
+32,Embedded Systems Engineer,ENGINEERING,Experienced,3-5,"C, C++, RTOS, Microcontrollers, ARM, I2C, SPI, UART, Debugging, PCB Design",Develop embedded firmware. Interface with hardware. Write device drivers. Debug hardware issues. Collaborate with hardware team. Document designs,"Linux Kernel, Python, IoT, Wireless Protocols",Bachelor's in EE or CE,Austin TX,"Job Title: Embedded Systems Engineer
+        Category: ENGINEERING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in EE or CE
+
+        Required Skills:
+        C, C++, RTOS, Microcontrollers, ARM, I2C, SPI, UART, Debugging, PCB Design
+
+        Preferred Skills:
+        Linux Kernel, Python, IoT, Wireless Protocols
+
+        Key Responsibilities:
+        Develop embedded firmware. Interface with hardware. Write device drivers. Debug hardware issues. Collaborate with hardware team. Document designs"
+33,Mechanical Engineer,ENGINEERING,Junior,1-3,"SolidWorks, AutoCAD, GD&T, FEA, Manufacturing Processes, 3D Printing, Tolerance Analysis",Design mechanical components. Create engineering drawings. Perform FEA analysis. Collaborate with manufacturing. Support prototyping. Document designs,"ANSYS, Injection Molding, Sheet Metal, Product Development",Bachelor's in Mechanical Engineering,Detroit MI,"Job Title: Mechanical Engineer
+        Category: ENGINEERING
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in Mechanical Engineering
+
+        Required Skills:
+        SolidWorks, AutoCAD, GD&T, FEA, Manufacturing Processes, 3D Printing, Tolerance Analysis
+
+        Preferred Skills:
+        ANSYS, Injection Molding, Sheet Metal, Product Development
+
+        Key Responsibilities:
+        Design mechanical components. Create engineering drawings. Perform FEA analysis. Collaborate with manufacturing. Support prototyping. Document designs"
+34,Senior Mechanical Engineer,ENGINEERING,Senior,5+,"SolidWorks, ANSYS, GD&T, DFMEA, Design for Manufacturing, Project Management, Team Leadership",Lead mechanical design projects. Mentor junior engineers. Conduct design reviews. Interface with suppliers. Drive cost reduction. Manage project timelines,"Thermal Analysis, Vibration Analysis, Automation, Robotics",Bachelor's or Master's in Mechanical Engineering,Seattle WA,"Job Title: Senior Mechanical Engineer
+        Category: ENGINEERING
+        Experience Level: Senior (5+ years)
+
+        Education Required: Bachelor's or Master's in Mechanical Engineering
+
+        Required Skills:
+        SolidWorks, ANSYS, GD&T, DFMEA, Design for Manufacturing, Project Management, Team Leadership
+
+        Preferred Skills:
+        Thermal Analysis, Vibration Analysis, Automation, Robotics
+
+        Key Responsibilities:
+        Lead mechanical design projects. Mentor junior engineers. Conduct design reviews. Interface with suppliers. Drive cost reduction. Manage project timelines"
+35,Civil Engineer,ENGINEERING,Experienced,3-5,"AutoCAD Civil 3D, Stormwater Management, Grading, Drainage, Site Plans, Permits, Construction Documents",Design civil infrastructure. Prepare site plans. Perform drainage calculations. Coordinate with agencies. Review construction documents. Support permitting,"Revit, GIS, Transportation, Water Resources",Bachelor's in Civil Engineering,Denver CO,"Job Title: Civil Engineer
+        Category: ENGINEERING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Civil Engineering
+
+        Required Skills:
+        AutoCAD Civil 3D, Stormwater Management, Grading, Drainage, Site Plans, Permits, Construction Documents
+
+        Preferred Skills:
+        Revit, GIS, Transportation, Water Resources
+
+        Key Responsibilities:
+        Design civil infrastructure. Prepare site plans. Perform drainage calculations. Coordinate with agencies. Review construction documents. Support permitting"
+36,Structural Engineer,ENGINEERING,Experienced,3-5,"Structural Analysis, SAP2000, ETABS, Steel Design, Concrete Design, Seismic Design, AutoCAD",Analyze structural systems. Design steel and concrete structures. Perform seismic analysis. Review shop drawings. Coordinate with architects. Prepare calculations,"Revit, BIM, Timber Design, PE License",Bachelor's or Master's in Structural Engineering,San Francisco CA,"Job Title: Structural Engineer
+        Category: ENGINEERING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's or Master's in Structural Engineering
+
+        Required Skills:
+        Structural Analysis, SAP2000, ETABS, Steel Design, Concrete Design, Seismic Design, AutoCAD
+
+        Preferred Skills:
+        Revit, BIM, Timber Design, PE License
+
+        Key Responsibilities:
+        Analyze structural systems. Design steel and concrete structures. Perform seismic analysis. Review shop drawings. Coordinate with architects. Prepare calculations"
+37,Electrical Engineer,ENGINEERING,Experienced,3-5,"Circuit Design, PCB Layout, Altium, SPICE, Oscilloscope, Power Electronics, Embedded Systems",Design electrical circuits. Create PCB layouts. Test prototypes. Debug hardware issues. Collaborate with firmware team. Document designs,"RF Design, Motor Control, Battery Systems, EMC",Bachelor's in Electrical Engineering,Boston MA,"Job Title: Electrical Engineer
+        Category: ENGINEERING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Electrical Engineering
+
+        Required Skills:
+        Circuit Design, PCB Layout, Altium, SPICE, Oscilloscope, Power Electronics, Embedded Systems
+
+        Preferred Skills:
+        RF Design, Motor Control, Battery Systems, EMC
+
+        Key Responsibilities:
+        Design electrical circuits. Create PCB layouts. Test prototypes. Debug hardware issues. Collaborate with firmware team. Document designs"
+38,Manufacturing Engineer,ENGINEERING,Experienced,3-5,"Lean Manufacturing, Six Sigma, Process Improvement, CAD, Work Instructions, Root Cause Analysis, SPC",Optimize manufacturing processes. Design production layouts. Implement lean initiatives. Conduct time studies. Train production staff. Drive quality improvements,"Automation, Robotics, ISO 9001, Project Management",Bachelor's in Industrial or Manufacturing Engineering,Detroit MI,"Job Title: Manufacturing Engineer
+        Category: ENGINEERING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Industrial or Manufacturing Engineering
+
+        Required Skills:
+        Lean Manufacturing, Six Sigma, Process Improvement, CAD, Work Instructions, Root Cause Analysis, SPC
+
+        Preferred Skills:
+        Automation, Robotics, ISO 9001, Project Management
+
+        Key Responsibilities:
+        Optimize manufacturing processes. Design production layouts. Implement lean initiatives. Conduct time studies. Train production staff. Drive quality improvements"
+39,Quality Engineer,ENGINEERING,Experienced,3-5,"Quality Management, Six Sigma, Root Cause Analysis, FMEA, SPC, ISO 9001, Auditing",Develop quality systems. Conduct audits. Lead root cause investigations. Implement corrective actions. Monitor quality metrics. Train employees,"AS9100, IATF 16949, Metrology, Supplier Quality",Bachelor's in Engineering or related,Chicago IL,"Job Title: Quality Engineer
+        Category: ENGINEERING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Engineering or related
+
+        Required Skills:
+        Quality Management, Six Sigma, Root Cause Analysis, FMEA, SPC, ISO 9001, Auditing
+
+        Preferred Skills:
+        AS9100, IATF 16949, Metrology, Supplier Quality
+
+        Key Responsibilities:
+        Develop quality systems. Conduct audits. Lead root cause investigations. Implement corrective actions. Monitor quality metrics. Train employees"
+40,Project Engineer,ENGINEERING,Experienced,3-5,"Project Management, AutoCAD, Budgeting, Scheduling, Vendor Management, Technical Documentation, MS Project",Manage engineering projects. Coordinate with vendors. Track project budgets. Prepare technical reports. Ensure compliance. Lead project meetings,"PMP, Primavera, Construction Management, Energy",Bachelor's in Engineering,Houston TX,"Job Title: Project Engineer
+        Category: ENGINEERING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Engineering
+
+        Required Skills:
+        Project Management, AutoCAD, Budgeting, Scheduling, Vendor Management, Technical Documentation, MS Project
+
+        Preferred Skills:
+        PMP, Primavera, Construction Management, Energy
+
+        Key Responsibilities:
+        Manage engineering projects. Coordinate with vendors. Track project budgets. Prepare technical reports. Ensure compliance. Lead project meetings"
+41,Process Engineer,ENGINEERING,Experienced,3-5,"Process Design, P&ID, Simulation, Aspen Plus, MATLAB, Statistical Analysis, Troubleshooting",Design process systems. Create P&IDs. Perform process simulations. Optimize operations. Troubleshoot issues. Document procedures,"HYSYS, Chemical Engineering, Oil and Gas, Pharma",Bachelor's in Chemical Engineering,Houston TX,"Job Title: Process Engineer
+        Category: ENGINEERING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Chemical Engineering
+
+        Required Skills:
+        Process Design, P&ID, Simulation, Aspen Plus, MATLAB, Statistical Analysis, Troubleshooting
+
+        Preferred Skills:
+        HYSYS, Chemical Engineering, Oil and Gas, Pharma
+
+        Key Responsibilities:
+        Design process systems. Create P&IDs. Perform process simulations. Optimize operations. Troubleshoot issues. Document procedures"
+42,Biomedical Engineer,ENGINEERING,Junior,1-3,"Medical Devices, FDA Regulations, ISO 13485, CAD, Testing, Technical Documentation, Quality Systems",Design medical devices. Conduct testing. Prepare regulatory submissions. Support manufacturing. Document designs. Collaborate with clinicians,"Embedded Systems, Biomechanics, 3D Printing, Clinical Trials",Bachelor's in Biomedical Engineering,Minneapolis MN,"Job Title: Biomedical Engineer
+        Category: ENGINEERING
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in Biomedical Engineering
+
+        Required Skills:
+        Medical Devices, FDA Regulations, ISO 13485, CAD, Testing, Technical Documentation, Quality Systems
+
+        Preferred Skills:
+        Embedded Systems, Biomechanics, 3D Printing, Clinical Trials
+
+        Key Responsibilities:
+        Design medical devices. Conduct testing. Prepare regulatory submissions. Support manufacturing. Document designs. Collaborate with clinicians"
+43,Systems Engineer,ENGINEERING,Experienced,3-5,"Systems Design, Requirements Management, DOORS, MBSE, Integration Testing, Technical Documentation, V&V",Define system requirements. Create system architectures. Lead integration efforts. Conduct verification testing. Document designs. Interface with customers,"Aerospace, Defense, Automotive, SysML",Bachelor's or Master's in Engineering,Los Angeles CA,"Job Title: Systems Engineer
+        Category: ENGINEERING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's or Master's in Engineering
+
+        Required Skills:
+        Systems Design, Requirements Management, DOORS, MBSE, Integration Testing, Technical Documentation, V&V
+
+        Preferred Skills:
+        Aerospace, Defense, Automotive, SysML
+
+        Key Responsibilities:
+        Define system requirements. Create system architectures. Lead integration efforts. Conduct verification testing. Document designs. Interface with customers"
+44,Aerospace Engineer,ENGINEERING,Experienced,3-5,"Aerodynamics, CFD, MATLAB, CATIA, Structural Analysis, Flight Testing, Technical Documentation",Perform aerodynamic analysis. Design aerospace components. Conduct CFD simulations. Support flight testing. Document designs. Collaborate with teams,"Propulsion, Controls, Space Systems, Security Clearance",Bachelor's or Master's in Aerospace Engineering,Seattle WA,"Job Title: Aerospace Engineer
+        Category: ENGINEERING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's or Master's in Aerospace Engineering
+
+        Required Skills:
+        Aerodynamics, CFD, MATLAB, CATIA, Structural Analysis, Flight Testing, Technical Documentation
+
+        Preferred Skills:
+        Propulsion, Controls, Space Systems, Security Clearance
+
+        Key Responsibilities:
+        Perform aerodynamic analysis. Design aerospace components. Conduct CFD simulations. Support flight testing. Document designs. Collaborate with teams"
+45,Chemical Engineer,ENGINEERING,Experienced,3-5,"Process Design, P&ID, Aspen HYSYS, Heat Transfer, Mass Transfer, Safety Analysis, Regulatory Compliance",Design chemical processes. Perform process simulations. Develop P&IDs. Conduct safety reviews. Optimize production. Ensure compliance,"Petrochemical, Pharmaceuticals, Green Chemistry, Six Sigma",Bachelor's in Chemical Engineering,Houston TX,"Job Title: Chemical Engineer
+        Category: ENGINEERING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Chemical Engineering
+
+        Required Skills:
+        Process Design, P&ID, Aspen HYSYS, Heat Transfer, Mass Transfer, Safety Analysis, Regulatory Compliance
+
+        Preferred Skills:
+        Petrochemical, Pharmaceuticals, Green Chemistry, Six Sigma
+
+        Key Responsibilities:
+        Design chemical processes. Perform process simulations. Develop P&IDs. Conduct safety reviews. Optimize production. Ensure compliance"
+46,Environmental Engineer,ENGINEERING,Junior,1-3,"Environmental Regulations, Air Quality, Water Treatment, GIS, Sampling, Report Writing, EPA Compliance",Conduct environmental assessments. Prepare permit applications. Perform sampling. Analyze data. Write reports. Ensure regulatory compliance,"Remediation, Sustainability, Climate Change, Hydrogeology",Bachelor's in Environmental Engineering,Denver CO,"Job Title: Environmental Engineer
+        Category: ENGINEERING
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in Environmental Engineering
+
+        Required Skills:
+        Environmental Regulations, Air Quality, Water Treatment, GIS, Sampling, Report Writing, EPA Compliance
+
+        Preferred Skills:
+        Remediation, Sustainability, Climate Change, Hydrogeology
+
+        Key Responsibilities:
+        Conduct environmental assessments. Prepare permit applications. Perform sampling. Analyze data. Write reports. Ensure regulatory compliance"
+47,Industrial Engineer,ENGINEERING,Experienced,3-5,"Lean Manufacturing, Six Sigma, Time Studies, Process Improvement, Simulation, Facility Layout, Statistical Analysis",Optimize operations. Conduct time studies. Design facility layouts. Implement lean initiatives. Analyze data. Lead improvement projects,"Automation, Robotics, Supply Chain, SimPy",Bachelor's in Industrial Engineering,Detroit MI,"Job Title: Industrial Engineer
+        Category: ENGINEERING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Industrial Engineering
+
+        Required Skills:
+        Lean Manufacturing, Six Sigma, Time Studies, Process Improvement, Simulation, Facility Layout, Statistical Analysis
+
+        Preferred Skills:
+        Automation, Robotics, Supply Chain, SimPy
+
+        Key Responsibilities:
+        Optimize operations. Conduct time studies. Design facility layouts. Implement lean initiatives. Analyze data. Lead improvement projects"
+48,Hardware Engineer,ENGINEERING,Experienced,3-5,"PCB Design, Altium, Signal Integrity, Power Electronics, Embedded Systems, Hardware Testing, Schematic Capture",Design hardware systems. Create schematics. Layout PCBs. Test prototypes. Debug issues. Collaborate with firmware team,"FPGA, RF Design, High-Speed Design, Security Clearance",Bachelor's in Electrical or Computer Engineering,San Jose CA,"Job Title: Hardware Engineer
+        Category: ENGINEERING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Electrical or Computer Engineering
+
+        Required Skills:
+        PCB Design, Altium, Signal Integrity, Power Electronics, Embedded Systems, Hardware Testing, Schematic Capture
+
+        Preferred Skills:
+        FPGA, RF Design, High-Speed Design, Security Clearance
+
+        Key Responsibilities:
+        Design hardware systems. Create schematics. Layout PCBs. Test prototypes. Debug issues. Collaborate with firmware team"
+49,Test Engineer,ENGINEERING,Junior,1-3,"Test Plans, Automated Testing, Python, LabVIEW, Data Analysis, Hardware Testing, Technical Documentation",Develop test plans. Build test fixtures. Execute tests. Analyze results. Document findings. Support product development,"Selenium, Performance Testing, Reliability Testing, Six Sigma",Bachelor's in Engineering or CS,Austin TX,"Job Title: Test Engineer
+        Category: ENGINEERING
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in Engineering or CS
+
+        Required Skills:
+        Test Plans, Automated Testing, Python, LabVIEW, Data Analysis, Hardware Testing, Technical Documentation
+
+        Preferred Skills:
+        Selenium, Performance Testing, Reliability Testing, Six Sigma
+
+        Key Responsibilities:
+        Develop test plans. Build test fixtures. Execute tests. Analyze results. Document findings. Support product development"
+50,Solutions Architect,INFORMATION-TECHNOLOGY,Lead,8+,"Cloud Architecture, AWS, Azure, GCP, Kubernetes, Microservices, DevOps, Security, Technical Leadership",Design customer solutions. Lead technical discussions. Create architecture diagrams. Mentor teams. Drive adoption. Collaborate with sales,"Multi-cloud, Serverless, AI/ML, Enterprise Architecture",Bachelor's or Master's in CS,Remote,"Job Title: Solutions Architect
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Lead (8+ years)
+
+        Education Required: Bachelor's or Master's in CS
+
+        Required Skills:
+        Cloud Architecture, AWS, Azure, GCP, Kubernetes, Microservices, DevOps, Security, Technical Leadership
+
+        Preferred Skills:
+        Multi-cloud, Serverless, AI/ML, Enterprise Architecture
+
+        Key Responsibilities:
+        Design customer solutions. Lead technical discussions. Create architecture diagrams. Mentor teams. Drive adoption. Collaborate with sales"
+51,Digital Marketing Manager,DIGITAL-MEDIA,Experienced,3-5,"SEO, SEM, PPC, Google Analytics, Google Ads, Social Media Marketing, Content Marketing, Email Marketing, Marketing Automation",Develop digital marketing strategies. Manage campaigns. Analyze performance. Optimize conversion. Manage budget. Lead marketing team,"Marketing Attribution, CRO, Video Marketing, B2B SaaS",Bachelor's in Marketing or Business,New York NY,"Job Title: Digital Marketing Manager
+        Category: DIGITAL-MEDIA
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Marketing or Business
+
+        Required Skills:
+        SEO, SEM, PPC, Google Analytics, Google Ads, Social Media Marketing, Content Marketing, Email Marketing, Marketing Automation
+
+        Preferred Skills:
+        Marketing Attribution, CRO, Video Marketing, B2B SaaS
+
+        Key Responsibilities:
+        Develop digital marketing strategies. Manage campaigns. Analyze performance. Optimize conversion. Manage budget. Lead marketing team"
+52,Social Media Manager,DIGITAL-MEDIA,Junior,1-3,"Social Media Platforms, Content Creation, Community Management, Hootsuite, Analytics, Copywriting, Visual Design",Create social content. Manage communities. Schedule posts. Analyze engagement. Respond to comments. Collaborate with marketing,"Video Editing, Influencer Marketing, Paid Social, TikTok",Bachelor's in Marketing or Communications,Los Angeles CA,"Job Title: Social Media Manager
+        Category: DIGITAL-MEDIA
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in Marketing or Communications
+
+        Required Skills:
+        Social Media Platforms, Content Creation, Community Management, Hootsuite, Analytics, Copywriting, Visual Design
+
+        Preferred Skills:
+        Video Editing, Influencer Marketing, Paid Social, TikTok
+
+        Key Responsibilities:
+        Create social content. Manage communities. Schedule posts. Analyze engagement. Respond to comments. Collaborate with marketing"
+53,Content Strategist,DIGITAL-MEDIA,Experienced,3-5,"Content Strategy, SEO, Editorial Calendar, Copywriting, Analytics, CMS, Project Management",Develop content strategy. Manage editorial calendar. Write and edit content. Analyze performance. Collaborate with SEO. Brief writers,"Video Content, Podcasting, Thought Leadership, B2B",Bachelor's in English or Marketing,Remote,"Job Title: Content Strategist
+        Category: DIGITAL-MEDIA
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in English or Marketing
+
+        Required Skills:
+        Content Strategy, SEO, Editorial Calendar, Copywriting, Analytics, CMS, Project Management
+
+        Preferred Skills:
+        Video Content, Podcasting, Thought Leadership, B2B
+
+        Key Responsibilities:
+        Develop content strategy. Manage editorial calendar. Write and edit content. Analyze performance. Collaborate with SEO. Brief writers"
+54,SEO Specialist,DIGITAL-MEDIA,Junior,1-3,"SEO, Keyword Research, Google Analytics, Search Console, Link Building, On-Page SEO, Technical SEO",Conduct keyword research. Optimize on-page content. Build backlinks. Analyze rankings. Conduct technical audits. Report performance,"Local SEO, E-commerce SEO, Content Marketing, Ahrefs",Bachelor's in Marketing or related,Remote,"Job Title: SEO Specialist
+        Category: DIGITAL-MEDIA
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in Marketing or related
+
+        Required Skills:
+        SEO, Keyword Research, Google Analytics, Search Console, Link Building, On-Page SEO, Technical SEO
+
+        Preferred Skills:
+        Local SEO, E-commerce SEO, Content Marketing, Ahrefs
+
+        Key Responsibilities:
+        Conduct keyword research. Optimize on-page content. Build backlinks. Analyze rankings. Conduct technical audits. Report performance"
+55,Paid Media Specialist,DIGITAL-MEDIA,Experienced,3-5,"Google Ads, Facebook Ads, Programmatic, DSP, Analytics, Attribution, Budget Management, A/B Testing",Manage paid campaigns. Optimize bids and budgets. Create ad copy. Analyze performance. Conduct A/B tests. Report to clients,"Programmatic, Connected TV, Retail Media, SQL",Bachelor's in Marketing or Business,Chicago IL,"Job Title: Paid Media Specialist
+        Category: DIGITAL-MEDIA
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Marketing or Business
+
+        Required Skills:
+        Google Ads, Facebook Ads, Programmatic, DSP, Analytics, Attribution, Budget Management, A/B Testing
+
+        Preferred Skills:
+        Programmatic, Connected TV, Retail Media, SQL
+
+        Key Responsibilities:
+        Manage paid campaigns. Optimize bids and budgets. Create ad copy. Analyze performance. Conduct A/B tests. Report to clients"
+56,Video Producer,DIGITAL-MEDIA,Experienced,3-5,"Video Production, Adobe Premiere, After Effects, Camera Operation, Lighting, Sound Recording, Storyboarding, Editing",Produce video content. Direct shoots. Edit videos. Manage post-production. Collaborate with creative team. Manage budgets,"Motion Graphics, Color Grading, Drone Operation, Live Streaming",Bachelor's in Film or Media,Los Angeles CA,"Job Title: Video Producer
+        Category: DIGITAL-MEDIA
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Film or Media
+
+        Required Skills:
+        Video Production, Adobe Premiere, After Effects, Camera Operation, Lighting, Sound Recording, Storyboarding, Editing
+
+        Preferred Skills:
+        Motion Graphics, Color Grading, Drone Operation, Live Streaming
+
+        Key Responsibilities:
+        Produce video content. Direct shoots. Edit videos. Manage post-production. Collaborate with creative team. Manage budgets"
+57,Graphic Designer,DIGITAL-MEDIA,Junior,1-3,"Adobe Creative Suite, Photoshop, Illustrator, InDesign, Typography, Layout Design, Brand Guidelines",Create visual designs. Develop brand assets. Design marketing materials. Collaborate with marketing. Maintain brand consistency. Prepare print files,"Motion Graphics, UI Design, Figma, Illustration",Bachelor's in Graphic Design,New York NY,"Job Title: Graphic Designer
+        Category: DIGITAL-MEDIA
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in Graphic Design
+
+        Required Skills:
+        Adobe Creative Suite, Photoshop, Illustrator, InDesign, Typography, Layout Design, Brand Guidelines
+
+        Preferred Skills:
+        Motion Graphics, UI Design, Figma, Illustration
+
+        Key Responsibilities:
+        Create visual designs. Develop brand assets. Design marketing materials. Collaborate with marketing. Maintain brand consistency. Prepare print files"
+58,UX Researcher,DIGITAL-MEDIA,Experienced,3-5,"User Research, Usability Testing, Interviews, Surveys, Analytics, Persona Development, Journey Mapping",Conduct user research. Plan usability studies. Analyze data. Create personas. Present findings. Collaborate with designers,"Quantitative Research, A/B Testing, Eye Tracking, Accessibility",Bachelor's or Master's in HCI or Psychology,San Francisco CA,"Job Title: UX Researcher
+        Category: DIGITAL-MEDIA
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's or Master's in HCI or Psychology
+
+        Required Skills:
+        User Research, Usability Testing, Interviews, Surveys, Analytics, Persona Development, Journey Mapping
+
+        Preferred Skills:
+        Quantitative Research, A/B Testing, Eye Tracking, Accessibility
+
+        Key Responsibilities:
+        Conduct user research. Plan usability studies. Analyze data. Create personas. Present findings. Collaborate with designers"
+59,Copywriter,DIGITAL-MEDIA,Junior,1-3,"Copywriting, Content Writing, SEO Writing, Editing, Proofreading, Brand Voice, Creative Writing",Write marketing copy. Develop brand voice. Edit content. Collaborate with designers. Optimize for SEO. Meet deadlines,"Technical Writing, UX Writing, Video Scripts, B2B",Bachelor's in English or Communications,Remote,"Job Title: Copywriter
+        Category: DIGITAL-MEDIA
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in English or Communications
+
+        Required Skills:
+        Copywriting, Content Writing, SEO Writing, Editing, Proofreading, Brand Voice, Creative Writing
+
+        Preferred Skills:
+        Technical Writing, UX Writing, Video Scripts, B2B
+
+        Key Responsibilities:
+        Write marketing copy. Develop brand voice. Edit content. Collaborate with designers. Optimize for SEO. Meet deadlines"
+60,Brand Manager,DIGITAL-MEDIA,Experienced,3-5,"Brand Strategy, Brand Guidelines, Market Research, Campaign Management, Creative Briefs, Analytics, Team Leadership",Develop brand strategy. Manage brand guidelines. Lead campaigns. Conduct market research. Collaborate with agencies. Track brand metrics,"Product Marketing, Consumer Insights, Digital Branding, CPG",Bachelor's in Marketing or Business,New York NY,"Job Title: Brand Manager
+        Category: DIGITAL-MEDIA
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Marketing or Business
+
+        Required Skills:
+        Brand Strategy, Brand Guidelines, Market Research, Campaign Management, Creative Briefs, Analytics, Team Leadership
+
+        Preferred Skills:
+        Product Marketing, Consumer Insights, Digital Branding, CPG
+
+        Key Responsibilities:
+        Develop brand strategy. Manage brand guidelines. Lead campaigns. Conduct market research. Collaborate with agencies. Track brand metrics"
+61,Data Analyst,DATA-SCIENCE,Junior,1-3,"SQL, Excel, Python, Tableau, Data Visualization, Statistical Analysis, Reporting",Analyze business data. Create dashboards. Write SQL queries. Present findings. Collaborate with stakeholders. Automate reports,"R, Power BI, A/B Testing, ETL",Bachelor's in Statistics or related,Remote,"Job Title: Data Analyst
+        Category: DATA-SCIENCE
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in Statistics or related
+
+        Required Skills:
+        SQL, Excel, Python, Tableau, Data Visualization, Statistical Analysis, Reporting
+
+        Preferred Skills:
+        R, Power BI, A/B Testing, ETL
+
+        Key Responsibilities:
+        Analyze business data. Create dashboards. Write SQL queries. Present findings. Collaborate with stakeholders. Automate reports"
+62,Senior Data Analyst,DATA-SCIENCE,Senior,5+,"SQL, Python, R, Tableau, Power BI, Statistical Modeling, Experimentation, Team Leadership",Lead analytics projects. Mentor analysts. Design experiments. Build predictive models. Present to executives. Define metrics,"Machine Learning, Airflow, dbt, Domain Expertise",Bachelor's or Master's in Statistics or related,New York NY,"Job Title: Senior Data Analyst
+        Category: DATA-SCIENCE
+        Experience Level: Senior (5+ years)
+
+        Education Required: Bachelor's or Master's in Statistics or related
+
+        Required Skills:
+        SQL, Python, R, Tableau, Power BI, Statistical Modeling, Experimentation, Team Leadership
+
+        Preferred Skills:
+        Machine Learning, Airflow, dbt, Domain Expertise
+
+        Key Responsibilities:
+        Lead analytics projects. Mentor analysts. Design experiments. Build predictive models. Present to executives. Define metrics"
+63,Business Intelligence Analyst,DATA-SCIENCE,Experienced,3-5,"SQL, Power BI, Tableau, Data Modeling, ETL, Excel, Requirements Gathering",Build BI dashboards. Design data models. Gather requirements. Optimize queries. Train users. Document solutions,"Snowflake, dbt, Looker, Data Governance",Bachelor's in Business or Analytics,Chicago IL,"Job Title: Business Intelligence Analyst
+        Category: DATA-SCIENCE
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Business or Analytics
+
+        Required Skills:
+        SQL, Power BI, Tableau, Data Modeling, ETL, Excel, Requirements Gathering
+
+        Preferred Skills:
+        Snowflake, dbt, Looker, Data Governance
+
+        Key Responsibilities:
+        Build BI dashboards. Design data models. Gather requirements. Optimize queries. Train users. Document solutions"
+64,Data Architect,DATA-SCIENCE,Lead,8+,"Data Modeling, Data Warehousing, ETL, Cloud Platforms, SQL, NoSQL, Data Governance, Technical Leadership",Design data architectures. Define data standards. Lead data initiatives. Mentor engineers. Evaluate technologies. Ensure data quality,"Data Mesh, Lakehouse, Streaming, Machine Learning",Bachelor's or Master's in CS,Seattle WA,"Job Title: Data Architect
+        Category: DATA-SCIENCE
+        Experience Level: Lead (8+ years)
+
+        Education Required: Bachelor's or Master's in CS
+
+        Required Skills:
+        Data Modeling, Data Warehousing, ETL, Cloud Platforms, SQL, NoSQL, Data Governance, Technical Leadership
+
+        Preferred Skills:
+        Data Mesh, Lakehouse, Streaming, Machine Learning
+
+        Key Responsibilities:
+        Design data architectures. Define data standards. Lead data initiatives. Mentor engineers. Evaluate technologies. Ensure data quality"
+65,Machine Learning Researcher,DATA-SCIENCE,Senior,5+,"Deep Learning, Python, PyTorch, TensorFlow, Research, Publications, Mathematics, Experimentation",Conduct ML research. Publish papers. Develop novel algorithms. Collaborate with engineers. Present at conferences. Mentor junior researchers,"NLP, Computer Vision, Reinforcement Learning, PhD",PhD in CS or related,San Francisco CA,"Job Title: Machine Learning Researcher
+        Category: DATA-SCIENCE
+        Experience Level: Senior (5+ years)
+
+        Education Required: PhD in CS or related
+
+        Required Skills:
+        Deep Learning, Python, PyTorch, TensorFlow, Research, Publications, Mathematics, Experimentation
+
+        Preferred Skills:
+        NLP, Computer Vision, Reinforcement Learning, PhD
+
+        Key Responsibilities:
+        Conduct ML research. Publish papers. Develop novel algorithms. Collaborate with engineers. Present at conferences. Mentor junior researchers"
+66,NLP Engineer,DATA-SCIENCE,Experienced,3-5,"Python, NLP, Transformers, BERT, spaCy, NLTK, Deep Learning, Model Deployment",Build NLP models. Fine-tune transformers. Deploy models. Build data pipelines. Collaborate with product. Evaluate model performance,"LLMs, RAG, Prompt Engineering, Speech Recognition",Master's in CS or related,Remote,"Job Title: NLP Engineer
+        Category: DATA-SCIENCE
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Master's in CS or related
+
+        Required Skills:
+        Python, NLP, Transformers, BERT, spaCy, NLTK, Deep Learning, Model Deployment
+
+        Preferred Skills:
+        LLMs, RAG, Prompt Engineering, Speech Recognition
+
+        Key Responsibilities:
+        Build NLP models. Fine-tune transformers. Deploy models. Build data pipelines. Collaborate with product. Evaluate model performance"
+67,Computer Vision Engineer,DATA-SCIENCE,Experienced,3-5,"Python, OpenCV, PyTorch, TensorFlow, Deep Learning, Image Processing, Model Deployment, CUDA",Build CV models. Process image data. Deploy models. Optimize inference. Collaborate with product. Evaluate performance,"3D Vision, SLAM, Autonomous Driving, Edge Deployment",Master's in CS or related,San Jose CA,"Job Title: Computer Vision Engineer
+        Category: DATA-SCIENCE
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Master's in CS or related
+
+        Required Skills:
+        Python, OpenCV, PyTorch, TensorFlow, Deep Learning, Image Processing, Model Deployment, CUDA
+
+        Preferred Skills:
+        3D Vision, SLAM, Autonomous Driving, Edge Deployment
+
+        Key Responsibilities:
+        Build CV models. Process image data. Deploy models. Optimize inference. Collaborate with product. Evaluate performance"
+68,Analytics Engineer,DATA-SCIENCE,Experienced,3-5,"SQL, dbt, Python, Data Modeling, ETL, Snowflake, Airflow, Version Control",Build analytics data models. Write dbt transformations. Maintain data pipelines. Collaborate with analysts. Ensure data quality. Document models,"Looker, Data Governance, Streaming, Data Contracts",Bachelor's in CS or related,Remote,"Job Title: Analytics Engineer
+        Category: DATA-SCIENCE
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        SQL, dbt, Python, Data Modeling, ETL, Snowflake, Airflow, Version Control
+
+        Preferred Skills:
+        Looker, Data Governance, Streaming, Data Contracts
+
+        Key Responsibilities:
+        Build analytics data models. Write dbt transformations. Maintain data pipelines. Collaborate with analysts. Ensure data quality. Document models"
+69,Statistician,DATA-SCIENCE,Experienced,3-5,"Statistics, R, Python, Experimental Design, Regression, Bayesian Methods, Sampling, Statistical Modeling",Design experiments. Analyze data. Build statistical models. Present findings. Collaborate with researchers. Validate methods,"Clinical Trials, Biostatistics, Causal Inference, SAS",Master's or PhD in Statistics,Boston MA,"Job Title: Statistician
+        Category: DATA-SCIENCE
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Master's or PhD in Statistics
+
+        Required Skills:
+        Statistics, R, Python, Experimental Design, Regression, Bayesian Methods, Sampling, Statistical Modeling
+
+        Preferred Skills:
+        Clinical Trials, Biostatistics, Causal Inference, SAS
+
+        Key Responsibilities:
+        Design experiments. Analyze data. Build statistical models. Present findings. Collaborate with researchers. Validate methods"
+70,Data Governance Analyst,DATA-SCIENCE,Experienced,3-5,"Data Governance, Data Quality, Metadata Management, SQL, Collibra, Data Catalog, Policies",Develop data governance policies. Manage data catalog. Ensure data quality. Define data standards. Train users. Conduct audits,"GDPR, CCPA, Master Data Management, Data Lineage",Bachelor's in CS or related,New York NY,"Job Title: Data Governance Analyst
+        Category: DATA-SCIENCE
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        Data Governance, Data Quality, Metadata Management, SQL, Collibra, Data Catalog, Policies
+
+        Preferred Skills:
+        GDPR, CCPA, Master Data Management, Data Lineage
+
+        Key Responsibilities:
+        Develop data governance policies. Manage data catalog. Ensure data quality. Define data standards. Train users. Conduct audits"
+71,Cloud Engineer,INFORMATION-TECHNOLOGY,Experienced,3-5,"AWS, Azure, GCP, Terraform, Kubernetes, Docker, Linux, CI/CD, Python",Deploy cloud infrastructure. Automate provisioning. Manage Kubernetes clusters. Implement monitoring. Optimize costs. Support development teams,"Serverless, Service Mesh, FinOps, Security",Bachelor's in CS or IT,Remote,"Job Title: Cloud Engineer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or IT
+
+        Required Skills:
+        AWS, Azure, GCP, Terraform, Kubernetes, Docker, Linux, CI/CD, Python
+
+        Preferred Skills:
+        Serverless, Service Mesh, FinOps, Security
+
+        Key Responsibilities:
+        Deploy cloud infrastructure. Automate provisioning. Manage Kubernetes clusters. Implement monitoring. Optimize costs. Support development teams"
+72,Platform Engineer,INFORMATION-TECHNOLOGY,Experienced,3-5,"Kubernetes, Docker, Terraform, Helm, Go, Python, CI/CD, Observability, Linux",Build internal developer platform. Manage Kubernetes. Build CI/CD pipelines. Improve developer experience. Implement observability. Automate workflows,"Backstage, Crossplane, Istio, FinOps",Bachelor's in CS or IT,Seattle WA,"Job Title: Platform Engineer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or IT
+
+        Required Skills:
+        Kubernetes, Docker, Terraform, Helm, Go, Python, CI/CD, Observability, Linux
+
+        Preferred Skills:
+        Backstage, Crossplane, Istio, FinOps
+
+        Key Responsibilities:
+        Build internal developer platform. Manage Kubernetes. Build CI/CD pipelines. Improve developer experience. Implement observability. Automate workflows"
+73,Backend Engineer,INFORMATION-TECHNOLOGY,Experienced,3-5,"Go, Python, PostgreSQL, Redis, Kafka, REST APIs, gRPC, Docker, Kubernetes",Build backend services. Design APIs. Optimize database queries. Implement caching. Write tests. Participate in on-call,"Event-Driven Architecture, GraphQL, Service Mesh, Security",Bachelor's in CS or related,Remote,"Job Title: Backend Engineer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        Go, Python, PostgreSQL, Redis, Kafka, REST APIs, gRPC, Docker, Kubernetes
+
+        Preferred Skills:
+        Event-Driven Architecture, GraphQL, Service Mesh, Security
+
+        Key Responsibilities:
+        Build backend services. Design APIs. Optimize database queries. Implement caching. Write tests. Participate in on-call"
+74,API Developer,INFORMATION-TECHNOLOGY,Experienced,3-5,"REST, GraphQL, OpenAPI, Node.js, Python, API Gateway, OAuth, Microservices",Design APIs. Implement API gateway. Write API documentation. Ensure API security. Monitor performance. Collaborate with consumers,"gRPC, AsyncAPI, API Management, Developer Portal",Bachelor's in CS or related,Remote,"Job Title: API Developer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        REST, GraphQL, OpenAPI, Node.js, Python, API Gateway, OAuth, Microservices
+
+        Preferred Skills:
+        gRPC, AsyncAPI, API Management, Developer Portal
+
+        Key Responsibilities:
+        Design APIs. Implement API gateway. Write API documentation. Ensure API security. Monitor performance. Collaborate with consumers"
+75,Blockchain Developer,INFORMATION-TECHNOLOGY,Experienced,3-5,"Solidity, Ethereum, Smart Contracts, Web3.js, Truffle, Hardhat, JavaScript, Cryptography",Develop smart contracts. Build DApps. Audit contracts. Integrate wallets. Optimize gas costs. Collaborate with product,"DeFi, NFT, Layer 2, Rust",Bachelor's in CS or related,Remote,"Job Title: Blockchain Developer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        Solidity, Ethereum, Smart Contracts, Web3.js, Truffle, Hardhat, JavaScript, Cryptography
+
+        Preferred Skills:
+        DeFi, NFT, Layer 2, Rust
+
+        Key Responsibilities:
+        Develop smart contracts. Build DApps. Audit contracts. Integrate wallets. Optimize gas costs. Collaborate with product"
+76,Game Developer,INFORMATION-TECHNOLOGY,Experienced,3-5,"Unity, C#, Game Design, 3D Math, Physics, Shaders, Performance Optimization, Version Control",Develop game features. Implement gameplay systems. Optimize performance. Collaborate with designers. Debug issues. Ship games,"Unreal Engine, Multiplayer, Mobile Games, Graphics Programming",Bachelor's in CS or Game Design,Los Angeles CA,"Job Title: Game Developer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or Game Design
+
+        Required Skills:
+        Unity, C#, Game Design, 3D Math, Physics, Shaders, Performance Optimization, Version Control
+
+        Preferred Skills:
+        Unreal Engine, Multiplayer, Mobile Games, Graphics Programming
+
+        Key Responsibilities:
+        Develop game features. Implement gameplay systems. Optimize performance. Collaborate with designers. Debug issues. Ship games"
+77,AR/VR Developer,INFORMATION-TECHNOLOGY,Experienced,3-5,"Unity, C#, ARKit, ARCore, OpenXR, 3D Math, Shaders, Performance Optimization",Develop AR/VR applications. Optimize for mobile. Implement interactions. Collaborate with designers. Test on devices. Ship applications,"WebXR, Hand Tracking, Spatial Computing, Machine Learning",Bachelor's in CS or related,San Francisco CA,"Job Title: AR/VR Developer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or related
+
+        Required Skills:
+        Unity, C#, ARKit, ARCore, OpenXR, 3D Math, Shaders, Performance Optimization
+
+        Preferred Skills:
+        WebXR, Hand Tracking, Spatial Computing, Machine Learning
+
+        Key Responsibilities:
+        Develop AR/VR applications. Optimize for mobile. Implement interactions. Collaborate with designers. Test on devices. Ship applications"
+78,IoT Engineer,INFORMATION-TECHNOLOGY,Experienced,3-5,"Embedded C, Python, MQTT, BLE, Zigbee, AWS IoT, Edge Computing, Security",Develop IoT solutions. Build edge applications. Integrate sensors. Implement connectivity. Ensure security. Deploy at scale,"LoRaWAN, Digital Twins, Time Series, Machine Learning",Bachelor's in EE or CS,Austin TX,"Job Title: IoT Engineer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in EE or CS
+
+        Required Skills:
+        Embedded C, Python, MQTT, BLE, Zigbee, AWS IoT, Edge Computing, Security
+
+        Preferred Skills:
+        LoRaWAN, Digital Twins, Time Series, Machine Learning
+
+        Key Responsibilities:
+        Develop IoT solutions. Build edge applications. Integrate sensors. Implement connectivity. Ensure security. Deploy at scale"
+79,ERP Consultant,INFORMATION-TECHNOLOGY,Experienced,3-5,"SAP, Oracle, NetSuite, Business Analysis, Requirements Gathering, Configuration, Training, Project Management",Implement ERP solutions. Gather requirements. Configure systems. Train users. Support go-live. Manage projects,"Supply Chain, Finance, Manufacturing, ABAP",Bachelor's in Business or IT,Chicago IL,"Job Title: ERP Consultant
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Business or IT
+
+        Required Skills:
+        SAP, Oracle, NetSuite, Business Analysis, Requirements Gathering, Configuration, Training, Project Management
+
+        Preferred Skills:
+        Supply Chain, Finance, Manufacturing, ABAP
+
+        Key Responsibilities:
+        Implement ERP solutions. Gather requirements. Configure systems. Train users. Support go-live. Manage projects"
+80,Salesforce Developer,INFORMATION-TECHNOLOGY,Experienced,3-5,"Apex, Visualforce, Lightning, SOQL, SOSL, REST APIs, JavaScript, Salesforce DX",Develop Salesforce solutions. Build custom applications. Integrate systems. Write triggers and classes. Support users. Document solutions,"Sales Cloud, Service Cloud, Marketing Cloud, Einstein",Bachelor's in CS or IT,Remote,"Job Title: Salesforce Developer
+        Category: INFORMATION-TECHNOLOGY
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in CS or IT
+
+        Required Skills:
+        Apex, Visualforce, Lightning, SOQL, SOSL, REST APIs, JavaScript, Salesforce DX
+
+        Preferred Skills:
+        Sales Cloud, Service Cloud, Marketing Cloud, Einstein
+
+        Key Responsibilities:
+        Develop Salesforce solutions. Build custom applications. Integrate systems. Write triggers and classes. Support users. Document solutions"
+81,Technical Recruiter,HUMAN-RESOURCES,Experienced,3-5,"Sourcing, Screening, Interviewing, ATS, Boolean Search, Negotiation, Employer Branding, Relationship Building",Source candidates. Screen resumes. Conduct interviews. Manage hiring process. Negotiate offers. Build talent pipeline,"Technical Background, Diversity Hiring, Employer Branding, Data Analytics",Bachelor's in HR or related,San Francisco CA,"Job Title: Technical Recruiter
+        Category: HUMAN-RESOURCES
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in HR or related
+
+        Required Skills:
+        Sourcing, Screening, Interviewing, ATS, Boolean Search, Negotiation, Employer Branding, Relationship Building
+
+        Preferred Skills:
+        Technical Background, Diversity Hiring, Employer Branding, Data Analytics
+
+        Key Responsibilities:
+        Source candidates. Screen resumes. Conduct interviews. Manage hiring process. Negotiate offers. Build talent pipeline"
+82,HR Business Partner,HUMAN-RESOURCES,Experienced,3-5,"Employee Relations, Performance Management, HR Policies, Coaching, Change Management, Data Analysis, Employment Law",Partner with leaders. Manage employee relations. Coach managers. Implement HR programs. Analyze metrics. Ensure compliance,"Org Design, Talent Management, Compensation, HRIS",Bachelor's in HR or Business,New York NY,"Job Title: HR Business Partner
+        Category: HUMAN-RESOURCES
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in HR or Business
+
+        Required Skills:
+        Employee Relations, Performance Management, HR Policies, Coaching, Change Management, Data Analysis, Employment Law
+
+        Preferred Skills:
+        Org Design, Talent Management, Compensation, HRIS
+
+        Key Responsibilities:
+        Partner with leaders. Manage employee relations. Coach managers. Implement HR programs. Analyze metrics. Ensure compliance"
+83,Learning and Development Manager,HUMAN-RESOURCES,Experienced,3-5,"Training Design, E-Learning, LMS, Instructional Design, Facilitation, Needs Assessment, Evaluation",Design training programs. Deliver workshops. Manage LMS. Assess needs. Evaluate effectiveness. Collaborate with stakeholders,"Articulate Storyline, Virtual Training, Leadership Development, Coaching",Bachelor's in HR or Education,Remote,"Job Title: Learning and Development Manager
+        Category: HUMAN-RESOURCES
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in HR or Education
+
+        Required Skills:
+        Training Design, E-Learning, LMS, Instructional Design, Facilitation, Needs Assessment, Evaluation
+
+        Preferred Skills:
+        Articulate Storyline, Virtual Training, Leadership Development, Coaching
+
+        Key Responsibilities:
+        Design training programs. Deliver workshops. Manage LMS. Assess needs. Evaluate effectiveness. Collaborate with stakeholders"
+84,Compensation Analyst,HUMAN-RESOURCES,Experienced,3-5,"Compensation Analysis, Market Data, Excel, HRIS, Benchmarking, Job Evaluation, Reporting",Conduct market analysis. Benchmark positions. Design compensation structures. Analyze data. Support annual cycles. Ensure compliance,"Sales Compensation, Executive Compensation, SQL, Tableau",Bachelor's in HR or Finance,Chicago IL,"Job Title: Compensation Analyst
+        Category: HUMAN-RESOURCES
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in HR or Finance
+
+        Required Skills:
+        Compensation Analysis, Market Data, Excel, HRIS, Benchmarking, Job Evaluation, Reporting
+
+        Preferred Skills:
+        Sales Compensation, Executive Compensation, SQL, Tableau
+
+        Key Responsibilities:
+        Conduct market analysis. Benchmark positions. Design compensation structures. Analyze data. Support annual cycles. Ensure compliance"
+85,Talent Acquisition Manager,HUMAN-RESOURCES,Lead,7+,"Recruiting Strategy, Team Leadership, Employer Branding, Data Analytics, Vendor Management, Budget Management, Stakeholder Management",Lead recruiting team. Develop talent strategy. Build employer brand. Manage vendors. Analyze metrics. Partner with executives,"Technical Recruiting, International Hiring, Diversity, HRIS",Bachelor's in HR or Business,San Francisco CA,"Job Title: Talent Acquisition Manager
+        Category: HUMAN-RESOURCES
+        Experience Level: Lead (7+ years)
+
+        Education Required: Bachelor's in HR or Business
+
+        Required Skills:
+        Recruiting Strategy, Team Leadership, Employer Branding, Data Analytics, Vendor Management, Budget Management, Stakeholder Management
+
+        Preferred Skills:
+        Technical Recruiting, International Hiring, Diversity, HRIS
+
+        Key Responsibilities:
+        Lead recruiting team. Develop talent strategy. Build employer brand. Manage vendors. Analyze metrics. Partner with executives"
+86,Financial Analyst,FINANCE,Experienced,3-5,"Financial Modeling, Excel, Forecasting, Budgeting, Variance Analysis, SQL, PowerPoint, Business Partnering",Build financial models. Prepare forecasts. Analyze variances. Support budgeting. Present to leadership. Collaborate with business,"FP&A, SaaS Metrics, SQL, Tableau",Bachelor's in Finance or Economics,New York NY,"Job Title: Financial Analyst
+        Category: FINANCE
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Finance or Economics
+
+        Required Skills:
+        Financial Modeling, Excel, Forecasting, Budgeting, Variance Analysis, SQL, PowerPoint, Business Partnering
+
+        Preferred Skills:
+        FP&A, SaaS Metrics, SQL, Tableau
+
+        Key Responsibilities:
+        Build financial models. Prepare forecasts. Analyze variances. Support budgeting. Present to leadership. Collaborate with business"
+87,Senior Financial Analyst,FINANCE,Senior,5+,"Financial Modeling, Excel, VBA, SQL, Data Visualization, Forecasting, Strategic Analysis, Team Leadership",Lead financial planning. Build complex models. Mentor analysts. Drive strategic initiatives. Present to executives. Improve processes,"Python, Tableau, M&A, SaaS",Bachelor's or Master's in Finance,San Francisco CA,"Job Title: Senior Financial Analyst
+        Category: FINANCE
+        Experience Level: Senior (5+ years)
+
+        Education Required: Bachelor's or Master's in Finance
+
+        Required Skills:
+        Financial Modeling, Excel, VBA, SQL, Data Visualization, Forecasting, Strategic Analysis, Team Leadership
+
+        Preferred Skills:
+        Python, Tableau, M&A, SaaS
+
+        Key Responsibilities:
+        Lead financial planning. Build complex models. Mentor analysts. Drive strategic initiatives. Present to executives. Improve processes"
+88,Investment Analyst,FINANCE,Experienced,3-5,"Financial Modeling, Valuation, DCF, Excel, Research, Due Diligence, Presentation, Industry Analysis",Conduct investment research. Build valuation models. Perform due diligence. Write investment memos. Present recommendations. Monitor portfolio,"Private Equity, Venture Capital, SQL, Python",Bachelor's in Finance or Economics,New York NY,"Job Title: Investment Analyst
+        Category: FINANCE
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Finance or Economics
+
+        Required Skills:
+        Financial Modeling, Valuation, DCF, Excel, Research, Due Diligence, Presentation, Industry Analysis
+
+        Preferred Skills:
+        Private Equity, Venture Capital, SQL, Python
+
+        Key Responsibilities:
+        Conduct investment research. Build valuation models. Perform due diligence. Write investment memos. Present recommendations. Monitor portfolio"
+89,Accountant,FINANCE,Junior,1-3,"Accounting, GAAP, Excel, QuickBooks, Reconciliation, AP/AR, Financial Statements, Month-End Close",Process transactions. Reconcile accounts. Prepare journal entries. Assist with month-end close. Support audits. Maintain records,"CPA, NetSuite, Tax, Payroll",Bachelor's in Accounting,Chicago IL,"Job Title: Accountant
+        Category: FINANCE
+        Experience Level: Junior (1-3 years)
+
+        Education Required: Bachelor's in Accounting
+
+        Required Skills:
+        Accounting, GAAP, Excel, QuickBooks, Reconciliation, AP/AR, Financial Statements, Month-End Close
+
+        Preferred Skills:
+        CPA, NetSuite, Tax, Payroll
+
+        Key Responsibilities:
+        Process transactions. Reconcile accounts. Prepare journal entries. Assist with month-end close. Support audits. Maintain records"
+90,Senior Accountant,FINANCE,Senior,5+,"Accounting, GAAP, Excel, ERP Systems, Consolidation, Financial Reporting, Team Leadership, Process Improvement",Lead month-end close. Prepare financial statements. Review journal entries. Mentor staff. Improve processes. Support audits,"CPA, SEC Reporting, Technical Accounting, NetSuite",Bachelor's in Accounting,New York NY,"Job Title: Senior Accountant
+        Category: FINANCE
+        Experience Level: Senior (5+ years)
+
+        Education Required: Bachelor's in Accounting
+
+        Required Skills:
+        Accounting, GAAP, Excel, ERP Systems, Consolidation, Financial Reporting, Team Leadership, Process Improvement
+
+        Preferred Skills:
+        CPA, SEC Reporting, Technical Accounting, NetSuite
+
+        Key Responsibilities:
+        Lead month-end close. Prepare financial statements. Review journal entries. Mentor staff. Improve processes. Support audits"
+91,Controller,FINANCE,Lead,8+,"Financial Reporting, GAAP, Team Leadership, Process Improvement, ERP, Internal Controls, Budgeting, Audit Management",Lead accounting team. Ensure accurate reporting. Implement controls. Manage audits. Drive process improvements. Partner with executives,"CPA, MBA, SEC Reporting, M&A",Bachelor's or Master's in Accounting,San Francisco CA,"Job Title: Controller
+        Category: FINANCE
+        Experience Level: Lead (8+ years)
+
+        Education Required: Bachelor's or Master's in Accounting
+
+        Required Skills:
+        Financial Reporting, GAAP, Team Leadership, Process Improvement, ERP, Internal Controls, Budgeting, Audit Management
+
+        Preferred Skills:
+        CPA, MBA, SEC Reporting, M&A
+
+        Key Responsibilities:
+        Lead accounting team. Ensure accurate reporting. Implement controls. Manage audits. Drive process improvements. Partner with executives"
+92,Product Marketing Manager,MARKETING,Experienced,3-5,"Product Marketing, Positioning, Messaging, Go-to-Market, Competitive Analysis, Sales Enablement, Content Creation",Develop positioning. Create messaging. Lead launches. Conduct competitive analysis. Enable sales. Create marketing content,"B2B SaaS, Technical Background, Demand Generation, Analytics",Bachelor's in Marketing or Business,San Francisco CA,"Job Title: Product Marketing Manager
+        Category: MARKETING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: Bachelor's in Marketing or Business
+
+        Required Skills:
+        Product Marketing, Positioning, Messaging, Go-to-Market, Competitive Analysis, Sales Enablement, Content Creation
+
+        Preferred Skills:
+        B2B SaaS, Technical Background, Demand Generation, Analytics
+
+        Key Responsibilities:
+        Develop positioning. Create messaging. Lead launches. Conduct competitive analysis. Enable sales. Create marketing content"
+93,Demand Generation Manager,MARKETING,Experienced,3-5,Demand Generation,,,,,"Job Title: Demand Generation Manager
+        Category: MARKETING
+        Experience Level: Experienced (3-5 years)
+
+        Education Required: nan
+
+        Required Skills:
+        Demand Generation
+
+        Preferred Skills:
+        
+
+        Key Responsibilities:"
