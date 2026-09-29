@@ -1,3 +1,9 @@
-data/
-*.csv
-*.xlsx
+data/data_preparation/raw/
+.venv
+.vscode
+resumatch/__pycache__
+*__pycache__
+*.DS_Store
+.ipynb_checkpoints
+resumatch.egg-info
+uv.lock
