@@ -1,15 +1,13 @@
 # Extractor for information extraction from resumes
 import re
 from typing import Literal
-from typing import Literal, Dict, List
+
 from resumatch.extractor.constants import (
     CONTACT_PATTERNS,
     DEFAULT_SKILL_TAXONOMY,
     DEGREE_PATTERNS,
-    SKILLS_SECTION_PATTERN,
-    STOPWORD_EXCLUSIONS,
-    TECH_ENTITY_PATTERN,
     HEADER_STOPWORDS,
+    SKILLS_SECTION_PATTERN,
 )
 from resumatch.utils.models import ExtractedProfile
 
@@ -89,7 +87,7 @@ class ProfileExtractor:
                 found_degrees.append(degree_name)
         return found_degrees
 
-    def _extract_sections(self, text: str) -> Dict[str, str]:
+    def _extract_sections(self, text: str) -> dict[str, str]:
         """Splits raw text into key sections for downstream visualizer context."""
         sections = {
             "Experience": "",
@@ -132,9 +130,9 @@ class ProfileExtractor:
 
         return sections
 
-    def _extract_achievements(self, text: str, sections: Dict[str, str]) -> List[str]:
+    def _extract_achievements(self, text: str, sections: dict[str, str]) -> list[str]:
         """Extracts bullet points containing metrics, awards, or key impact phrases."""
-        highlights: List[str] = []
+        highlights: list[str] = []
         target_text = sections.get("Awards") or text
 
         lines = [line.strip() for line in target_text.split("\n") if line.strip()]
@@ -154,9 +152,9 @@ class ProfileExtractor:
 
         return highlights
 
-    def _extract_volunteering(self, text: str, sections: Dict[str, str]) -> List[str]:
+    def _extract_volunteering(self, text: str, sections: dict[str, str]) -> list[str]:
         """Extracts leadership, mentorship, or volunteering entries."""
-        vol_items: List[str] = []
+        vol_items: list[str] = []
         target_text = sections.get("Volunteering") or ""
 
         if not target_text:

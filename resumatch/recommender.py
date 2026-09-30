@@ -1,9 +1,7 @@
 import json
 import logging
-from pathlib import Path
-from typing import Any, Dict, List, Optional, Union
+from typing import Any
 
-import pandas as pd
 from resumatch.matcher.resume_matcher import CompositeMatcher, MatchResult
 
 logger = logging.getLogger(__name__)
@@ -28,10 +26,10 @@ class CandidateRecommender:
 
     def _build_candidate_json(
         self,
-        candidate_input: Dict[str, Any],
+        candidate_input: dict[str, Any],
         match: MatchResult,
-        rank: Optional[int] = None,
-    ) -> Dict[str, Any]:
+        rank: int | None = None,
+    ) -> dict[str, Any]:
 
         candidate_id = candidate_input.get("id", match.cv_id)
 
@@ -63,16 +61,16 @@ class CandidateRecommender:
             "skills_analysis": {
                 "matched_skills_count": len(match.matched_skills),
                 "missing_skills_count": len(match.missing_skills),
-                "matched_skills": sorted(list(match.matched_skills)),
-                "missing_skills": sorted(list(match.missing_skills)),
+                "matched_skills": sorted(match.matched_skills),
+                "missing_skills": sorted(match.missing_skills),
             },
         }
 
     # evaluate and recommend single pair
     def recommend_single(
         self,
-        candidate: Dict[str, Any],
-        job: Dict[str, Any],
+        candidate: dict[str, Any],
+        job: dict[str, Any],
     ) -> str:
 
         match = self.matcher.evaluate_single(
@@ -98,8 +96,8 @@ class CandidateRecommender:
     # evaluate and recommend multiple pair / batch
     def recommend_batch(
         self,
-        candidates: List[Dict[str, Any]],
-        jobs: Union[Dict[str, Any], List[Dict[str, Any]]],
+        candidates: list[dict[str, Any]],
+        jobs: dict[str, Any] | list[dict[str, Any]],
         top_k: int = 10,
     ) -> str:
         # it takes candidates and jobs pair.
@@ -107,7 +105,7 @@ class CandidateRecommender:
         cand_map = {c["id"]: c for c in candidates}
 
         # resume_matcher in use
-        match_results_map: Dict[str, List[MatchResult]] = self.matcher.evaluate_batch(
+        match_results_map: dict[str, list[MatchResult]] = self.matcher.evaluate_batch(
             candidates=candidates,
             jobs=job_list,
             top_k_retrieval=len(candidates),

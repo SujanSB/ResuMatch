@@ -1,7 +1,8 @@
-from pathlib import Path
-from pypdf import PdfReader
-from docx import Document
 import argparse
+from pathlib import Path
+
+from docx import Document
+from pypdf import PdfReader
 
 
 # Document Reader for parsing text from Pdf/docs/md/txt files
@@ -49,5 +50,5 @@ if __name__ == "__main__":
     try:
         result = document_parser.parse(args.file_path)
         print(result)
-    except Exception as e:
+    except (FileNotFoundError, ValueError) as e:
         print(f"Error: {e}")

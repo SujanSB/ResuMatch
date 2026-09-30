@@ -5,17 +5,18 @@ reports/jobs/<JOB_ID>/<CANDIDATE_ID>_report.png
 """
 
 import logging
-from pathlib import Path
 import re
-from typing import Any, Dict, List, Union
+import warnings
+from pathlib import Path
+from typing import Any
 
-import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-import warnings
+from matplotlib import gridspec
+from wordcloud import STOPWORDS, WordCloud
+
 from resumatch.matcher.resume_matcher import MatchResult
-from wordcloud import WordCloud, STOPWORDS
 
 logger = logging.getLogger(__name__)
 # to handle warnings
@@ -24,7 +25,7 @@ with warnings.catch_warnings():
 
 
 class Visualizer:
-    def __init__(self, base_output_dir: Union[str, Path] = "reports_jobs") -> None:
+    def __init__(self, base_output_dir: str | Path = "reports_jobs") -> None:
         self.base_output_dir = Path(base_output_dir)
         sns.set_theme(style="whitegrid", palette="muted")
 
@@ -123,8 +124,8 @@ class Visualizer:
 
     def generate_candidate_report(
         self,
-        candidate: Dict[str, Any],
-        job: Dict[str, Any],
+        candidate: dict[str, Any],
+        job: dict[str, Any],
         match: MatchResult,
     ) -> Path:
 
@@ -198,13 +199,13 @@ class Visualizer:
         if n_matched == 0 and n_missing == 0:
             n_matched, n_missing = 1, 0
 
-        wedges, texts, autotexts = ax2.pie(
+        _wedges, _texts, autotexts = ax2.pie(
             [n_matched, n_missing],
             labels=[f"Matched ({n_matched})", f"Missing ({n_missing})"],
             autopct="%1.1f%%",
             startangle=140,
             colors=["#2ecc71", "#e74c3c"],
-            wedgeprops=dict(width=0.4, edgecolor="w"),
+            wedgeprops={"width": 0.4, "edgecolor": "w"},
         )
         plt.setp(autotexts, size=10, weight="bold")
         ax2.set_title(
@@ -232,8 +233,8 @@ class Visualizer:
             else ("Consider" if match.overall_score >= 50 else "Not Recommended")
         )
 
-        matched_str = ", ".join(sorted(list(match.matched_skills))[:5]) or "None"
-        missing_str = ", ".join(sorted(list(match.missing_skills))[:5]) or "None"
+        matched_str = ", ".join(sorted(match.matched_skills)[:5]) or "None"
+        missing_str = ", ".join(sorted(match.missing_skills)[:5]) or "None"
 
         summary_text = (
             f"RECRUITER DECISION CARD\n"
@@ -256,9 +257,7 @@ class Visualizer:
             fontsize=10,
             verticalalignment="top",
             fontfamily="monospace",
-            bbox=dict(
-                boxstyle="round,pad=0.8", facecolor="#f8f9fa", edgecolor="#cbd5e1"
-            ),
+            bbox={"boxstyle": "round,pad=0.8", "facecolor": "#f8f9fa", "edgecolor": "#cbd5e1"},
         )
 
         # -------------------------------------------------------------
@@ -313,9 +312,7 @@ class Visualizer:
             fontsize=10,
             verticalalignment="top",
             fontfamily="monospace",
-            bbox=dict(
-                boxstyle="round,pad=0.8", facecolor="#f0fdf4", edgecolor="#86efac"
-            ),
+            bbox={"boxstyle": "round,pad=0.8", "facecolor": "#f0fdf4", "edgecolor": "#86efac"},
         )
 
         plt.subplots_adjust(
@@ -329,10 +326,10 @@ class Visualizer:
 
     def generate_batch_reports(
         self,
-        candidates: List[Dict[str, Any]],
-        jobs: Union[Dict[str, Any], List[Dict[str, Any]]],
-        results_map: Dict[str, List[MatchResult]],
-    ) -> List[Path]:
+        candidates: list[dict[str, Any]],
+        jobs: dict[str, Any] | list[dict[str, Any]],
+        results_map: dict[str, list[MatchResult]],
+    ) -> list[Path]:
         job_list = [jobs] if isinstance(jobs, dict) else jobs
         cand_map = {c["id"]: c for c in candidates}
         saved_paths = []

@@ -140,3 +140,42 @@ uv run -m resumatch \
 | `--output_dir`  | Directory for generated reports            | `reports`                                    |
 | `--max_resumes` | Maximum number of resumes to process       | `3`                                          |
 
+
+### Dataset  
+The project includes sample candidate resumes and job descriptions under:
+``` bash
+data/sample_data/
+├── resumes/
+└── jobs/
+```
+Resumes are provided as PDF files. Job descriptions are provided as a CSV file.   
+
+---
+
+### Output
+The generated results are saved under the specified output directory:
+``` bash 
+reports/
+├── batch_recommendations.json
+└── jobs/
+    └── JOB_61_Data_Analyst/
+        ├── Sujan_Sharma_report.png
+        └── Candidate_Name_report.png
+``` 
+- ```batch_recommendations.json``` contains the candidate matching and recommendation results.
+
+- PNG files contain the generated visual candidate reports.
+---
+
+### Development
+The project uses Ruff for formatting and linting:
+``` bash 
+uv run ruff format .
+uv run ruff check .
+``` 
+### Tests can be run with:
+``` bash
+uv run pytest tests/test_overall_pipeline.py
+```
+
+

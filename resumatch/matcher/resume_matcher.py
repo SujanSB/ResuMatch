@@ -1,12 +1,11 @@
-from dataclasses import dataclass, field
-from typing_extensions import Dict, List, Any, Union
-import numpy as np
 import logging
-from resumatch.utils.models import MatchResult
-from resumatch.matcher.retriever import SemanticRetriever
-from resumatch.matcher.reranker import DeepReranker
-from resumatch.matcher.heuristics import SkillOverlapHeuristics, SkillAnalysisResult
 
+from typing_extensions import Any
+
+from resumatch.matcher.heuristics import SkillAnalysisResult, SkillOverlapHeuristics
+from resumatch.matcher.reranker import DeepReranker
+from resumatch.matcher.retriever import SemanticRetriever
+from resumatch.utils.models import MatchResult
 
 logger = logging.getLogger(__name__)
 
@@ -81,10 +80,10 @@ class CompositeMatcher:
     # two step retrieval and reranking across cvs and jobs
     def evaluate_batch(
         self,
-        candidates: List[Dict[str, Any]],
-        jobs: Union[Dict[str, Any], List[Dict[str, Any]]],
+        candidates: list[dict[str, Any]],
+        jobs: dict[str, Any] | list[dict[str, Any]],
         top_k_retrieval: int = 50,
-    ) -> Dict[str, List[MatchResult]]:
+    ) -> dict[str, list[MatchResult]]:
 
         if not candidates:
             return {}
@@ -98,7 +97,7 @@ class CompositeMatcher:
         cv_texts = [c["text"] for c in candidates]
         cv_embeddings = self.retriever.encode(cv_texts)
 
-        results_by_job: Dict[str, List[MatchResult]] = {}
+        results_by_job: dict[str, list[MatchResult]] = {}
 
         for job in job_list:
             job_id = job["id"]

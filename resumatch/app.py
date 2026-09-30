@@ -1,9 +1,9 @@
 import argparse
 import logging
 import os
-from pathlib import Path
-from typing import Any, Dict, List
 import warnings
+from pathlib import Path
+from typing import Any
 
 # Suppress Hugging Face, Tokenizer, and HTTP transport logs
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -43,16 +43,16 @@ def process_resumes(
     parser: DocumentParser,
     extractor: ProfileExtractor,
     limit: int | None = 1,
-) -> List[Dict[str, Any]]:
+) -> list[dict[str, Any]]:
     """Sequentially parses PDF resumes and extracts candidate metadata."""
-    pdf_files = sorted(list(resumes_dir.glob("*.pdf")))
+    pdf_files = sorted(resumes_dir.glob("*.pdf"))
     if limit is not None:
         pdf_files = pdf_files[:limit]
     if not pdf_files:
         logger.error(f"No PDF files found in: {resumes_dir.resolve()}")
         return []
 
-    candidates: List[Dict[str, Any]] = []
+    candidates: list[dict[str, Any]] = []
 
     for pdf_path in pdf_files:
         try:
@@ -72,9 +72,8 @@ def process_resumes(
                 "metadata": profile.to_dict(),
             }
             candidates.append(candidate_record)
-        except Exception as e:
+        except (ValueError, OSError, RuntimeError) as e:
             logger.error(f"Failed to process {pdf_path.name}: {e}")
-
     return candidates
 
 

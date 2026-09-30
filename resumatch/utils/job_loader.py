@@ -1,9 +1,9 @@
-import pandas as pd
 import re
-from typing import List, Dict, Set
+
+import pandas as pd
 
 
-def parse_skill_string(raw_skills: str | list) -> Set[str]:
+def parse_skill_string(raw_skills: str | list) -> set[str]:
     """Splits raw string representations of skills into clean, individual tokens."""
     if isinstance(raw_skills, list):
         raw_skills = ",".join(str(s) for s in raw_skills)
@@ -22,7 +22,7 @@ def parse_skill_string(raw_skills: str | list) -> Set[str]:
     return clean_set
 
 
-def load_jobs_from_csv(csv_path: str, category: str | None = None) -> List[Dict]:
+def load_jobs_from_csv(csv_path: str, category: str | None = None) -> list[dict]:
     df = pd.read_csv(csv_path)
 
     # Filter by category if specified
@@ -32,7 +32,7 @@ def load_jobs_from_csv(csv_path: str, category: str | None = None) -> List[Dict]
             df["Category"].fillna("").astype(str).str.strip().str.upper() == target_cat
         ]
 
-    jobs: List[Dict] = []
+    jobs: list[dict] = []
     # only taking few rows of
     df = df.iloc[0:5]
 

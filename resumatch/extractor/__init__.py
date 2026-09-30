@@ -7,8 +7,8 @@ from resumatch.extractor.constants import (
 from resumatch.extractor.resume_extractor import ProfileExtractor
 
 __all__ = [
-    "ProfileExtractor",
+    "CONTACT_PATTERNS",
     "DEFAULT_SKILL_TAXONOMY",
     "DEGREE_PATTERNS",
-    "CONTACT_PATTERNS",
+    "ProfileExtractor",
 ]
