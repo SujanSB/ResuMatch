@@ -8,7 +8,8 @@ from resumatch.matcher.resume_matcher import CompositeMatcher, MatchResult
 
 logger = logging.getLogger(__name__)
 
-# recommender 
+
+# recommender
 class CandidateRecommender:
     def __init__(self, semantic_weight: float = 0.7, skill_weight: float = 0.3) -> None:
         self.matcher = CompositeMatcher(
@@ -31,9 +32,9 @@ class CandidateRecommender:
         match: MatchResult,
         rank: Optional[int] = None,
     ) -> Dict[str, Any]:
-        
+
         candidate_id = candidate_input.get("id", match.cv_id)
-        
+
         # extract metadata from extractor
         profile_meta = candidate_input.get("metadata", {})
         extracted_skills = list(candidate_input.get("skills", set()))
@@ -42,12 +43,14 @@ class CandidateRecommender:
             "rank": rank,
             "candidate_id": candidate_id,
             "candidate_details": {
-                "name": candidate_input.get("name", profile_meta.get("name", candidate_id)),
+                "name": candidate_input.get(
+                    "name", profile_meta.get("name", candidate_id)
+                ),
                 "email": candidate_input.get("email", profile_meta.get("email", "N/A")),
                 "phone": candidate_input.get("phone", profile_meta.get("phone", "N/A")),
                 # "total_experience_years": candidate_input.get(
                 #     "experience_years", profile_meta.get("experience_years", "N/A")
-                # ), # This can be only  in use if we use the LLM extractor in extracting details form cvs. 
+                # ), # This can be only  in use if we use the LLM extractor in extracting details form cvs.
                 "extracted_skills_count": len(extracted_skills),
                 "top_skills": sorted(extracted_skills)[:10],
             },
@@ -71,7 +74,7 @@ class CandidateRecommender:
         candidate: Dict[str, Any],
         job: Dict[str, Any],
     ) -> str:
-       
+
         match = self.matcher.evaluate_single(
             cv_id=candidate["id"],
             cv_text=candidate["text"],
@@ -99,7 +102,7 @@ class CandidateRecommender:
         jobs: Union[Dict[str, Any], List[Dict[str, Any]]],
         top_k: int = 10,
     ) -> str:
-        # it takes candidates and jobs pair. 
+        # it takes candidates and jobs pair.
         job_list = [jobs] if isinstance(jobs, dict) else jobs
         cand_map = {c["id"]: c for c in candidates}
 
@@ -117,16 +120,20 @@ class CandidateRecommender:
 
             ranked_candidates = []
             for rank, m in enumerate(job_matches[:top_k], start=1):
-                original_cand = cand_map.get(m.cv_id, {"id": m.cv_id, "skills": m.matched_skills})
+                original_cand = cand_map.get(
+                    m.cv_id, {"id": m.cv_id, "skills": m.matched_skills}
+                )
                 cand_json = self._build_candidate_json(original_cand, m, rank=rank)
                 ranked_candidates.append(cand_json)
 
-            job_reports.append({
-                "job_id": job_id,
-                "job_title": job.get("title", job_id),
-                "total_candidates_evaluated": len(candidates),
-                "recommended_candidates": ranked_candidates,
-            })
+            job_reports.append(
+                {
+                    "job_id": job_id,
+                    "job_title": job.get("title", job_id),
+                    "total_candidates_evaluated": len(candidates),
+                    "recommended_candidates": ranked_candidates,
+                }
+            )
 
         output = {
             "mode": "batch_ranking",
@@ -135,7 +142,6 @@ class CandidateRecommender:
         }
 
         return json.dumps(output, indent=2)
-
 
 
 if __name__ == "__main__":
@@ -148,7 +154,16 @@ if __name__ == "__main__":
             "email": "ersujansharma@gmail.com",
             "experience_years": 3.5,
             "text": "M.Sc. Data Science student skilled in Python, PyTorch, LangChain, RAG, Docker, AWS, SQL.",
-            "skills": {"Python", "PyTorch", "LangChain", "RAG", "Docker", "AWS", "SQL", "FastAPI"},
+            "skills": {
+                "Python",
+                "PyTorch",
+                "LangChain",
+                "RAG",
+                "Docker",
+                "AWS",
+                "SQL",
+                "FastAPI",
+            },
         },
         {
             "id": "CV_003_Alice_Johnson",
@@ -157,29 +172,36 @@ if __name__ == "__main__":
             "experience_years": 5,
             "text": "Experienced Data Scientist with expertise in Python, Machine Learning, and Deep Learning.",
             "skills": {"Python", "Machine Learning", "Deep Learning", "SQL"},
-        }
+        },
     ]
     sample_jobs = [
         {
             "id": "JOB_101_AI_Engineer",
             "title": "Senior AI / ML Engineer",
             "text": "Looking for AI Engineer with Python, PyTorch, RAG, LangChain, Docker, and AWS.",
-            "skills": {"Python", "PyTorch", "RAG", "LangChain", "Docker", "AWS", "Kubernetes"},
+            "skills": {
+                "Python",
+                "PyTorch",
+                "RAG",
+                "LangChain",
+                "Docker",
+                "AWS",
+                "Kubernetes",
+            },
         },
         {
             "id": "JOB_102_Data_Scientist",
             "title": "Data Scientist",
             "text": "Seeking a Data Scientist with expertise in Python, Machine Learning, and Deep Learning.",
             "skills": {"Python", "Machine Learning", "Deep Learning", "SQL"},
-        }
+        },
     ]
-   
 
     # print("--- SINGLE PAIR RECOMMENDATION JSON ---")
     # json_single = recommender.recommend_single(sample_candidates[0], sample_jobs[0])
     # print(json_single)
 
     print("--- BATCH RECOMMENDATION JSON ---")
-    top_k = 1 # lets look only 1
+    top_k = 1  # lets look only 1
     batch_json = recommender.recommend_batch(sample_candidates, sample_jobs, top_k)
     print(batch_json)

@@ -69,16 +69,18 @@ def test_overall_pipeline_execution(test_pipeline_environment, monkeypatch):
 
     test_args = [
         "resumatch",
-        "--resumes", resume_dir,
-        "--jobs", jobs_file,
-        "--output", output_dir,
+        "--resumes",
+        resume_dir,
+        "--jobs",
+        jobs_file,
+        "--output",
+        output_dir,
     ]
     monkeypatch.setattr("sys.argv", test_args)
 
     # running application pipeline
     main()
 
-   
     out_path = Path(output_dir)
     assert out_path.exists(), "Output directory inside tests/ should exist."
 
@@ -88,4 +90,6 @@ def test_overall_pipeline_execution(test_pipeline_environment, monkeypatch):
     json_files = list(out_path.glob("**/*.json"))
     assert len(json_files) > 0, f"Expected JSON result files in {out_path}, found none."
 
-    print(f"\n[SUCCESS] Generated {len(png_files)} PNG(s) and {len(json_files)} JSON(s) in {out_path}")
+    print(
+        f"\n[SUCCESS] Generated {len(png_files)} PNG(s) and {len(json_files)} JSON(s) in {out_path}"
+    )

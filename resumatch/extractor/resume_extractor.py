@@ -9,9 +9,10 @@ from resumatch.extractor.constants import (
     SKILLS_SECTION_PATTERN,
     STOPWORD_EXCLUSIONS,
     TECH_ENTITY_PATTERN,
-    HEADER_STOPWORDS 
+    HEADER_STOPWORDS,
 )
 from resumatch.utils.models import ExtractedProfile
+
 
 # extracts candidate metadata, contact info, degrees, and skills.
 class ProfileExtractor:
@@ -35,7 +36,7 @@ class ProfileExtractor:
         section_texts = self._extract_sections(text)
         achievements = self._extract_achievements(text, section_texts)
         volunteering = self._extract_volunteering(text, section_texts)
-        
+
         # extract taxonomy skills
         taxonomy_skills = (
             self._extract_taxonomy_skills(text)
@@ -60,7 +61,7 @@ class ProfileExtractor:
         all_skills = taxonomy_skills.union(dynamic_skills)
 
         return ExtractedProfile(
-raw_text=text,
+            raw_text=text,
             email=email,
             phone=phone,
             github=github,
@@ -76,7 +77,7 @@ raw_text=text,
         )
 
     def _extract_regex(self, text: str, pattern: str) -> str | None:
-        # regex pattern match 
+        # regex pattern match
         match = re.search(pattern, text, flags=re.IGNORECASE)
         return match.group(0) if match else None
 
@@ -131,9 +132,7 @@ raw_text=text,
 
         return sections
 
-    def _extract_achievements(
-        self, text: str, sections: Dict[str, str]
-    ) -> List[str]:
+    def _extract_achievements(self, text: str, sections: Dict[str, str]) -> List[str]:
         """Extracts bullet points containing metrics, awards, or key impact phrases."""
         highlights: List[str] = []
         target_text = sections.get("Awards") or text
@@ -145,7 +144,9 @@ raw_text=text,
             clean_line = re.sub(r"^[•\-\*\d\.\s]+", "", line).strip()
             if len(clean_line) > 15 and re.search(metric_pattern, clean_line):
                 # Format long lines
-                truncated = clean_line[:110] + "..." if len(clean_line) > 110 else clean_line
+                truncated = (
+                    clean_line[:110] + "..." if len(clean_line) > 110 else clean_line
+                )
                 if truncated not in highlights:
                     highlights.append(truncated)
             if len(highlights) >= 3:
@@ -153,9 +154,7 @@ raw_text=text,
 
         return highlights
 
-    def _extract_volunteering(
-        self, text: str, sections: Dict[str, str]
-    ) -> List[str]:
+    def _extract_volunteering(self, text: str, sections: Dict[str, str]) -> List[str]:
         """Extracts leadership, mentorship, or volunteering entries."""
         vol_items: List[str] = []
         target_text = sections.get("Volunteering") or ""
@@ -171,8 +170,12 @@ raw_text=text,
         lines = [line.strip() for line in target_text.split("\n") if line.strip()]
         for line in lines:
             clean_line = re.sub(r"^[•\-\*\d\.\s]+", "", line).strip()
-            if len(clean_line) > 15 and not any(h in clean_line.lower() for h in HEADER_STOPWORDS):
-                truncated = clean_line[:110] + "..." if len(clean_line) > 110 else clean_line
+            if len(clean_line) > 15 and not any(
+                h in clean_line.lower() for h in HEADER_STOPWORDS
+            ):
+                truncated = (
+                    clean_line[:110] + "..." if len(clean_line) > 110 else clean_line
+                )
                 if truncated not in vol_items:
                     vol_items.append(truncated)
             if len(vol_items) >= 3:
@@ -192,7 +195,6 @@ raw_text=text,
                 found_skills.add(skill)
 
         return found_skills
-    
 
     def _extract_dynamic_skills(self, text: str, exclude: set[str]) -> set[str]:
 
@@ -207,7 +209,7 @@ raw_text=text,
             section_text = section_match.group(1)
             # Split on colons, commas, pipes, semicolons, asterisks, newlines, and bullet points
             raw_tokens = re.split(r"[:,•|;\n\*\&]", section_text)
-            
+
             for token in raw_tokens:
                 clean_token = re.sub(r"^[\s\-\*\•\d\.]+", "", token).strip()
                 clean_token = re.sub(r"[\(\)]", "", clean_token).strip()
@@ -220,6 +222,7 @@ raw_text=text,
                         discovered.add(token_lower)
 
         return discovered
+
 
 def run_extractor(cv_text: str) -> None:
     """Run extraction demo on a sample string."""
@@ -246,7 +249,6 @@ if __name__ == "__main__":
     Python, PyTorch, Scikit-Learn, Docker, Git, SQL, C++, REST API,
     OpenCV, HuggingFace, Vitis_HLS, Next.js, CUDA
     """
-    
 
     cv_text2 = """
             SUJAN SHARMA
@@ -342,7 +344,7 @@ if __name__ == "__main__":
             •Data Science Fellow – Fellowship.ai Jan 2023
             •Full Scholarship, Bachelor of Computer Engineering – Nepal Engineering College (value>USD 8,000) 2017–2022
         """
-    cv_text3 ="""
+    cv_text3 = """
         INFORMATION TECHNOLOGY
         Summary
         Dedicated  Information Assurance Professional  well-versed in analyzing and mitigating risk and finding cost-effective

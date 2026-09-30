@@ -10,6 +10,7 @@ from resumatch.matcher.heuristics import SkillOverlapHeuristics, SkillAnalysisRe
 
 logger = logging.getLogger(__name__)
 
+
 # combining neural retrieval + heuristic skill analysis
 class CompositeMatcher:
     def __init__(
@@ -37,13 +38,12 @@ class CompositeMatcher:
         job_skills: set[str],
     ) -> MatchResult:
 
-
         # # --- DEBUG PRINT: INPUT SKILLS ---
         # print(f"\n==========================================")
         # print(f"SINGLE EVALUATION: Job [{job_id}] vs CV [{cv_id}]")
         # print(f"Job Required Skills ({len(job_skills)}): {sorted(job_skills)}")
         # print(f"CV Extracted Skills  ({len(cv_skills)}): {sorted(cv_skills)}")
-        
+
         rerank_score = self.reranker.rerank(job_text, [cv_text])[0]
         skill_res: SkillAnalysisResult = self.heuristics.evaluate_skills(
             cv_skills, job_skills
@@ -54,8 +54,8 @@ class CompositeMatcher:
         # print(f"Missing Skills ({len(skill_res.missing_skills)}): {sorted(skill_res.missing_skills)}")
         # print(f"Skill Score: {skill_res.score * 100:.2f}%")
         # print(f"==========================================\n")
-       
-        # direct rerank 
+
+        # direct rerank
         rerank_score = self.reranker.rerank(job_text, [cv_text])[0]
 
         # heuristic Analysis
@@ -78,14 +78,14 @@ class CompositeMatcher:
             missing_skills=skill_res.missing_skills,
         )
 
-# two step retrieval and reranking across cvs and jobs
+    # two step retrieval and reranking across cvs and jobs
     def evaluate_batch(
         self,
         candidates: List[Dict[str, Any]],
         jobs: Union[Dict[str, Any], List[Dict[str, Any]]],
         top_k_retrieval: int = 50,
     ) -> Dict[str, List[MatchResult]]:
-        
+
         if not candidates:
             return {}
 
@@ -99,12 +99,11 @@ class CompositeMatcher:
         cv_embeddings = self.retriever.encode(cv_texts)
 
         results_by_job: Dict[str, List[MatchResult]] = {}
-        
+
         for job in job_list:
             job_id = job["id"]
             job_text = job["text"]
             job_skills = set(job.get("skills", set()))
-
 
             # # --- DEBUG PRINT: JOB REQUIREMENTS ---
             # print(f"\n==================================================")
@@ -136,12 +135,12 @@ class CompositeMatcher:
                     self.skill_weight * skill_res.score
                 )
                 # --- DEBUG PRINT: CANDIDATE MATCH DETAILS ---
-                
+
                 # print(f"  ├─ CV Skills ({len(cand_skills)}): {sorted(cand_skills)}")
                 # print(f"  ├─ Matched   ({len(skill_res.matched_skills)}): {sorted(skill_res.matched_skills)}")
                 # print(f"  ├─ Missing   ({len(skill_res.missing_skills)}): {sorted(skill_res.missing_skills)}")
                 # print(f"  └─ Skill Score: {skill_res.score * 100:.2f}% | Semantic: {sem_score * 100:.2f}%")
-                
+
                 job_matches.append(
                     MatchResult(
                         cv_id=cand["id"],
@@ -154,7 +153,7 @@ class CompositeMatcher:
                     )
                 )
 
-            # sort candidate rankings per job 
+            # sort candidate rankings per job
             job_matches.sort(key=lambda x: x.overall_score, reverse=True)
             results_by_job[job_id] = job_matches
 
@@ -190,15 +189,15 @@ if __name__ == "__main__":
     # print(f"Missing Skills: {res.missing_skills}")
 
     # ------------------------ testing batch evaluation ------------------------
-    batch_candidates=  [
-            {
-                "id": "CV_001",
-                "text": "Data Scientist proficient in Python, SQL, and PyTorch.",
-                "skills": {"Python", "SQL", "PyTorch"},
-            },
-            {
-                "id": "CV_002",
-                "text": """
+    batch_candidates = [
+        {
+            "id": "CV_001",
+            "text": "Data Scientist proficient in Python, SQL, and PyTorch.",
+            "skills": {"Python", "SQL", "PyTorch"},
+        },
+        {
+            "id": "CV_002",
+            "text": """
                         SUJAN SHARMA
                 Witten, Germany|ersujansharma@gmail.com|/g♀beWebsite|/♀nednLinkedIn|/gtbGitHub
                 Education
@@ -292,52 +291,154 @@ if __name__ == "__main__":
                 •Data Science Fellow – Fellowship.ai Jan 2023
                 •Full Scholarship, Bachelor of Computer Engineering – Nepal Engineering College (value>USD 8,000) 2017–2022
                 """,
-                "skills": {'Fellowship.ai', 'Master Data Documentation', 'EngineerAug', 'Hugging Face', 'WebSockets', 'Deep Learning', 'GPA', 'Cloud & Mlops: Docker', 'Git', 'Exploratory Data Analysis', 'Linux', 'Restful Apis', 'LeveragedLarge', 'Mysql', 'SUJAN', 'SDLC', 'Fastapi', 'FestDecember', 'Pgvector', 'OpenCV', 'DeepLearning', 'Scikit-Learn', 'Ci/Cd', 'PubMed', 'Postgresql', 'ETL', 'MiniLM', 'Docker', 'EngineerSept', 'LecturerJan', 'Data Governance', 'Github Actions', 'Analysis', 'Issue Tracking', 'UniversityDortmund', 'LangChain', 'Agile', 'NLI', 'Etl Pipelines', 'C', 'TrainerDec', 'Numpy', 'SageMaker', 'CNN', 'IDEAX', 'Computer Graphics', 'PubMedBERT', 'Data Science', 'Sql', 'Python', 'Data Consistency Checks', 'Snowflake', 'ResNet50', 'Django', 'Mlflow', 'TaughtInformation', 'Pytorch', 'Aws', 'Llms', 'Dbt', 'Rag', 'C++', 'MentorDecember', 'Flask', 'Prompt Engineering', 'Machine Learning', 'UniversityChangunarayan', 'Pandas', 'Tensorflow', 'Opencv', 'Javascript', 'Nltk', 'GPT', 'Langgraph', 'Data Analysis', 'LecturerMay', 'Numpy)', 'LangGraph', 'RAG', 'GenAI', 'Sagemaker)', 'Bash', 'Github', 'AppliedSHAPandLIMEfor', 'DeveloperNov', 'Root-cause', 'Python (pandas', 'USD', 'Artificial Intelligence', 'Streamlit', 'Aws (ec2', 'LLM', 'NLTK'}
+            "skills": {
+                "Fellowship.ai",
+                "Master Data Documentation",
+                "EngineerAug",
+                "Hugging Face",
+                "WebSockets",
+                "Deep Learning",
+                "GPA",
+                "Cloud & Mlops: Docker",
+                "Git",
+                "Exploratory Data Analysis",
+                "Linux",
+                "Restful Apis",
+                "LeveragedLarge",
+                "Mysql",
+                "SUJAN",
+                "SDLC",
+                "Fastapi",
+                "FestDecember",
+                "Pgvector",
+                "OpenCV",
+                "DeepLearning",
+                "Scikit-Learn",
+                "Ci/Cd",
+                "PubMed",
+                "Postgresql",
+                "ETL",
+                "MiniLM",
+                "Docker",
+                "EngineerSept",
+                "LecturerJan",
+                "Data Governance",
+                "Github Actions",
+                "Analysis",
+                "Issue Tracking",
+                "UniversityDortmund",
+                "LangChain",
+                "Agile",
+                "NLI",
+                "Etl Pipelines",
+                "C",
+                "TrainerDec",
+                "Numpy",
+                "SageMaker",
+                "CNN",
+                "IDEAX",
+                "Computer Graphics",
+                "PubMedBERT",
+                "Data Science",
+                "Sql",
+                "Python",
+                "Data Consistency Checks",
+                "Snowflake",
+                "ResNet50",
+                "Django",
+                "Mlflow",
+                "TaughtInformation",
+                "Pytorch",
+                "Aws",
+                "Llms",
+                "Dbt",
+                "Rag",
+                "C++",
+                "MentorDecember",
+                "Flask",
+                "Prompt Engineering",
+                "Machine Learning",
+                "UniversityChangunarayan",
+                "Pandas",
+                "Tensorflow",
+                "Opencv",
+                "Javascript",
+                "Nltk",
+                "GPT",
+                "Langgraph",
+                "Data Analysis",
+                "LecturerMay",
+                "Numpy)",
+                "LangGraph",
+                "RAG",
+                "GenAI",
+                "Sagemaker)",
+                "Bash",
+                "Github",
+                "AppliedSHAPandLIMEfor",
+                "DeveloperNov",
+                "Root-cause",
+                "Python (pandas",
+                "USD",
+                "Artificial Intelligence",
+                "Streamlit",
+                "Aws (ec2",
+                "LLM",
+                "NLTK",
             },
-        ]
+        },
+    ]
     batch_jobs = [
-        {'id': 'JOB_001_Python_Developer',
-            'text': "Job Title: Python Developer\n        Category: INFORMATION-TECHNOLOGY\n        Experience Level: Junior (1-3 years)\n\n        Education Required: Bachelor's in CS or related\n\n        Required Skills:\n        Python, Django, Flask, REST APIs, SQL, Git\n\n        Preferred Skills:\n        Docker, AWS, PostgreSQL, Redis, Celery\n\n        Key Responsibilities:\n        Design and develop backend services. Write clean maintainable code. Collaborate with frontend developers. Participate in code reviews. Debug and fix production issues",
-            'skills': {'Django', 'Flask', 'Git', 'Python', 'REST APIs', 'SQL'}},
-        
-        {'id': 'JOB_002_Senior_Python_Developer',
-            'text': "Job Title: Senior Python Developer\n        Category: INFORMATION-TECHNOLOGY\n        Experience Level: Senior (5+ years)\n\n        Education Required: Bachelor's or Master's in CS\n\n        Required Skills:\n        Python, Django, Flask, FastAPI, PostgreSQL, Docker, Kubernetes, AWS, CI/CD, System Design\n\n        Preferred Skills:\n        GraphQL, Kafka, Terraform, Machine Learning\n\n        Key Responsibilities:\n        Lead backend architecture decisions. Mentor junior developers. Design scalable microservices. Optimize database performance. Implement security best practices. Conduct technical interviews",
-            'skills': {'AWS',
-            'CI/CD',
-            'Django',
-            'Docker',
-            'FastAPI',
-            'Flask',
-            'Kubernetes',
-            'PostgreSQL',
-            'Python',
-            'System Design'}},
-
-        {'id': 'JOB_003_Java_Developer',
-            'text': "Job Title: Java Developer\n        Category: INFORMATION-TECHNOLOGY\n        Experience Level: Junior (1-3 years)\n\n        Education Required: Bachelor's in CS or IT\n\n        Required Skills:\n        Java, Spring Boot, Hibernate, REST APIs, MySQL, Maven, Git\n\n        Preferred Skills:\n        Microservices, Docker, Jenkins, Kafka\n\n        Key Responsibilities:\n        Develop enterprise applications. Write unit and integration tests. Participate in agile ceremonies. Troubleshoot application issues. Document technical specifications",
-            'skills': {'Git',
-            'Hibernate',
-            'Java',
-            'Maven',
-            'MySQL',
-            'REST APIs',
-            'Spring Boot'}}]
-                
+        {
+            "id": "JOB_001_Python_Developer",
+            "text": "Job Title: Python Developer\n        Category: INFORMATION-TECHNOLOGY\n        Experience Level: Junior (1-3 years)\n\n        Education Required: Bachelor's in CS or related\n\n        Required Skills:\n        Python, Django, Flask, REST APIs, SQL, Git\n\n        Preferred Skills:\n        Docker, AWS, PostgreSQL, Redis, Celery\n\n        Key Responsibilities:\n        Design and develop backend services. Write clean maintainable code. Collaborate with frontend developers. Participate in code reviews. Debug and fix production issues",
+            "skills": {"Django", "Flask", "Git", "Python", "REST APIs", "SQL"},
+        },
+        {
+            "id": "JOB_002_Senior_Python_Developer",
+            "text": "Job Title: Senior Python Developer\n        Category: INFORMATION-TECHNOLOGY\n        Experience Level: Senior (5+ years)\n\n        Education Required: Bachelor's or Master's in CS\n\n        Required Skills:\n        Python, Django, Flask, FastAPI, PostgreSQL, Docker, Kubernetes, AWS, CI/CD, System Design\n\n        Preferred Skills:\n        GraphQL, Kafka, Terraform, Machine Learning\n\n        Key Responsibilities:\n        Lead backend architecture decisions. Mentor junior developers. Design scalable microservices. Optimize database performance. Implement security best practices. Conduct technical interviews",
+            "skills": {
+                "AWS",
+                "CI/CD",
+                "Django",
+                "Docker",
+                "FastAPI",
+                "Flask",
+                "Kubernetes",
+                "PostgreSQL",
+                "Python",
+                "System Design",
+            },
+        },
+        {
+            "id": "JOB_003_Java_Developer",
+            "text": "Job Title: Java Developer\n        Category: INFORMATION-TECHNOLOGY\n        Experience Level: Junior (1-3 years)\n\n        Education Required: Bachelor's in CS or IT\n\n        Required Skills:\n        Java, Spring Boot, Hibernate, REST APIs, MySQL, Maven, Git\n\n        Preferred Skills:\n        Microservices, Docker, Jenkins, Kafka\n\n        Key Responsibilities:\n        Develop enterprise applications. Write unit and integration tests. Participate in agile ceremonies. Troubleshoot application issues. Document technical specifications",
+            "skills": {
+                "Git",
+                "Hibernate",
+                "Java",
+                "Maven",
+                "MySQL",
+                "REST APIs",
+                "Spring Boot",
+            },
+        },
+    ]
 
     results_map = matcher.evaluate_batch(
-            candidates=batch_candidates,
-            jobs=batch_jobs,
-            top_k_retrieval=2,
-        )
+        candidates=batch_candidates,
+        jobs=batch_jobs,
+        top_k_retrieval=2,
+    )
 
     # results per job
     for job_id, matches in results_map.items():
-            print(f"\n--- Rankings for {job_id} ---")
-            for rank, match in enumerate(matches, start=1):
-                print(
-                    f" Rank {rank}: {match.cv_id:<25} | "
-                    f"Overall: {match.overall_score:6.2f}% | "
-                    f"Semantic: {match.semantic_score:6.2f}% | "
-                    f"Skills: {match.skill_score:6.2f}%"
-                )
-                print(f"  Matched Skills: {match.matched_skills}")
+        print(f"\n--- Rankings for {job_id} ---")
+        for rank, match in enumerate(matches, start=1):
+            print(
+                f" Rank {rank}: {match.cv_id:<25} | "
+                f"Overall: {match.overall_score:6.2f}% | "
+                f"Semantic: {match.semantic_score:6.2f}% | "
+                f"Skills: {match.skill_score:6.2f}%"
+            )
+            print(f"  Matched Skills: {match.matched_skills}")

@@ -22,8 +22,8 @@ logger = logging.getLogger(__name__)
 with warnings.catch_warnings():
     warnings.simplefilter("ignore", UserWarning)
 
-class Visualizer:
 
+class Visualizer:
     def __init__(self, base_output_dir: Union[str, Path] = "reports_jobs") -> None:
         self.base_output_dir = Path(base_output_dir)
         sns.set_theme(style="whitegrid", palette="muted")
@@ -48,35 +48,78 @@ class Visualizer:
         )
 
         # 2. Filter out resume boilerplate, contact tokens, and common verbs/dates
-        custom_stopwords = set(STOPWORDS).union({
-            "email", "phone", "github", "linkedin", "experience", "education", 
-            "summary", "projects", "profile", "work", "history", "university", 
-            "college", "present", "jan", "feb", "mar", "apr", "may", "jun", 
-            "jul", "aug", "sep", "oct", "nov", "dec", "year", "years", "using", 
-            "built", "developed", "led", "managed", "worked", "germany", "nepal"
-        })
+        custom_stopwords = set(STOPWORDS).union(
+            {
+                "email",
+                "phone",
+                "github",
+                "linkedin",
+                "experience",
+                "education",
+                "summary",
+                "projects",
+                "profile",
+                "work",
+                "history",
+                "university",
+                "college",
+                "present",
+                "jan",
+                "feb",
+                "mar",
+                "apr",
+                "may",
+                "jun",
+                "jul",
+                "aug",
+                "sep",
+                "oct",
+                "nov",
+                "dec",
+                "year",
+                "years",
+                "using",
+                "built",
+                "developed",
+                "led",
+                "managed",
+                "worked",
+                "germany",
+                "nepal",
+            }
+        )
         if cleaned_text.strip():
-                    wordcloud = WordCloud(
-                        width=800,
-                        height=400,
-                        background_color="white",
-                        colormap="Blues",
-                        stopwords=custom_stopwords,
-                        max_words=60,
-                        min_font_size=8,
-                        random_state=42,
-                    ).generate(cleaned_text)
+            wordcloud = WordCloud(
+                width=800,
+                height=400,
+                background_color="white",
+                colormap="Blues",
+                stopwords=custom_stopwords,
+                max_words=60,
+                min_font_size=8,
+                random_state=42,
+            ).generate(cleaned_text)
 
-                    ax.imshow(wordcloud, interpolation="bilinear")
-                    ax.axis("off")
+            ax.imshow(wordcloud, interpolation="bilinear")
+            ax.axis("off")
         else:
             ax.text(
-                0.5, 0.5, "Insufficient text for WordCloud", 
-                ha="center", va="center", fontsize=10, color="gray"
+                0.5,
+                0.5,
+                "Insufficient text for WordCloud",
+                ha="center",
+                va="center",
+                fontsize=10,
+                color="gray",
             )
             ax.axis("off")
 
-        ax.set_title("Profile Narrative & Domain Keywords", fontweight="bold", fontsize=12, pad=15)
+        ax.set_title(
+            "Profile Narrative & Domain Keywords",
+            fontweight="bold",
+            fontsize=12,
+            pad=15,
+        )
 
     def generate_candidate_report(
         self,
@@ -96,23 +139,27 @@ class Visualizer:
 
         # GridSpec Layout: 3 Rows x 2 Columns (Last row spans both columns)
         fig = plt.figure(figsize=(15, 12))
-        gs = gridspec.GridSpec(3, 2, height_ratios=[1, 1, 0.75], hspace=0.35, wspace=0.25)
+        gs = gridspec.GridSpec(
+            3, 2, height_ratios=[1, 1, 0.75], hspace=0.35, wspace=0.25
+        )
 
         fig.suptitle(
             f"Candidate Intelligence & Profile Alignment Report\nJob: {job.get('title', job_id)} | Candidate: {cand_id}",
             fontsize=16,
             fontweight="bold",
-            y=0.99
+            y=0.99,
         )
 
         # -------------------------------------------------------------
         # PANEL 1 (Top Left): Match Telemetry (Horizontal Bar)
         # -------------------------------------------------------------
         ax1 = fig.add_subplot(gs[0, 0])
-        scores_df = pd.DataFrame({
-            "Metric": ["Overall Fit", "Semantic Match", "Skill Coverage"],
-            "Score": [match.overall_score, match.semantic_score, match.skill_score],
-        })
+        scores_df = pd.DataFrame(
+            {
+                "Metric": ["Overall Fit", "Semantic Match", "Skill Coverage"],
+                "Score": [match.overall_score, match.semantic_score, match.skill_score],
+            }
+        )
 
         sns.barplot(
             data=scores_df,
@@ -131,7 +178,10 @@ class Visualizer:
             width = p.get_width()
             ax1.annotate(
                 f"{width:.1f}%",
-                (width - 8 if width > 15 else width + 2, p.get_y() + p.get_height() / 2.0),
+                (
+                    width - 8 if width > 15 else width + 2,
+                    p.get_y() + p.get_height() / 2.0,
+                ),
                 ha="center",
                 va="center",
                 color="white" if width > 15 else "black",
@@ -157,7 +207,9 @@ class Visualizer:
             wedgeprops=dict(width=0.4, edgecolor="w"),
         )
         plt.setp(autotexts, size=10, weight="bold")
-        ax2.set_title("Required Skill Gap Ratio", fontweight="bold", fontsize=12,pad = 15)
+        ax2.set_title(
+            "Required Skill Gap Ratio", fontweight="bold", fontsize=12, pad=15
+        )
 
         # -------------------------------------------------------------
         # PANEL 3 (Middle Left): Impact & Action Keyword Density
@@ -225,10 +277,23 @@ class Visualizer:
             achievements = [
                 s.strip()
                 for s in re.split(r"[\n\.]+", raw)
-                if any(w in s.lower() for w in ["award", "honor", "first", "lead", "built", "increased", "published"])
+                if any(
+                    w in s.lower()
+                    for w in [
+                        "award",
+                        "honor",
+                        "first",
+                        "lead",
+                        "built",
+                        "increased",
+                        "published",
+                    ]
+                )
             ][:2]
 
-        ach_str = "\n  • ".join(achievements) if achievements else "None explicit in profile."
+        ach_str = (
+            "\n  • ".join(achievements) if achievements else "None explicit in profile."
+        )
         vol_str = "\n  • ".join(volunteering) if volunteering else "None listed."
 
         narrative_text = (
@@ -253,7 +318,9 @@ class Visualizer:
             ),
         )
 
-        plt.subplots_adjust(top=0.88, bottom=0.08, left=0.08, right=0.92, hspace=0.35, wspace=0.3)
+        plt.subplots_adjust(
+            top=0.88, bottom=0.08, left=0.08, right=0.92, hspace=0.35, wspace=0.3
+        )
         plt.savefig(output_file, dpi=300, bbox_inches="tight")
         plt.close(fig)
 

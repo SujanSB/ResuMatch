@@ -23,6 +23,7 @@ dependencies = [
     "fpdf>=1.7.2",
     "python-docx>=1.2.0",
     "wordcloud>=1.9.6",
+    "pytest>=9.1.1",
 ]
 
 [project.scripts]
@@ -35,4 +36,12 @@ packages = ["resumatch"]
 dev = [
     "pytest>=8.0.0",
     "ruff>=0.1.0",
+]
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.9",
 ]

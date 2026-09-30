@@ -14,13 +14,15 @@ class DocumentParser:
 
         if path.suffix.lower() == ".pdf":
             return self._parse_pdf(path)
-        elif path.suffix.lower() in [".doc", ".docx",".txt", ".md"]:
+        elif path.suffix.lower() in [".doc", ".docx", ".txt", ".md"]:
             if path.suffix.lower() in [".doc", ".docx"]:
                 try:
                     doc = Document(path)
                     return "\n".join([para.text for para in doc.paragraphs])
                 except ImportError:
-                    raise ImportError("python-docx is required to parse .doc/.docx files")
+                    raise ImportError(
+                        "python-docx is required to parse .doc/.docx files"
+                    )
             else:
                 return path.read_text(encoding="utf-8")
         else:

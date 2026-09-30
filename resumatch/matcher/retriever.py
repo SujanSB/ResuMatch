@@ -7,6 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 logger = logging.getLogger(__name__)
 
+
 # vector search retriever using sentence embeddings
 class SemanticRetriever:
     def __init__(self, model_name: str = "all-MiniLM-L6-v2") -> None:
@@ -15,9 +16,7 @@ class SemanticRetriever:
 
     def encode(self, texts: list[str]) -> np.ndarray:
         """Converts a list of raw text strings into a 2D numpy array of embeddings."""
-        return self.model.encode(
-            texts, convert_to_numpy=True, show_progress_bar=False
-        )
+        return self.model.encode(texts, convert_to_numpy=True, show_progress_bar=False)
 
     def search(
         self,
@@ -35,9 +34,7 @@ class SemanticRetriever:
         return [(int(idx), float(similarities[idx])) for idx in top_indices]
 
 
-
 if __name__ == "__main__":
-
     retriever = SemanticRetriever()
 
     candidates = [

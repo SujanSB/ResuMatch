@@ -22,33 +22,24 @@ def parse_skill_string(raw_skills: str | list) -> Set[str]:
     return clean_set
 
 
-def load_jobs_from_csv(
-    csv_path: str, category: str | None = None
-) -> List[Dict]:
+def load_jobs_from_csv(csv_path: str, category: str | None = None) -> List[Dict]:
     df = pd.read_csv(csv_path)
 
     # Filter by category if specified
     if category is not None and "Category" in df.columns:
         target_cat = str(category).strip().upper()
         df = df[
-            df["Category"]
-            .fillna("")
-            .astype(str)
-            .str.strip()
-            .str.upper()
-            == target_cat
+            df["Category"].fillna("").astype(str).str.strip().str.upper() == target_cat
         ]
 
     jobs: List[Dict] = []
-    # only taking few rows of 
+    # only taking few rows of
     df = df.iloc[0:5]
 
     # Iterate over all rows in the filtered DataFrame
     for idx, row in df.iterrows():
         # Safely extract skill fields avoiding NaN issues
-        skills_val = (
-            str(row.get("Skills", "")) if pd.notna(row.get("Skills")) else ""
-        )
+        skills_val = str(row.get("Skills", "")) if pd.notna(row.get("Skills")) else ""
         pref_skills_val = (
             str(row.get("PreferredSkills", ""))
             if pd.notna(row.get("PreferredSkills"))

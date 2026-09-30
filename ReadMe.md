@@ -4,8 +4,18 @@
 
 ---
 
+## Features
 
-## Repository Structure
+- **Multi-Format Parsing:** Supports `.pdf`, `.docx`, and `.txt` resumes.
+- **Hybrid Matching:** Uses bi-encoder retrieval and cross-encoder re-ranking.
+- **Skill Extraction:** Extracts contact details, experience, and skills.
+- **Skill Gap Analysis:** Identifies matched, missing, and related skills.
+- **Recommendation:** Classifies candidates as *Strongly Recommended*, *Consider*, or *Not Recommended*.
+- **Visual Reports:** Generates reports with match scores and skill gaps.
+- **JSON Export:** Saves detailed matching results in JSON format.
+
+
+## Project Structure
 
 ```text
 RESUMATCH/
@@ -48,6 +58,9 @@ RESUMATCH/
 
 ![ResuMatch System Architecture](assets/architecture.png)
 
+ *([View on Lucidchart](https://lucid.app/lucidchart/31e388a0-668d-48c1-838d-0a3df4a2aa01/edit?viewport_loc=-109%2C-220%2C1762%2C1151%2C0_0&invitationId=inv_ff8f7132-20d4-4184-84e6-53e8cc96c513))*
+
+
 The processing pipeline is organized into five modular layers:
 
 1. **Input Layer**
@@ -84,3 +97,46 @@ ResuMatch automatically generates individual candidate intelligence reports feat
 ![Sample Candidate Report](assets/Sujan_Sharma_report.png)
 
 ---
+
+## Requirements
+
+- Python `>= 3.10`
+- `uv` (recommended) or `pip`
+
+## Installation
+
+Clone the repository and install the package:
+
+```bash
+git clone https://github.com/SujanSB/ResuMatch.git
+   
+cd ResuMatch
+
+uv pip install -e .    
+```
+
+## Usage
+### Run the ResuMatch pipeline:
+``` bash 
+uv run -m resumatch
+```
+
+You can also specify custom input and output paths:
+
+```bash
+uv run -m resumatch \
+  --resumes_dir data/sample_data/resumes \
+  --jobs_csv data/sample_data/jobs/final_job_descriptions.csv \
+  --output_dir reports \
+  --max_resumes 3
+``` 
+
+### Command-Line Arguments
+
+| Argument        | Description                                | Default                                      |
+|-----------------|--------------------------------------------|----------------------------------------------|
+| `--resumes_dir` | Directory containing candidate PDF resumes | `data/sample_data/resumes`                   |
+| `--jobs_csv`    | Job descriptions CSV file                  | `data/sample_data/jobs/final_job_descriptions.csv` |
+| `--output_dir`  | Directory for generated reports            | `reports`                                    |
+| `--max_resumes` | Maximum number of resumes to process       | `3`                                          |
+

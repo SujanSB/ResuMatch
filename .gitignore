@@ -11,3 +11,5 @@ __pycache__/
 *.egg-info/
 .eggs/
 uv.lock
+.pytest_cache/
+.ruff_cache/

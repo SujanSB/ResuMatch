@@ -3,6 +3,7 @@
 from typing import Any, Dict, List, Set
 from dataclasses import asdict, dataclass, field
 
+
 @dataclass
 # keep major things like: metadata, contact details, and skills extracted from the docs
 class ExtractedProfile:
@@ -19,7 +20,7 @@ class ExtractedProfile:
     achievements: List[str] = field(default_factory=list)
     volunteering: List[str] = field(default_factory=list)
     section_texts: Dict[str, str] = field(default_factory=dict)
-    
+
     def to_dict(self) -> Dict[str, Any]:
         return {
             "raw_text": self.raw_text,
@@ -37,7 +38,7 @@ class ExtractedProfile:
             "section_texts": self.section_texts,
         }
 
-    
+
 @dataclass
 # result of matching a cv details for a job description ( with scores and skills )
 class MatchResult:
@@ -48,6 +49,7 @@ class MatchResult:
     skill_score: float
     matched_skills: set[str] = field(default_factory=set)
     missing_skills: set[str] = field(default_factory=set)
+
     def to_dict(self) -> Dict[str, Any]:
         return {
             "cv_id": self.cv_id,

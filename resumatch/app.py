@@ -39,7 +39,10 @@ logger = logging.getLogger("ResuMatch")
 
 
 def process_resumes(
-    resumes_dir: Path, parser: DocumentParser, extractor: ProfileExtractor, limit: int | None = 1
+    resumes_dir: Path,
+    parser: DocumentParser,
+    extractor: ProfileExtractor,
+    limit: int | None = 1,
 ) -> List[Dict[str, Any]]:
     """Sequentially parses PDF resumes and extracts candidate metadata."""
     pdf_files = sorted(list(resumes_dir.glob("*.pdf")))
@@ -89,7 +92,7 @@ def main() -> None:
     parser.add_argument(
         "--max_resumes",
         type=int,
-        default=3,  # how many cvs/resumes to test. 
+        default=3,  # how many cvs/resumes to test.
         help="Maximum number of resumes to process (useful for testing)",
     )
     parser.add_argument(
@@ -114,7 +117,7 @@ def main() -> None:
 
     # 1. Load Job Descriptions First
     logger.info("=== Step 1: Loading Job Descriptions ===")
-    jobs = load_jobs_from_csv(jobs_csv_path,"DATA-SCIENCE")
+    jobs = load_jobs_from_csv(jobs_csv_path, "DATA-SCIENCE")
     # jobs = load_jobs_from_csv(jobs_csv_path)
     if not jobs:
         logger.error("No valid jobs found in CSV. Aborting run.")
@@ -137,9 +140,7 @@ def main() -> None:
         logger.error("No candidate resumes were successfully processed. Aborting run.")
         return
 
-    logger.info(
-        f"Successfully extracted {len(candidates)} candidate profiles."
-    )
+    logger.info(f"Successfully extracted {len(candidates)} candidate profiles.")
 
     # 3. Match Candidates & Generate Recommendations
     logger.info("=== Step 3: Matching Candidates & Generating Recommendations ===")

@@ -4,6 +4,7 @@ from sentence_transformers import CrossEncoder
 
 logger = logging.getLogger(__name__)
 
+
 # contextual Cross-Encoder reranker for more precise scoring
 class DeepReranker:
     def __init__(self, model_name: str = "BAAI/bge-reranker-base") -> None:
@@ -24,11 +25,12 @@ class DeepReranker:
         return [float(s) for s in scores]
 
 
-
 if __name__ == "__main__":
     reranker = DeepReranker()
 
-    job_text = "Seeking Python Engineer with experience in PyTorch and Machine Learning."
+    job_text = (
+        "Seeking Python Engineer with experience in PyTorch and Machine Learning."
+    )
     candidate_texts = [
         "Data Scientist with 3 years building ML models using PyTorch and Python.",
         "Frontend React Developer specializing in CSS and HTML layout.",
@@ -37,4 +39,4 @@ if __name__ == "__main__":
     scores = reranker.rerank(job_text, candidate_texts)
 
     for i, score in enumerate(scores):
-        print(f"Candidate {i+1} Rerank Score: {score * 100:.2f}%")
+        print(f"Candidate {i + 1} Rerank Score: {score * 100:.2f}%")

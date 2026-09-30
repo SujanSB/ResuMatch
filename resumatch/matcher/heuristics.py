@@ -1,17 +1,19 @@
 from dataclasses import dataclass, field
 
+
 @dataclass
 class SkillAnalysisResult:
     score: float
     matched_skills: set[str] = field(default_factory=set)
     missing_skills: set[str] = field(default_factory=set)
 
+
 # calculate ratio of matched skills to job requirements
 class SkillOverlapHeuristics:
     @staticmethod
     def normalize_skill(skill: str) -> str:
         return skill.strip().lower()
-    
+
     # with basic formula: coverage_ratio = len(matched_skills) / len(job_skills)
     def evaluate_skills(
         self, cv_skills: set[str], job_skills: set[str]

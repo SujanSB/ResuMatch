@@ -1,5 +1,10 @@
 from resumatch.extractor import ProfileExtractor
-from resumatch.matcher import CompositeMatcher, DeepReranker, SemanticRetriever, SkillOverlapHeuristics
+from resumatch.matcher import (
+    CompositeMatcher,
+    DeepReranker,
+    SemanticRetriever,
+    SkillOverlapHeuristics,
+)
 from resumatch.utils.models import MatchResult
 from resumatch.parser import DocumentParser
 from resumatch.recommender import CandidateRecommender
