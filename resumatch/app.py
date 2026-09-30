@@ -97,7 +97,7 @@ def main() -> None:
     parser.add_argument(
         "--jobs_csv",
         type=str,
-        default="data/sample_data/jobs/final_job_descriptions.csv",
+        default="data/sample_data/jobs/sample_job_descriptions.csv",
         help="Path to CSV file containing job descriptions",
     )
     parser.add_argument(

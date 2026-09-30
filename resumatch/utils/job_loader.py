@@ -34,7 +34,7 @@ def load_jobs_from_csv(csv_path: str, category: str | None = None) -> list[dict]
 
     jobs: list[dict] = []
     # only taking few rows of
-    df = df.iloc[0:5]
+    # df = df.iloc[0:5]
 
     # Iterate over all rows in the filtered DataFrame
     for idx, row in df.iterrows():
