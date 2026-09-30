@@ -44,41 +44,51 @@ def process_resumes(
     extractor: ProfileExtractor,
     limit: int | None = 1,
 ) -> list[dict[str, Any]]:
-    """Sequentially parses PDF resumes and extracts candidate metadata."""
-    pdf_files = sorted(resumes_dir.glob("*.pdf"))
+    supported_extensions = {".pdf", ".txt", ".docx"}
+
+    resume_files = sorted(
+        [
+            f
+            for f in resumes_dir.glob("*")
+            if f.is_file() and f.suffix.lower() in supported_extensions
+        ]
+    )
+
     if limit is not None:
-        pdf_files = pdf_files[:limit]
-    if not pdf_files:
-        logger.error(f"No PDF files found in: {resumes_dir.resolve()}")
+        resume_files = resume_files[:limit]
+
+    if not resume_files:
+        logger.error(
+            f"No valid resume files (.pdf, .txt, .docx) found in: {resumes_dir.resolve()}"
+        )
         return []
 
     candidates: list[dict[str, Any]] = []
 
-    for pdf_path in pdf_files:
+    for file_path in resume_files:
         try:
-            logger.info(f"Processing: {pdf_path.name}")
-            raw_text = parser.parse(pdf_path)
+            logger.info(f"Processing: {file_path.name}")
+            raw_text = parser.parse(file_path)
             profile = extractor.extract(raw_text)
 
-            cand_id = pdf_path.stem
+            cand_id = file_path.stem
             candidate_record = {
                 "id": cand_id,
                 "name": getattr(profile, "name", None) or cand_id,
                 "email": profile.email or "N/A",
                 "phone": profile.phone or "N/A",
-                # "experience_years": getattr(profile, "experience_years", 0.0), Can be extracted if LLM used. I guess.
                 "text": raw_text,
                 "skills": profile.skills,
                 "metadata": profile.to_dict(),
             }
             candidates.append(candidate_record)
         except (ValueError, OSError, RuntimeError) as e:
-            logger.error(f"Failed to process {pdf_path.name}: {e}")
+            logger.error(f"Failed to process {file_path.name}: {e}")
+
     return candidates
 
 
 def main() -> None:
-    """CLI Entrypoint executed when called via `uv run -m resumatch`."""
     parser = argparse.ArgumentParser(
         description="ResuMatch: Hybrid CV-Job Matching and Recommendation Engine"
     )
@@ -114,7 +124,7 @@ def main() -> None:
     reports_path = Path(args.output_dir)
     reports_path.mkdir(parents=True, exist_ok=True)
 
-    # 1. Load Job Descriptions First
+    # load jd
     logger.info("=== Step 1: Loading Job Descriptions ===")
     jobs = load_jobs_from_csv(jobs_csv_path, "DATA-SCIENCE")
     # jobs = load_jobs_from_csv(jobs_csv_path)
@@ -123,7 +133,7 @@ def main() -> None:
         return
     logger.info(f"Loaded {len(jobs)} jobs successfully.")
 
-    # 2. Instantiate Parsers & Process Candidate Resumes Sequentially
+    # initialize the parser and extract candidate details
     logger.info("=== Step 2: Parsing & Extracting Candidate Resumes ===")
     doc_parser = DocumentParser()
     profile_extractor = ProfileExtractor()
@@ -141,7 +151,7 @@ def main() -> None:
 
     logger.info(f"Successfully extracted {len(candidates)} candidate profiles.")
 
-    # 3. Match Candidates & Generate Recommendations
+    # run matcher and recommendation
     logger.info("=== Step 3: Matching Candidates & Generating Recommendations ===")
     recommender = CandidateRecommender(semantic_weight=0.7, skill_weight=0.3)
     recommendations_json = recommender.recommend_batch(
@@ -155,7 +165,7 @@ def main() -> None:
         f.write(recommendations_json)
     logger.info(f"Saved JSON recommendation report to: {json_report_path}")
 
-    # 4. Generate Visual Analytics Charts
+    # generate the visual graphs/charts
     logger.info("=== Step 4: Generating Visual Analytics Charts ===")
     visualizer = Visualizer(base_output_dir=reports_path / "jobs")
     results_map = recommender.matcher.evaluate_batch(

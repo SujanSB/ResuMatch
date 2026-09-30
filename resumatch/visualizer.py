@@ -1,9 +1,3 @@
-"""Visualizer Module.
-
-Generates executive HR analytics dashboards (2x2 grid + 1 full-width text row) saved into:
-reports/jobs/<JOB_ID>/<CANDIDATE_ID>_report.png
-"""
-
 import logging
 import re
 import warnings
@@ -37,9 +31,9 @@ class Visualizer:
         job_dir.mkdir(parents=True, exist_ok=True)
         return job_dir
 
+    # remdering the WordCloud of profile text
     def _draw_chart_3_wordcloud(self, ax: plt.Axes, raw_text: str) -> None:
-        """Renders a WordCloud of profile text, excluding the explicit skills section."""
-        # 1. Strip out the dedicated skills section to focus on experience & domain keywords
+        # except the skills section to focus on experience & domain keywords
         skills_pattern = (
             r"(?:TECHNICAL\s+SKILLS|SKILLS|COMPETENCIES|TOOLS)\s*:?\n?"
             r"(.*?)(?=\n\n|\n[A-Z\s]{4,}:|\Z)"
@@ -48,7 +42,7 @@ class Visualizer:
             skills_pattern, "", raw_text, flags=re.IGNORECASE | re.DOTALL
         )
 
-        # 2. Filter out resume boilerplate, contact tokens, and common verbs/dates
+        # filtering resume boilerplate, contact tokens, and common verbs/dates
         custom_stopwords = set(STOPWORDS).union(
             {
                 "email",
@@ -138,7 +132,7 @@ class Visualizer:
         )
         output_file = job_dir / f"{clean_cand_id}_report.png"
 
-        # GridSpec Layout: 3 Rows x 2 Columns (Last row spans both columns)
+        # GridSpec Layout: 3 Rows x 2 Columns
         fig = plt.figure(figsize=(15, 12))
         gs = gridspec.GridSpec(
             3, 2, height_ratios=[1, 1, 0.75], hspace=0.35, wspace=0.25
@@ -257,7 +251,11 @@ class Visualizer:
             fontsize=10,
             verticalalignment="top",
             fontfamily="monospace",
-            bbox={"boxstyle": "round,pad=0.8", "facecolor": "#f8f9fa", "edgecolor": "#cbd5e1"},
+            bbox={
+                "boxstyle": "round,pad=0.8",
+                "facecolor": "#f8f9fa",
+                "edgecolor": "#cbd5e1",
+            },
         )
 
         # -------------------------------------------------------------
@@ -312,7 +310,11 @@ class Visualizer:
             fontsize=10,
             verticalalignment="top",
             fontfamily="monospace",
-            bbox={"boxstyle": "round,pad=0.8", "facecolor": "#f0fdf4", "edgecolor": "#86efac"},
+            bbox={
+                "boxstyle": "round,pad=0.8",
+                "facecolor": "#f0fdf4",
+                "edgecolor": "#86efac",
+            },
         )
 
         plt.subplots_adjust(
