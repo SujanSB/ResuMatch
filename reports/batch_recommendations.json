@@ -1,586 +1,10 @@
 {
   "mode": "batch_ranking",
-  "total_jobs_evaluated": 5,
+  "total_jobs_evaluated": 3,
   "jobs": [
     {
-      "job_id": "JOB_61_Data_Analyst",
-      "job_title": "JOB_61_Data_Analyst",
-      "total_candidates_evaluated": 3,
-      "recommended_candidates": [
-        {
-          "rank": 1,
-          "candidate_id": "Arjun_Mehta_DataScience",
-          "candidate_details": {
-            "name": "Arjun_Mehta_DataScience",
-            "email": "arjun.mehta@example.com",
-            "phone": "2023",
-            "extracted_skills_count": 10,
-            "top_skills": [
-              "data science",
-              "github",
-              "machine learning",
-              "numpy",
-              "pandas",
-              "power bi",
-              "python",
-              "scikit-learn",
-              "sql",
-              "statistics"
-            ]
-          },
-          "recommendation_tier": "Consider / Worth Interviewing",
-          "match_scores": {
-            "overall_fit_percentage": 59.6,
-            "semantic_context_score": 72.28,
-            "skill_coverage_score": 30.0
-          },
-          "skills_analysis": {
-            "matched_skills_count": 3,
-            "missing_skills_count": 7,
-            "matched_skills": [
-              "power bi",
-              "python",
-              "sql"
-            ],
-            "missing_skills": [
-              "a/b testing",
-              "data visualization",
-              "etl",
-              "excel",
-              "reporting",
-              "statistical analysis",
-              "tableau"
-            ]
-          }
-        },
-        {
-          "rank": 2,
-          "candidate_id": "1Sujan_Sharma",
-          "candidate_details": {
-            "name": "1Sujan_Sharma",
-            "email": "ersujansharma@gmail.com",
-            "phone": "2025",
-            "extracted_skills_count": 59,
-            "top_skills": [
-              "agile",
-              "analysis",
-              "artificial intelligence",
-              "aws",
-              "aws ec2",
-              "bash",
-              "c++",
-              "ci/cd",
-              "cloud",
-              "data analysis"
-            ]
-          },
-          "recommendation_tier": "Not Recommended",
-          "match_scores": {
-            "overall_fit_percentage": 41.52,
-            "semantic_context_score": 50.75,
-            "skill_coverage_score": 20.0
-          },
-          "skills_analysis": {
-            "matched_skills_count": 2,
-            "missing_skills_count": 8,
-            "matched_skills": [
-              "python",
-              "sql"
-            ],
-            "missing_skills": [
-              "a/b testing",
-              "data visualization",
-              "etl",
-              "excel",
-              "power bi",
-              "reporting",
-              "statistical analysis",
-              "tableau"
-            ]
-          }
-        },
-        {
-          "rank": 3,
-          "candidate_id": "EthanMiller_Mechanical",
-          "candidate_details": {
-            "name": "EthanMiller_Mechanical",
-            "email": "ethan.miller@example.com",
-            "phone": "2023",
-            "extracted_skills_count": 7,
-            "top_skills": [
-              "autocad",
-              "d printing",
-              "design for manufacturing",
-              "fea",
-              "gd",
-              "solidworks",
-              "t standards."
-            ]
-          },
-          "recommendation_tier": "Not Recommended",
-          "match_scores": {
-            "overall_fit_percentage": 35.05,
-            "semantic_context_score": 50.07,
-            "skill_coverage_score": 0.0
-          },
-          "skills_analysis": {
-            "matched_skills_count": 0,
-            "missing_skills_count": 10,
-            "matched_skills": [],
-            "missing_skills": [
-              "a/b testing",
-              "data visualization",
-              "etl",
-              "excel",
-              "power bi",
-              "python",
-              "reporting",
-              "sql",
-              "statistical analysis",
-              "tableau"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "job_id": "JOB_62_Senior_Data_Analyst",
-      "job_title": "JOB_62_Senior_Data_Analyst",
-      "total_candidates_evaluated": 3,
-      "recommended_candidates": [
-        {
-          "rank": 1,
-          "candidate_id": "Arjun_Mehta_DataScience",
-          "candidate_details": {
-            "name": "Arjun_Mehta_DataScience",
-            "email": "arjun.mehta@example.com",
-            "phone": "2023",
-            "extracted_skills_count": 10,
-            "top_skills": [
-              "data science",
-              "github",
-              "machine learning",
-              "numpy",
-              "pandas",
-              "power bi",
-              "python",
-              "scikit-learn",
-              "sql",
-              "statistics"
-            ]
-          },
-          "recommendation_tier": "Consider / Worth Interviewing",
-          "match_scores": {
-            "overall_fit_percentage": 61.07,
-            "semantic_context_score": 71.66,
-            "skill_coverage_score": 36.36
-          },
-          "skills_analysis": {
-            "matched_skills_count": 4,
-            "missing_skills_count": 7,
-            "matched_skills": [
-              "machine learning",
-              "power bi",
-              "python",
-              "sql"
-            ],
-            "missing_skills": [
-              "airflow",
-              "dbt",
-              "domain expertise",
-              "experimentation",
-              "statistical modeling",
-              "tableau",
-              "team leadership"
-            ]
-          }
-        },
-        {
-          "rank": 2,
-          "candidate_id": "1Sujan_Sharma",
-          "candidate_details": {
-            "name": "1Sujan_Sharma",
-            "email": "ersujansharma@gmail.com",
-            "phone": "2025",
-            "extracted_skills_count": 59,
-            "top_skills": [
-              "agile",
-              "analysis",
-              "artificial intelligence",
-              "aws",
-              "aws ec2",
-              "bash",
-              "c++",
-              "ci/cd",
-              "cloud",
-              "data analysis"
-            ]
-          },
-          "recommendation_tier": "Not Recommended",
-          "match_scores": {
-            "overall_fit_percentage": 46.04,
-            "semantic_context_score": 50.19,
-            "skill_coverage_score": 36.36
-          },
-          "skills_analysis": {
-            "matched_skills_count": 4,
-            "missing_skills_count": 7,
-            "matched_skills": [
-              "dbt",
-              "machine learning",
-              "python",
-              "sql"
-            ],
-            "missing_skills": [
-              "airflow",
-              "domain expertise",
-              "experimentation",
-              "power bi",
-              "statistical modeling",
-              "tableau",
-              "team leadership"
-            ]
-          }
-        },
-        {
-          "rank": 3,
-          "candidate_id": "EthanMiller_Mechanical",
-          "candidate_details": {
-            "name": "EthanMiller_Mechanical",
-            "email": "ethan.miller@example.com",
-            "phone": "2023",
-            "extracted_skills_count": 7,
-            "top_skills": [
-              "autocad",
-              "d printing",
-              "design for manufacturing",
-              "fea",
-              "gd",
-              "solidworks",
-              "t standards."
-            ]
-          },
-          "recommendation_tier": "Not Recommended",
-          "match_scores": {
-            "overall_fit_percentage": 35.07,
-            "semantic_context_score": 50.1,
-            "skill_coverage_score": 0.0
-          },
-          "skills_analysis": {
-            "matched_skills_count": 0,
-            "missing_skills_count": 11,
-            "matched_skills": [],
-            "missing_skills": [
-              "airflow",
-              "dbt",
-              "domain expertise",
-              "experimentation",
-              "machine learning",
-              "power bi",
-              "python",
-              "sql",
-              "statistical modeling",
-              "tableau",
-              "team leadership"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "job_id": "JOB_63_Business_Intelligence_Analyst",
-      "job_title": "JOB_63_Business_Intelligence_Analyst",
-      "total_candidates_evaluated": 3,
-      "recommended_candidates": [
-        {
-          "rank": 1,
-          "candidate_id": "Arjun_Mehta_DataScience",
-          "candidate_details": {
-            "name": "Arjun_Mehta_DataScience",
-            "email": "arjun.mehta@example.com",
-            "phone": "2023",
-            "extracted_skills_count": 10,
-            "top_skills": [
-              "data science",
-              "github",
-              "machine learning",
-              "numpy",
-              "pandas",
-              "power bi",
-              "python",
-              "scikit-learn",
-              "sql",
-              "statistics"
-            ]
-          },
-          "recommendation_tier": "Consider / Worth Interviewing",
-          "match_scores": {
-            "overall_fit_percentage": 53.85,
-            "semantic_context_score": 69.14,
-            "skill_coverage_score": 18.18
-          },
-          "skills_analysis": {
-            "matched_skills_count": 2,
-            "missing_skills_count": 9,
-            "matched_skills": [
-              "power bi",
-              "sql"
-            ],
-            "missing_skills": [
-              "data governance",
-              "data modeling",
-              "dbt",
-              "etl",
-              "excel",
-              "looker",
-              "requirements gathering",
-              "snowflake",
-              "tableau"
-            ]
-          }
-        },
-        {
-          "rank": 2,
-          "candidate_id": "1Sujan_Sharma",
-          "candidate_details": {
-            "name": "1Sujan_Sharma",
-            "email": "ersujansharma@gmail.com",
-            "phone": "2025",
-            "extracted_skills_count": 59,
-            "top_skills": [
-              "agile",
-              "analysis",
-              "artificial intelligence",
-              "aws",
-              "aws ec2",
-              "bash",
-              "c++",
-              "ci/cd",
-              "cloud",
-              "data analysis"
-            ]
-          },
-          "recommendation_tier": "Not Recommended",
-          "match_scores": {
-            "overall_fit_percentage": 46.2,
-            "semantic_context_score": 50.41,
-            "skill_coverage_score": 36.36
-          },
-          "skills_analysis": {
-            "matched_skills_count": 4,
-            "missing_skills_count": 7,
-            "matched_skills": [
-              "data governance",
-              "dbt",
-              "snowflake",
-              "sql"
-            ],
-            "missing_skills": [
-              "data modeling",
-              "etl",
-              "excel",
-              "looker",
-              "power bi",
-              "requirements gathering",
-              "tableau"
-            ]
-          }
-        },
-        {
-          "rank": 3,
-          "candidate_id": "EthanMiller_Mechanical",
-          "candidate_details": {
-            "name": "EthanMiller_Mechanical",
-            "email": "ethan.miller@example.com",
-            "phone": "2023",
-            "extracted_skills_count": 7,
-            "top_skills": [
-              "autocad",
-              "d printing",
-              "design for manufacturing",
-              "fea",
-              "gd",
-              "solidworks",
-              "t standards."
-            ]
-          },
-          "recommendation_tier": "Not Recommended",
-          "match_scores": {
-            "overall_fit_percentage": 35.03,
-            "semantic_context_score": 50.04,
-            "skill_coverage_score": 0.0
-          },
-          "skills_analysis": {
-            "matched_skills_count": 0,
-            "missing_skills_count": 11,
-            "matched_skills": [],
-            "missing_skills": [
-              "data governance",
-              "data modeling",
-              "dbt",
-              "etl",
-              "excel",
-              "looker",
-              "power bi",
-              "requirements gathering",
-              "snowflake",
-              "sql",
-              "tableau"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "job_id": "JOB_64_Data_Architect",
-      "job_title": "JOB_64_Data_Architect",
-      "total_candidates_evaluated": 3,
-      "recommended_candidates": [
-        {
-          "rank": 1,
-          "candidate_id": "Arjun_Mehta_DataScience",
-          "candidate_details": {
-            "name": "Arjun_Mehta_DataScience",
-            "email": "arjun.mehta@example.com",
-            "phone": "2023",
-            "extracted_skills_count": 10,
-            "top_skills": [
-              "data science",
-              "github",
-              "machine learning",
-              "numpy",
-              "pandas",
-              "power bi",
-              "python",
-              "scikit-learn",
-              "sql",
-              "statistics"
-            ]
-          },
-          "recommendation_tier": "Not Recommended",
-          "match_scores": {
-            "overall_fit_percentage": 46.94,
-            "semantic_context_score": 59.92,
-            "skill_coverage_score": 16.67
-          },
-          "skills_analysis": {
-            "matched_skills_count": 2,
-            "missing_skills_count": 10,
-            "matched_skills": [
-              "machine learning",
-              "sql"
-            ],
-            "missing_skills": [
-              "cloud platforms",
-              "data governance",
-              "data mesh",
-              "data modeling",
-              "data warehousing",
-              "etl",
-              "lakehouse",
-              "nosql",
-              "streaming",
-              "technical leadership"
-            ]
-          }
-        },
-        {
-          "rank": 2,
-          "candidate_id": "1Sujan_Sharma",
-          "candidate_details": {
-            "name": "1Sujan_Sharma",
-            "email": "ersujansharma@gmail.com",
-            "phone": "2025",
-            "extracted_skills_count": 59,
-            "top_skills": [
-              "agile",
-              "analysis",
-              "artificial intelligence",
-              "aws",
-              "aws ec2",
-              "bash",
-              "c++",
-              "ci/cd",
-              "cloud",
-              "data analysis"
-            ]
-          },
-          "recommendation_tier": "Not Recommended",
-          "match_scores": {
-            "overall_fit_percentage": 43.29,
-            "semantic_context_score": 51.13,
-            "skill_coverage_score": 25.0
-          },
-          "skills_analysis": {
-            "matched_skills_count": 3,
-            "missing_skills_count": 9,
-            "matched_skills": [
-              "data governance",
-              "machine learning",
-              "sql"
-            ],
-            "missing_skills": [
-              "cloud platforms",
-              "data mesh",
-              "data modeling",
-              "data warehousing",
-              "etl",
-              "lakehouse",
-              "nosql",
-              "streaming",
-              "technical leadership"
-            ]
-          }
-        },
-        {
-          "rank": 3,
-          "candidate_id": "EthanMiller_Mechanical",
-          "candidate_details": {
-            "name": "EthanMiller_Mechanical",
-            "email": "ethan.miller@example.com",
-            "phone": "2023",
-            "extracted_skills_count": 7,
-            "top_skills": [
-              "autocad",
-              "d printing",
-              "design for manufacturing",
-              "fea",
-              "gd",
-              "solidworks",
-              "t standards."
-            ]
-          },
-          "recommendation_tier": "Not Recommended",
-          "match_scores": {
-            "overall_fit_percentage": 35.31,
-            "semantic_context_score": 50.44,
-            "skill_coverage_score": 0.0
-          },
-          "skills_analysis": {
-            "matched_skills_count": 0,
-            "missing_skills_count": 12,
-            "matched_skills": [],
-            "missing_skills": [
-              "cloud platforms",
-              "data governance",
-              "data mesh",
-              "data modeling",
-              "data warehousing",
-              "etl",
-              "lakehouse",
-              "machine learning",
-              "nosql",
-              "sql",
-              "streaming",
-              "technical leadership"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "job_id": "JOB_65_Machine_Learning_Researcher",
-      "job_title": "JOB_65_Machine_Learning_Researcher",
+      "job_id": "JOB_61_Machine_Learning_Researcher",
+      "job_title": "JOB_61_Machine_Learning_Researcher",
       "total_candidates_evaluated": 3,
       "recommended_candidates": [
         {
@@ -606,21 +30,22 @@
           },
           "recommendation_tier": "Consider / Worth Interviewing",
           "match_scores": {
-            "overall_fit_percentage": 53.45,
-            "semantic_context_score": 51.87,
-            "skill_coverage_score": 57.14
+            "overall_fit_percentage": 54.3,
+            "semantic_context_score": 51.85,
+            "skill_coverage_score": 60.0
           },
           "skills_analysis": {
-            "matched_skills_count": 8,
+            "matched_skills_count": 9,
             "missing_skills_count": 6,
             "matched_skills": [
               "aws",
-              "deep learning",
+              "ci/cd",
+              "data validation",
               "llms",
               "opencv",
               "python",
               "pytorch",
-              "scikit-learn",
+              "rag",
               "tensorflow"
             ],
             "missing_skills": [
@@ -656,21 +81,21 @@
           },
           "recommendation_tier": "Not Recommended",
           "match_scores": {
-            "overall_fit_percentage": 42.57,
-            "semantic_context_score": 54.69,
-            "skill_coverage_score": 14.29
+            "overall_fit_percentage": 39.43,
+            "semantic_context_score": 53.47,
+            "skill_coverage_score": 6.67
           },
           "skills_analysis": {
-            "matched_skills_count": 2,
-            "missing_skills_count": 12,
+            "matched_skills_count": 1,
+            "missing_skills_count": 14,
             "matched_skills": [
-              "python",
-              "scikit-learn"
+              "python"
             ],
             "missing_skills": [
               "aws",
+              "ci/cd",
               "computer vision",
-              "deep learning",
+              "data validation",
               "genai",
               "llms",
               "mathematics",
@@ -678,6 +103,7 @@
               "opencv",
               "phd",
               "pytorch",
+              "rag",
               "reinforcement learning",
               "tensorflow"
             ]
@@ -709,12 +135,13 @@
           },
           "skills_analysis": {
             "matched_skills_count": 0,
-            "missing_skills_count": 14,
+            "missing_skills_count": 15,
             "matched_skills": [],
             "missing_skills": [
               "aws",
+              "ci/cd",
               "computer vision",
-              "deep learning",
+              "data validation",
               "genai",
               "llms",
               "mathematics",
@@ -723,9 +150,294 @@
               "phd",
               "python",
               "pytorch",
+              "rag",
               "reinforcement learning",
-              "scikit-learn",
               "tensorflow"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "job_id": "JOB_62_Senior_Data_Analyst",
+      "job_title": "JOB_62_Senior_Data_Analyst",
+      "total_candidates_evaluated": 3,
+      "recommended_candidates": [
+        {
+          "rank": 1,
+          "candidate_id": "Arjun_Mehta_DataScience",
+          "candidate_details": {
+            "name": "Arjun_Mehta_DataScience",
+            "email": "arjun.mehta@example.com",
+            "phone": "2023",
+            "extracted_skills_count": 10,
+            "top_skills": [
+              "data science",
+              "github",
+              "machine learning",
+              "numpy",
+              "pandas",
+              "power bi",
+              "python",
+              "scikit-learn",
+              "sql",
+              "statistics"
+            ]
+          },
+          "recommendation_tier": "Consider / Worth Interviewing",
+          "match_scores": {
+            "overall_fit_percentage": 61.4,
+            "semantic_context_score": 72.13,
+            "skill_coverage_score": 36.36
+          },
+          "skills_analysis": {
+            "matched_skills_count": 4,
+            "missing_skills_count": 7,
+            "matched_skills": [
+              "machine learning",
+              "power bi",
+              "python",
+              "sql"
+            ],
+            "missing_skills": [
+              "airflow",
+              "data validation",
+              "dbt",
+              "domain expertise",
+              "git",
+              "statistical modeling",
+              "team leadership"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "candidate_id": "1Sujan_Sharma",
+          "candidate_details": {
+            "name": "1Sujan_Sharma",
+            "email": "ersujansharma@gmail.com",
+            "phone": "2025",
+            "extracted_skills_count": 59,
+            "top_skills": [
+              "agile",
+              "analysis",
+              "artificial intelligence",
+              "aws",
+              "aws ec2",
+              "bash",
+              "c++",
+              "ci/cd",
+              "cloud",
+              "data analysis"
+            ]
+          },
+          "recommendation_tier": "Consider / Worth Interviewing",
+          "match_scores": {
+            "overall_fit_percentage": 51.64,
+            "semantic_context_score": 50.39,
+            "skill_coverage_score": 54.55
+          },
+          "skills_analysis": {
+            "matched_skills_count": 6,
+            "missing_skills_count": 5,
+            "matched_skills": [
+              "data validation",
+              "dbt",
+              "git",
+              "machine learning",
+              "python",
+              "sql"
+            ],
+            "missing_skills": [
+              "airflow",
+              "domain expertise",
+              "power bi",
+              "statistical modeling",
+              "team leadership"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "candidate_id": "EthanMiller_Mechanical",
+          "candidate_details": {
+            "name": "EthanMiller_Mechanical",
+            "email": "ethan.miller@example.com",
+            "phone": "2023",
+            "extracted_skills_count": 7,
+            "top_skills": [
+              "autocad",
+              "d printing",
+              "design for manufacturing",
+              "fea",
+              "gd",
+              "solidworks",
+              "t standards."
+            ]
+          },
+          "recommendation_tier": "Not Recommended",
+          "match_scores": {
+            "overall_fit_percentage": 35.06,
+            "semantic_context_score": 50.08,
+            "skill_coverage_score": 0.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 0,
+            "missing_skills_count": 11,
+            "matched_skills": [],
+            "missing_skills": [
+              "airflow",
+              "data validation",
+              "dbt",
+              "domain expertise",
+              "git",
+              "machine learning",
+              "power bi",
+              "python",
+              "sql",
+              "statistical modeling",
+              "team leadership"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "job_id": "JOB_63_Business_Intelligence_Analyst",
+      "job_title": "JOB_63_Business_Intelligence_Analyst",
+      "total_candidates_evaluated": 3,
+      "recommended_candidates": [
+        {
+          "rank": 1,
+          "candidate_id": "Arjun_Mehta_DataScience",
+          "candidate_details": {
+            "name": "Arjun_Mehta_DataScience",
+            "email": "arjun.mehta@example.com",
+            "phone": "2023",
+            "extracted_skills_count": 10,
+            "top_skills": [
+              "data science",
+              "github",
+              "machine learning",
+              "numpy",
+              "pandas",
+              "power bi",
+              "python",
+              "scikit-learn",
+              "sql",
+              "statistics"
+            ]
+          },
+          "recommendation_tier": "Consider / Worth Interviewing",
+          "match_scores": {
+            "overall_fit_percentage": 55.31,
+            "semantic_context_score": 70.45,
+            "skill_coverage_score": 20.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 2,
+            "missing_skills_count": 8,
+            "matched_skills": [
+              "power bi",
+              "sql"
+            ],
+            "missing_skills": [
+              "data governance",
+              "data modeling",
+              "dbt",
+              "etl",
+              "git",
+              "looker",
+              "mlflow",
+              "snowflake"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "candidate_id": "1Sujan_Sharma",
+          "candidate_details": {
+            "name": "1Sujan_Sharma",
+            "email": "ersujansharma@gmail.com",
+            "phone": "2025",
+            "extracted_skills_count": 59,
+            "top_skills": [
+              "agile",
+              "analysis",
+              "artificial intelligence",
+              "aws",
+              "aws ec2",
+              "bash",
+              "c++",
+              "ci/cd",
+              "cloud",
+              "data analysis"
+            ]
+          },
+          "recommendation_tier": "Consider / Worth Interviewing",
+          "match_scores": {
+            "overall_fit_percentage": 53.3,
+            "semantic_context_score": 50.43,
+            "skill_coverage_score": 60.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 6,
+            "missing_skills_count": 4,
+            "matched_skills": [
+              "data governance",
+              "dbt",
+              "git",
+              "mlflow",
+              "snowflake",
+              "sql"
+            ],
+            "missing_skills": [
+              "data modeling",
+              "etl",
+              "looker",
+              "power bi"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "candidate_id": "EthanMiller_Mechanical",
+          "candidate_details": {
+            "name": "EthanMiller_Mechanical",
+            "email": "ethan.miller@example.com",
+            "phone": "2023",
+            "extracted_skills_count": 7,
+            "top_skills": [
+              "autocad",
+              "d printing",
+              "design for manufacturing",
+              "fea",
+              "gd",
+              "solidworks",
+              "t standards."
+            ]
+          },
+          "recommendation_tier": "Not Recommended",
+          "match_scores": {
+            "overall_fit_percentage": 35.02,
+            "semantic_context_score": 50.03,
+            "skill_coverage_score": 0.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 0,
+            "missing_skills_count": 10,
+            "matched_skills": [],
+            "missing_skills": [
+              "data governance",
+              "data modeling",
+              "dbt",
+              "etl",
+              "git",
+              "looker",
+              "mlflow",
+              "power bi",
+              "snowflake",
+              "sql"
             ]
           }
         }
