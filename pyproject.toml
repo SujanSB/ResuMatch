@@ -1,7 +1,11 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "resumatch"
 version = "0.1.0"
-description = "A semantic CV and job description matching engine"
+description = "A semantic CV and job description matching, recommendation and visualization engine"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -26,3 +30,9 @@ resumatch = "resumatch.__main__:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["resumatch"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.1.0",
+]
