@@ -6,7 +6,7 @@
 
 ## Features
 
-- **Multi-Format Parsing:** Supports `.pdf`, `.docx`, and `.txt` resumes.
+- **Multi-Format Parsing:** Supports `.pdf`, `.docx`, and `.txt` resumes. (better on PDF)
 - **Hybrid Matching:** Uses bi-encoder retrieval and cross-encoder re-ranking.
 - **Skill Extraction:** Extracts contact details, experience, and skills.
 - **Skill Gap Analysis:** Identifies matched, missing, and related skills.
@@ -64,7 +64,7 @@ RESUMATCH/
 The processing pipeline is organized into five modular layers:
 
 1. **Input Layer**
-   * **PDF Resume Directory:** Ingests candidate resumes in multiple formats (`.pdf`, `.docx`, `.txt`).
+   * **PDF Resume Directory:** Ingests candidate resumes in multiple formats (`.pdf`, `.docx`, `.txt`). 
    * **Job Descriptions CSV:** Loads structured job description datasets.
 
 2. **Data Loading & Parsing Layer**
@@ -111,6 +111,11 @@ Clone the repository and install the package:
 git clone https://github.com/SujanSB/ResuMatch.git
    
 cd ResuMatch
+
+# create venv
+uv venv
+# activate venv
+source .venv/bin/activate
 
 uv pip install -e .    
 ```
@@ -173,7 +178,7 @@ The project uses Ruff for formatting and linting:
 uv run ruff format .
 uv run ruff check .
 ``` 
-### Tests can be run with:
+### Tests of the Overall Pipeline:
 ``` bash
 uv run pytest tests/test_overall_pipeline.py
 ```
@@ -181,7 +186,7 @@ uv run pytest tests/test_overall_pipeline.py
 ---
 ## Limitations
 
-1. **Synthetic Data:** Default datasets may not fully represent real-world resumes and job descriptions.
+1. **Synthetic Data:** Default synthetic datasets may not fully represent real-world resumes and job descriptions.
 2. **Rule-Based Extraction:** Regex and static skill taxonomies may miss unconventional skills, formats, or sections.
 3. **Static Models:** Embeddings and skill weights are not fine-tuned for recruitment domains.
 
@@ -192,3 +197,4 @@ uv run pytest tests/test_overall_pipeline.py
 1. **LLM-Based Extraction:** Use LLMs for flexible and contextual entity and skill extraction.
 2. **Domain Fine-Tuning:** Fine-tune retrieval and re-ranking models on real-world HR datasets.
 3. **Dynamic Skill Mapping:** Use knowledge graphs or GNNs to capture relationships between related skills.
+
