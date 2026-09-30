@@ -1,6 +1,6 @@
 from resumatch.extractor import ProfileExtractor
 from resumatch.matcher import CompositeMatcher, DeepReranker, SemanticRetriever, SkillOverlapHeuristics
-from resumatch.models import MatchResult
+from resumatch.utils.models import MatchResult
 from resumatch.parser import DocumentParser
 from resumatch.recommender import CandidateRecommender
 from resumatch.utils.job_loader import load_jobs_from_csv
