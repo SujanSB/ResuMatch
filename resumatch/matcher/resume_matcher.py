@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 from typing_extensions import Dict, List, Any, Union
 import numpy as np
 import logging
-from resumatch.models import MatchResult
+from resumatch.utils.models import MatchResult
 from resumatch.matcher.retriever import SemanticRetriever
 from resumatch.matcher.reranker import DeepReranker
 from resumatch.matcher.heuristics import SkillOverlapHeuristics, SkillAnalysisResult
@@ -36,6 +36,24 @@ class CompositeMatcher:
         job_text: str,
         job_skills: set[str],
     ) -> MatchResult:
+
+
+        # # --- DEBUG PRINT: INPUT SKILLS ---
+        # print(f"\n==========================================")
+        # print(f"SINGLE EVALUATION: Job [{job_id}] vs CV [{cv_id}]")
+        # print(f"Job Required Skills ({len(job_skills)}): {sorted(job_skills)}")
+        # print(f"CV Extracted Skills  ({len(cv_skills)}): {sorted(cv_skills)}")
+        
+        rerank_score = self.reranker.rerank(job_text, [cv_text])[0]
+        skill_res: SkillAnalysisResult = self.heuristics.evaluate_skills(
+            cv_skills, job_skills
+        )
+
+        # # --- DEBUG PRINT: MATCH RESULTS ---
+        # print(f"Matched Skills ({len(skill_res.matched_skills)}): {sorted(skill_res.matched_skills)}")
+        # print(f"Missing Skills ({len(skill_res.missing_skills)}): {sorted(skill_res.missing_skills)}")
+        # print(f"Skill Score: {skill_res.score * 100:.2f}%")
+        # print(f"==========================================\n")
        
         # direct rerank 
         rerank_score = self.reranker.rerank(job_text, [cv_text])[0]
@@ -87,6 +105,13 @@ class CompositeMatcher:
             job_text = job["text"]
             job_skills = set(job.get("skills", set()))
 
+
+            # # --- DEBUG PRINT: JOB REQUIREMENTS ---
+            # print(f"\n==================================================")
+            # print(f"BATCH EVALUATION FOR JOB: [{job_id}]")
+            # print(f"Job Skills Required ({len(job_skills)}): {sorted(job_skills)}")
+            # print(f"==================================================")
+
             # step 1: Fast retrieval
             job_embedding = self.retriever.encode([job_text])
             effective_k = min(len(candidates), top_k_retrieval)
@@ -110,7 +135,13 @@ class CompositeMatcher:
                 overall = (self.semantic_weight * sem_score) + (
                     self.skill_weight * skill_res.score
                 )
-
+                # --- DEBUG PRINT: CANDIDATE MATCH DETAILS ---
+                
+                # print(f"  ├─ CV Skills ({len(cand_skills)}): {sorted(cand_skills)}")
+                # print(f"  ├─ Matched   ({len(skill_res.matched_skills)}): {sorted(skill_res.matched_skills)}")
+                # print(f"  ├─ Missing   ({len(skill_res.missing_skills)}): {sorted(skill_res.missing_skills)}")
+                # print(f"  └─ Skill Score: {skill_res.score * 100:.2f}% | Semantic: {sem_score * 100:.2f}%")
+                
                 job_matches.append(
                     MatchResult(
                         cv_id=cand["id"],

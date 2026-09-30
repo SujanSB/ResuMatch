@@ -10,7 +10,8 @@ class SkillAnalysisResult:
 class SkillOverlapHeuristics:
     @staticmethod
     def normalize_skill(skill: str) -> str:
-        return skill.strip().title()
+        return skill.strip().lower()
+    
     # with basic formula: coverage_ratio = len(matched_skills) / len(job_skills)
     def evaluate_skills(
         self, cv_skills: set[str], job_skills: set[str]
@@ -18,13 +19,13 @@ class SkillOverlapHeuristics:
         if not job_skills:
             return SkillAnalysisResult(score=1.0)
 
-        normalized_cv = {self.normalize_skill(s) for s in cv_skills}
-        normalized_job = {self.normalize_skill(s) for s in job_skills}
+        normalized_cv = {self.normalize_skill(s) for s in cv_skills if s}
+        normalized_job = {self.normalize_skill(s) for s in job_skills if s}
 
         matched = normalized_cv.intersection(normalized_job)
         missing = normalized_job - normalized_cv
 
-        coverage_ratio = len(matched) / len(normalized_job)
+        coverage_ratio = len(matched) / len(normalized_job) if normalized_job else 0.0
 
         return SkillAnalysisResult(
             score=float(coverage_ratio),

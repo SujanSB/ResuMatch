@@ -17,10 +17,9 @@ class DeepReranker:
         pairs = [[query, doc] for doc in documents]
         raw_logits = self.model.predict(pairs)
 
-        if isinstance(raw_logits, (float, int, np.floating)):
-            raw_logits = np.array([raw_logits])
+        # Ensure raw_logits is always at least a 1D array
+        raw_logits = np.atleast_1d(np.asarray(raw_logits))
 
-        # use Sigmoid to make in range of 0.0 - 1.0 range
         scores = 1 / (1 + np.exp(-raw_logits))
         return [float(s) for s in scores]
 
