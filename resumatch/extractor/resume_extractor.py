@@ -1,7 +1,7 @@
 # Extractor for information extraction from resumes
 import re
 from typing import Literal
-
+from typing import Literal, Dict, List
 from resumatch.extractor.constants import (
     CONTACT_PATTERNS,
     DEFAULT_SKILL_TAXONOMY,
@@ -9,8 +9,9 @@ from resumatch.extractor.constants import (
     SKILLS_SECTION_PATTERN,
     STOPWORD_EXCLUSIONS,
     TECH_ENTITY_PATTERN,
+    HEADER_STOPWORDS 
 )
-from resumatch.models import ExtractedProfile
+from resumatch.utils.models import ExtractedProfile
 
 # extracts candidate metadata, contact info, degrees, and skills.
 class ProfileExtractor:
@@ -31,6 +32,10 @@ class ProfileExtractor:
 
         degrees = self._extract_degrees(text)
 
+        section_texts = self._extract_sections(text)
+        achievements = self._extract_achievements(text, section_texts)
+        volunteering = self._extract_volunteering(text, section_texts)
+        
         # extract taxonomy skills
         taxonomy_skills = (
             self._extract_taxonomy_skills(text)
@@ -55,7 +60,7 @@ class ProfileExtractor:
         all_skills = taxonomy_skills.union(dynamic_skills)
 
         return ExtractedProfile(
-            raw_text=text,
+raw_text=text,
             email=email,
             phone=phone,
             github=github,
@@ -65,6 +70,9 @@ class ProfileExtractor:
             taxonomy_skills=taxonomy_skills,
             dynamic_skills=dynamic_skills,
             skills_with_sources=skills_with_sources,
+            achievements=achievements,
+            volunteering=volunteering,
+            section_texts=section_texts,
         )
 
     def _extract_regex(self, text: str, pattern: str) -> str | None:
@@ -80,57 +88,138 @@ class ProfileExtractor:
                 found_degrees.append(degree_name)
         return found_degrees
 
+    def _extract_sections(self, text: str) -> Dict[str, str]:
+        """Splits raw text into key sections for downstream visualizer context."""
+        sections = {
+            "Experience": "",
+            "Projects": "",
+            "Education": "",
+            "Awards": "",
+            "Volunteering": "",
+        }
+
+        # Header detection regex
+        exp_match = re.search(
+            r"(?i)(work experience|experience|employment history)(.*?)(?=education|projects|skills|certifications|volunteering|awards|\Z)",
+            text,
+            re.DOTALL,
+        )
+        proj_match = re.search(
+            r"(?i)(projects|key projects)(.*?)(?=experience|education|skills|certifications|volunteering|awards|\Z)",
+            text,
+            re.DOTALL,
+        )
+        award_match = re.search(
+            r"(?i)(certifications & awards|awards|honors|achievements)(.*?)(?=experience|projects|education|skills|volunteering|\Z)",
+            text,
+            re.DOTALL,
+        )
+        vol_match = re.search(
+            r"(?i)(volunteering|volunteer|teaching experience|training and mentorship)(.*?)(?=experience|projects|education|skills|awards|\Z)",
+            text,
+            re.DOTALL,
+        )
+
+        if exp_match:
+            sections["Experience"] = exp_match.group(2).strip()
+        if proj_match:
+            sections["Projects"] = proj_match.group(2).strip()
+        if award_match:
+            sections["Awards"] = award_match.group(2).strip()
+        if vol_match:
+            sections["Volunteering"] = vol_match.group(2).strip()
+
+        return sections
+
+    def _extract_achievements(
+        self, text: str, sections: Dict[str, str]
+    ) -> List[str]:
+        """Extracts bullet points containing metrics, awards, or key impact phrases."""
+        highlights: List[str] = []
+        target_text = sections.get("Awards") or text
+
+        lines = [line.strip() for line in target_text.split("\n") if line.strip()]
+        metric_pattern = r"(?i)(\baward\b|\bhonors?\b|\bscholarship\b|\bfirst\b|\b%\b|\$\d+|\breduced\b|\bincreased\b|\bachieved\b)"
+
+        for line in lines:
+            clean_line = re.sub(r"^[•\-\*\d\.\s]+", "", line).strip()
+            if len(clean_line) > 15 and re.search(metric_pattern, clean_line):
+                # Format long lines
+                truncated = clean_line[:110] + "..." if len(clean_line) > 110 else clean_line
+                if truncated not in highlights:
+                    highlights.append(truncated)
+            if len(highlights) >= 3:
+                break
+
+        return highlights
+
+    def _extract_volunteering(
+        self, text: str, sections: Dict[str, str]
+    ) -> List[str]:
+        """Extracts leadership, mentorship, or volunteering entries."""
+        vol_items: List[str] = []
+        target_text = sections.get("Volunteering") or ""
+
+        if not target_text:
+            vol_match = re.search(
+                r"(?i)(mentor|mentored|judge|judged|trainer|trained|volunteered|community)(.*?)(?=\n\n|\Z)",
+                text,
+            )
+            if vol_match:
+                target_text = vol_match.group(0)
+
+        lines = [line.strip() for line in target_text.split("\n") if line.strip()]
+        for line in lines:
+            clean_line = re.sub(r"^[•\-\*\d\.\s]+", "", line).strip()
+            if len(clean_line) > 15 and not any(h in clean_line.lower() for h in HEADER_STOPWORDS):
+                truncated = clean_line[:110] + "..." if len(clean_line) > 110 else clean_line
+                if truncated not in vol_items:
+                    vol_items.append(truncated)
+            if len(vol_items) >= 3:
+                break
+
+        return vol_items
+
     def _extract_taxonomy_skills(self, text: str) -> set[str]:
-        # extract skills 
         clean_text = text.lower()
         found_skills: set[str] = set()
 
         for skill in self.taxonomy:
             escaped_skill = re.escape(skill.lower())
-            pattern = rf"(?<![a-zA-Z0-9]){escaped_skill}(?![a-zA-Z0-9])"
+            # prevent 'c' from matching inside 'c++' or 'c#'
+            pattern = rf"(?<![a-zA-Z0-9]){escaped_skill}(?![a-zA-Z0-9+#.])"
             if re.search(pattern, clean_text):
-                found_skills.add(skill.title())
+                found_skills.add(skill)
 
         return found_skills
+    
 
-    def _extract_dynamic_skills(
-        self, text: str, exclude: set[str]
-    ) -> set[str]:
-        # extract skills that might not be in taxonomy with regex
+    def _extract_dynamic_skills(self, text: str, exclude: set[str]) -> set[str]:
+
         discovered: set[str] = set()
-        exclude_lower = {s.lower() for s in exclude}
+        exclude_lower = {s.lower() for s in exclude} | HEADER_STOPWORDS
 
-        # parse dedicated skills section
         section_match = re.search(
             SKILLS_SECTION_PATTERN, text, flags=re.IGNORECASE | re.DOTALL
         )
 
         if section_match:
             section_text = section_match.group(1)
-            raw_tokens = re.split(r"[,•|;\n]", section_text)
+            # Split on colons, commas, pipes, semicolons, asterisks, newlines, and bullet points
+            raw_tokens = re.split(r"[:,•|;\n\*\&]", section_text)
+            
             for token in raw_tokens:
                 clean_token = re.sub(r"^[\s\-\*\•\d\.]+", "", token).strip()
-                if 2 <= len(clean_token) <= 30 and not any(
-                    c in clean_token for c in ["@", "http", "/"]
-                ):
-                    if clean_token.lower() not in exclude_lower:
-                        formatted = " ".join(
-                            word.capitalize() for word in clean_token.split()
-                        )
-                        discovered.add(formatted)
+                clean_token = re.sub(r"[\(\)]", "", clean_token).strip()
 
-        # technical entity regex (CamelCase, Acronyms, extensions)
-        for match in re.finditer(TECH_ENTITY_PATTERN, text):
-            token = match.group(0).strip()
-            if (
-                token.lower() not in exclude_lower
-                and token.lower() not in STOPWORD_EXCLUSIONS
-                and len(token) >= 2
-            ):
-                discovered.add(token)
+                if 2 <= len(clean_token) <= 30 and not any(
+                    c in clean_token for c in ["@", "http", "/", "\\"]
+                ):
+                    token_lower = clean_token.lower()
+                    if token_lower not in exclude_lower:
+                        discovered.add(token_lower)
 
         return discovered
-
 
 def run_extractor(cv_text: str) -> None:
     """Run extraction demo on a sample string."""
