@@ -1,0 +1,44 @@
+{
+  "mode": "batch_ranking",
+  "total_jobs_evaluated": 1,
+  "jobs": [
+    {
+      "job_id": "JOB_0_",
+      "job_title": "JOB_0_",
+      "total_candidates_evaluated": 1,
+      "recommended_candidates": [
+        {
+          "rank": 1,
+          "candidate_id": "Cand_01_SoftwareEngineer",
+          "candidate_details": {
+            "name": "Cand_01_SoftwareEngineer",
+            "email": "candidate@example.com",
+            "phone": "N/A",
+            "extracted_skills_count": 7,
+            "top_skills": [
+              "docker",
+              "linux",
+              "matplotlib",
+              "pandas",
+              "python",
+              "pytorch",
+              "sql"
+            ]
+          },
+          "recommendation_tier": "Consider / Worth Interviewing",
+          "match_scores": {
+            "overall_fit_percentage": 65.08,
+            "semantic_context_score": 50.12,
+            "skill_coverage_score": 100.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 0,
+            "missing_skills_count": 0,
+            "matched_skills": [],
+            "missing_skills": []
+          }
+        }
+      ]
+    }
+  ]
+}
