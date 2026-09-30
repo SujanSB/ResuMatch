@@ -1,0 +1,74 @@
+Summary
+
+Data and Business Analyst with experience in data analysis, statistical modeling, SQL reporting, business intelligence, and dashboard development. Strong hands-on expertise in Python, SQL, Power BI, Pandas, and data visualization, with experience transforming raw datasets into actionable business insights. Skilled in data validation, exploratory analysis, data modeling, and communicating analytical findings to stakeholders. Familiar with machine learning workflows and modern data engineering practices.
+
+Skills
+
+|  |  |
+| --- | --- |
+| * Python * SQL * R * Git | * Power BI * Tableau * Excel |
+| * Pandas * NumPy * Scikit-Learn | * Statistical Modeling * Data Validation |
+| * Data Modeling * ETL * dbt | * Machine Learning * Data Visualization |
+| * Business Analysis * Reporting | * Problem Solving * Data Analytics |
+
+Experience
+
+CivicMetrics    Data Analyst   06/2025 to 09/2025
+
+- Analyzed survey and operational datasets using Python and Pandas to support recurring business reporting.
+- Developed SQL queries to combine customer and transaction data for analytical reporting.
+- Built Power BI and Tableau dashboards to monitor service volume, response time, and customer satisfaction.
+- Performed exploratory and statistical analysis to identify trends, patterns, and potential business improvements.
+- Prepared analytical reports and communicated data-driven findings to stakeholders.
+- Applied data validation and cleaning techniques to improve the quality and consistency of reporting datasets.
+
+Projects
+
+Customer Analytics and Predictive Modeling
+
+- Developed predictive models using Python, Pandas, and Scikit-Learn to analyze customer behavior and business trends.
+- Performed feature engineering, statistical analysis, and model evaluation on structured datasets.
+- Built reusable data-processing workflows for cleaning, transformation, and analysis.
+
+Business Intelligence Analytics
+
+- Designed interactive Power BI dashboards for business performance monitoring and KPI analysis.
+- Created structured data models and transformed raw datasets for reporting purposes.
+- Developed visualizations to communicate operational trends and analytical insights.
+
+Education and Training
+
+Bachelor of Science : Data Science | 2025 | University of Cincinnati, Cincinnati, OH
+
+Relevant Coursework:
+- Statistical Modeling
+- Machine Learning
+- Database Systems
+- Data Analytics
+- Data Visualization
+- Python Programming
+
+Volunteer:
+Taught introductory spreadsheet and data literacy workshops at a community center
+
+Skills
+
+- Python
+- SQL
+- R
+- Git
+- Power BI
+- Tableau
+- Excel
+- Pandas
+- NumPy
+- Scikit-Learn
+- Statistical Modeling
+- Data Validation
+- Data Modeling
+- ETL
+- dbt
+- Machine Learning
+- Data Visualization
+- Business Analysis
+- Reporting
