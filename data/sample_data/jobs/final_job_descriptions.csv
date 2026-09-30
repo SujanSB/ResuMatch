@@ -139,14 +139,14 @@ JobID,Title,Category,ExperienceLevel,YearsOfExperience,Skills,Responsibilities,P
 
         Key Responsibilities:
         Build predictive models. Analyze large datasets. Communicate findings to stakeholders. Design experiments. Deploy ML models. Collaborate with engineering teams"
-11,Machine Learning Engineer,INFORMATION-TECHNOLOGY,Senior,5+,"Python, TensorFlow, PyTorch, MLflow, Kubernetes, Docker, SQL, Feature Engineering, Model Deployment",Design ML pipelines. Deploy models to production. Optimize model performance. Build feature stores. Collaborate with data scientists. Monitor model drift,"Ray, Kubeflow, Spark, Deep Learning",Master's or PhD in CS or related,Seattle WA,"Job Title: Machine Learning Engineer
+11,Machine Learning Engineer,INFORMATION-TECHNOLOGY,Senior,5+,"Python, TensorFlow, PyTorch, MLflow, Kubernetes, Docker, SQL, Feature Engineering, CI/CD",Design ML pipelines. Deploy models to production. Optimize model performance. Build feature stores. Collaborate with data scientists. Monitor model drift,"Ray, Kubeflow, Spark, Deep Learning",Master's or PhD in CS or related,Seattle WA,"Job Title: Machine Learning Engineer
         Category: INFORMATION-TECHNOLOGY
         Experience Level: Senior (5+ years)
 
         Education Required: Master's or PhD in CS or related
 
         Required Skills:
-        Python, TensorFlow, PyTorch, MLflow, Kubernetes, Docker, SQL, Feature Engineering, Model Deployment
+        Python, TensorFlow, PyTorch, MLflow, Kubernetes, Docker, SQL, Feature Engineering, CI/CD
 
         Preferred Skills:
         Ray, Kubeflow, Spark, Deep Learning
@@ -895,42 +895,42 @@ JobID,Title,Category,ExperienceLevel,YearsOfExperience,Skills,Responsibilities,P
 
         Key Responsibilities:
         Design data architectures. Define data standards. Lead data initiatives. Mentor engineers. Evaluate technologies. Ensure data quality"
-65,Machine Learning Researcher,DATA-SCIENCE,Senior,5+,"Deep Learning, Python, PyTorch, TensorFlow, Research, Publications, Mathematics, Experimentation",Conduct ML research. Publish papers. Develop novel algorithms. Collaborate with engineers. Present at conferences. Mentor junior researchers,"NLP, Computer Vision, Reinforcement Learning, PhD",PhD in CS or related,San Francisco CA,"Job Title: Machine Learning Researcher
+65,Machine Learning Researcher,DATA-SCIENCE,Senior,5+,"Deep Learning, Python,Scikit-Learn, PyTorch, TensorFlow, OpenCV,GenAI,AWS, LLMs, Mathematics",Conduct ML research. Publish papers. Develop novel algorithms. Collaborate with engineers. Present at conferences. Mentor junior researchers,"NLP, Computer Vision, Reinforcement Learning, PhD",PhD in CS or related,San Francisco CA,"Job Title: Machine Learning Researcher
         Category: DATA-SCIENCE
         Experience Level: Senior (5+ years)
 
         Education Required: PhD in CS or related
 
         Required Skills:
-        Deep Learning, Python, PyTorch, TensorFlow, Research, Publications, Mathematics, Experimentation
+        Deep Learning, Python,Scikit-Learn, PyTorch, TensorFlow, OpenCV, GenAI, AWS,LLMs, Mathematics
 
         Preferred Skills:
         NLP, Computer Vision, Reinforcement Learning, PhD
 
         Key Responsibilities:
         Conduct ML research. Publish papers. Develop novel algorithms. Collaborate with engineers. Present at conferences. Mentor junior researchers"
-66,NLP Engineer,DATA-SCIENCE,Experienced,3-5,"Python, NLP, Transformers, BERT, spaCy, NLTK, Deep Learning, Model Deployment",Build NLP models. Fine-tune transformers. Deploy models. Build data pipelines. Collaborate with product. Evaluate model performance,"LLMs, RAG, Prompt Engineering, Speech Recognition",Master's in CS or related,Remote,"Job Title: NLP Engineer
+66,NLP Engineer,DATA-SCIENCE,Experienced,3-5,"Python, NLP, Transformers, BERT, spaCy, NLTK, Deep Learning, CI/CD",Build NLP models. Fine-tune transformers. Deploy models. Build data pipelines. Collaborate with product. Evaluate model performance,"LLMs, RAG, Prompt Engineering, Speech Recognition",Master's in CS or related,Remote,"Job Title: NLP Engineer
         Category: DATA-SCIENCE
         Experience Level: Experienced (3-5 years)
 
         Education Required: Master's in CS or related
 
         Required Skills:
-        Python, NLP, Transformers, BERT, spaCy, NLTK, Deep Learning, Model Deployment
+        Python, NLP, Transformers, BERT, spaCy, NLTK, Deep Learning, CI/CD
 
         Preferred Skills:
         LLMs, RAG, Prompt Engineering, Speech Recognition
 
         Key Responsibilities:
         Build NLP models. Fine-tune transformers. Deploy models. Build data pipelines. Collaborate with product. Evaluate model performance"
-67,Computer Vision Engineer,DATA-SCIENCE,Experienced,3-5,"Python, OpenCV, PyTorch, TensorFlow, Deep Learning, Image Processing, Model Deployment, CUDA",Build CV models. Process image data. Deploy models. Optimize inference. Collaborate with product. Evaluate performance,"3D Vision, SLAM, Autonomous Driving, Edge Deployment",Master's in CS or related,San Jose CA,"Job Title: Computer Vision Engineer
+67,Computer Vision Engineer,DATA-SCIENCE,Experienced,3-5,"Python, OpenCV, PyTorch, TensorFlow, Deep Learning, Image Processing, CI/CD, CUDA",Build CV models. Process image data. Deploy models. Optimize inference. Collaborate with product. Evaluate performance,"3D Vision, SLAM, Autonomous Driving, Edge Deployment",Master's in CS or related,San Jose CA,"Job Title: Computer Vision Engineer
         Category: DATA-SCIENCE
         Experience Level: Experienced (3-5 years)
 
         Education Required: Master's in CS or related
 
         Required Skills:
-        Python, OpenCV, PyTorch, TensorFlow, Deep Learning, Image Processing, Model Deployment, CUDA
+        Python, OpenCV, PyTorch, TensorFlow, Deep Learning, Image Processing, CI/CD, CUDA
 
         Preferred Skills:
         3D Vision, SLAM, Autonomous Driving, Edge Deployment
