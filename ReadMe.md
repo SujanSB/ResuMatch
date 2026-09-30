@@ -190,6 +190,8 @@ uv run pytest tests/test_overall_pipeline.py
 1. **Synthetic Data:** Default synthetic datasets may not fully represent real-world resumes and job descriptions.
 2. **Rule-Based Extraction:** Regex and static skill taxonomies may miss unconventional skills, formats, or sections.
 3. **Static Models:** Embeddings and skill weights are not fine-tuned for recruitment domains.
+4. **External Model/API Constraints:** Sometime Hugging Face dependencies may cause rate limits (`429`), cold starts, and network delays during batch scoring.
+
 
 ---
 
