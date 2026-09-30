@@ -1,40 +1,40 @@
 JobID,Title,Category,ExperienceLevel,YearsOfExperience,Skills,Responsibilities,PreferredSkills,Education,Location,FullProcessedDescription
-61,Data Analyst,DATA-SCIENCE,Junior,1-3,"SQL, Excel, Python, Tableau, Data Visualization, Statistical Analysis, Reporting",Analyze business data. Create dashboards. Write SQL queries. Present findings. Collaborate with stakeholders. Automate reports,"R, Power BI, A/B Testing, ETL",Bachelor's in Statistics or related,Remote,"Job Title: Data Analyst
+61,Machine Learning Researcher,DATA-SCIENCE,Senior,5+,"Python, PyTorch, TensorFlow, GenAI, LLMs, Mathematics, AWS, CI/CD, OpenCV, RAG, Data Validation",Conduct ML research. Publish papers. Develop novel algorithms. Collaborate with engineers. Present at conferences. Mentor junior researchers,"NLP, Computer Vision, Reinforcement Learning, PhD",PhD in CS or related,San Francisco CA,"Job Title: Machine Learning Researcher
         Category: DATA-SCIENCE
-        Experience Level: Junior (1-3 years)
+        Experience Level: Senior (5+ years)
 
-        Education Required: Bachelor's in Statistics or related
+        Education Required: PhD in CS or related
 
         Required Skills:
-        SQL, Excel, Python, Tableau, Data Visualization, Statistical Analysis, Reporting
+        Python, PyTorch, TensorFlow, GenAI, LLMs, Mathematics, AWS, CI/CD, OpenCV, RAG, Data Validation
 
         Preferred Skills:
-        R, Power BI, A/B Testing, ETL
+        NLP, Computer Vision, Reinforcement Learning, PhD
 
         Key Responsibilities:
-        Analyze business data. Create dashboards. Write SQL queries. Present findings. Collaborate with stakeholders. Automate reports"
-62,Senior Data Analyst,DATA-SCIENCE,Senior,5+,"SQL, Python, R, Tableau, Power BI, Statistical Modeling, Experimentation, Team Leadership",Lead analytics projects. Mentor analysts. Design experiments. Build predictive models. Present to executives. Define metrics,"Machine Learning, Airflow, dbt, Domain Expertise",Bachelor's or Master's in Statistics or related,New York NY,"Job Title: Senior Data Analyst
+        Conduct ML research. Publish papers. Develop novel algorithms. Collaborate with engineers. Present at conferences. Mentor junior researchers"
+62,Senior Data Analyst,DATA-SCIENCE,Senior,5+,"SQL, Python, R, Git, Power BI, Statistical Modeling, Data Validation, Team Leadership",Lead analytics projects. Mentor analysts. Design experiments. Build predictive models. Present to executives. Define metrics,"Machine Learning, Airflow, dbt, Domain Expertise",Bachelor's or Master's in Statistics or related,New York NY,"Job Title: Senior Data Analyst
         Category: DATA-SCIENCE
         Experience Level: Senior (5+ years)
 
         Education Required: Bachelor's or Master's in Statistics or related
 
         Required Skills:
-        SQL, Python, R, Tableau, Power BI, Statistical Modeling, Experimentation, Team Leadership
+        SQL, Python, R, Git, Power BI, Statistical Modeling, Data Validation, Team Leadership
 
         Preferred Skills:
         Machine Learning, Airflow, dbt, Domain Expertise
 
         Key Responsibilities:
         Lead analytics projects. Mentor analysts. Design experiments. Build predictive models. Present to executives. Define metrics"
-63,Business Intelligence Analyst,DATA-SCIENCE,Experienced,3-5,"SQL, Power BI, Tableau, Data Modeling, ETL, Excel, Requirements Gathering",Build BI dashboards. Design data models. Gather requirements. Optimize queries. Train users. Document solutions,"Snowflake, dbt, Looker, Data Governance",Bachelor's in Business or Analytics,Chicago IL,"Job Title: Business Intelligence Analyst
+63,Business Intelligence Analyst,DATA-SCIENCE,Experienced,3-5,"SQL, Power BI, Git, Data Modeling, ETL, dbt, MLflow",Build BI dashboards. Design data models. Gather requirements. Optimize queries. Train users. Document solutions,"Snowflake, dbt, Looker, Data Governance",Bachelor's in Business or Analytics,Chicago IL,"Job Title: Business Intelligence Analyst
         Category: DATA-SCIENCE
         Experience Level: Experienced (3-5 years)
 
         Education Required: Bachelor's in Business or Analytics
 
         Required Skills:
-        SQL, Power BI, Tableau, Data Modeling, ETL, Excel, Requirements Gathering
+        SQL, Power BI, Git, Data Modeling, ETL, dbt, MLflow
 
         Preferred Skills:
         Snowflake, dbt, Looker, Data Governance

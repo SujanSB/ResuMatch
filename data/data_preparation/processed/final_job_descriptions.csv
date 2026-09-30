@@ -839,42 +839,42 @@ JobID,Title,Category,ExperienceLevel,YearsOfExperience,Skills,Responsibilities,P
 
         Key Responsibilities:
         Develop brand strategy. Manage brand guidelines. Lead campaigns. Conduct market research. Collaborate with agencies. Track brand metrics"
-61,Data Analyst,DATA-SCIENCE,Junior,1-3,"SQL, Excel, Python, Tableau, Data Visualization, Statistical Analysis, Reporting",Analyze business data. Create dashboards. Write SQL queries. Present findings. Collaborate with stakeholders. Automate reports,"R, Power BI, A/B Testing, ETL",Bachelor's in Statistics or related,Remote,"Job Title: Data Analyst
+61,Machine Learning Researcher,DATA-SCIENCE,Senior,5+,"Python, PyTorch, TensorFlow, GenAI, LLMs, Mathematics, AWS, CI/CD, OpenCV, RAG, Data Validation",Conduct ML research. Publish papers. Develop novel algorithms. Collaborate with engineers. Present at conferences. Mentor junior researchers,"NLP, Computer Vision, Reinforcement Learning, PhD",PhD in CS or related,San Francisco CA,"Job Title: Machine Learning Researcher
         Category: DATA-SCIENCE
-        Experience Level: Junior (1-3 years)
+        Experience Level: Senior (5+ years)
 
-        Education Required: Bachelor's in Statistics or related
+        Education Required: PhD in CS or related
 
         Required Skills:
-        SQL, Excel, Python, Tableau, Data Visualization, Statistical Analysis, Reporting
+        Python, PyTorch, TensorFlow, GenAI, LLMs, Mathematics, AWS, CI/CD, OpenCV, RAG, Data Validation
 
         Preferred Skills:
-        R, Power BI, A/B Testing, ETL
+        NLP, Computer Vision, Reinforcement Learning, PhD
 
         Key Responsibilities:
-        Analyze business data. Create dashboards. Write SQL queries. Present findings. Collaborate with stakeholders. Automate reports"
-62,Senior Data Analyst,DATA-SCIENCE,Senior,5+,"SQL, Python, R, Tableau, Power BI, Statistical Modeling, Experimentation, Team Leadership",Lead analytics projects. Mentor analysts. Design experiments. Build predictive models. Present to executives. Define metrics,"Machine Learning, Airflow, dbt, Domain Expertise",Bachelor's or Master's in Statistics or related,New York NY,"Job Title: Senior Data Analyst
+        Conduct ML research. Publish papers. Develop novel algorithms. Collaborate with engineers. Present at conferences. Mentor junior researchers"
+62,Senior Data Analyst,DATA-SCIENCE,Senior,5+,"SQL, Python, R, Git, Power BI, Statistical Modeling, Data Validation, Team Leadership",Lead analytics projects. Mentor analysts. Design experiments. Build predictive models. Present to executives. Define metrics,"Machine Learning, Airflow, dbt, Domain Expertise",Bachelor's or Master's in Statistics or related,New York NY,"Job Title: Senior Data Analyst
         Category: DATA-SCIENCE
         Experience Level: Senior (5+ years)
 
         Education Required: Bachelor's or Master's in Statistics or related
 
         Required Skills:
-        SQL, Python, R, Tableau, Power BI, Statistical Modeling, Experimentation, Team Leadership
+        SQL, Python, R, Git, Power BI, Statistical Modeling, Data Validation, Team Leadership
 
         Preferred Skills:
         Machine Learning, Airflow, dbt, Domain Expertise
 
         Key Responsibilities:
         Lead analytics projects. Mentor analysts. Design experiments. Build predictive models. Present to executives. Define metrics"
-63,Business Intelligence Analyst,DATA-SCIENCE,Experienced,3-5,"SQL, Power BI, Tableau, Data Modeling, ETL, Excel, Requirements Gathering",Build BI dashboards. Design data models. Gather requirements. Optimize queries. Train users. Document solutions,"Snowflake, dbt, Looker, Data Governance",Bachelor's in Business or Analytics,Chicago IL,"Job Title: Business Intelligence Analyst
+63,Business Intelligence Analyst,DATA-SCIENCE,Experienced,3-5,"SQL, Power BI, Git, Data Modeling, ETL, dbt, MLflow",Build BI dashboards. Design data models. Gather requirements. Optimize queries. Train users. Document solutions,"Snowflake, dbt, Looker, Data Governance",Bachelor's in Business or Analytics,Chicago IL,"Job Title: Business Intelligence Analyst
         Category: DATA-SCIENCE
         Experience Level: Experienced (3-5 years)
 
         Education Required: Bachelor's in Business or Analytics
 
         Required Skills:
-        SQL, Power BI, Tableau, Data Modeling, ETL, Excel, Requirements Gathering
+        SQL, Power BI, Git, Data Modeling, ETL, dbt, MLflow
 
         Preferred Skills:
         Snowflake, dbt, Looker, Data Governance
@@ -895,28 +895,28 @@ JobID,Title,Category,ExperienceLevel,YearsOfExperience,Skills,Responsibilities,P
 
         Key Responsibilities:
         Design data architectures. Define data standards. Lead data initiatives. Mentor engineers. Evaluate technologies. Ensure data quality"
-65,Machine Learning Researcher,DATA-SCIENCE,Senior,5+,"Deep Learning, Python, PyTorch, TensorFlow, Research, Publications, Mathematics, Experimentation",Conduct ML research. Publish papers. Develop novel algorithms. Collaborate with engineers. Present at conferences. Mentor junior researchers,"NLP, Computer Vision, Reinforcement Learning, PhD",PhD in CS or related,San Francisco CA,"Job Title: Machine Learning Researcher
+65,Data Analyst,DATA-SCIENCE,Junior,1-3,"SQL, Excel, Python, Git, Data Visualization, Statistical Analysis, Reporting",Analyze business data. Create dashboards. Write SQL queries. Present findings. Collaborate with stakeholders. Automate reports,"R, Power BI, A/B Testing, ETL",Bachelor's in Statistics or related,Remote,"Job Title: Data Analyst
         Category: DATA-SCIENCE
-        Experience Level: Senior (5+ years)
+        Experience Level: Junior (1-3 years)
 
-        Education Required: PhD in CS or related
+        Education Required: Bachelor's in Statistics or related
 
         Required Skills:
-        Deep Learning, Python, PyTorch, TensorFlow, Research, Publications, Mathematics, Experimentation
+        SQL, Excel, Python, Git, Data Visualization, Statistical Analysis, Reporting
 
         Preferred Skills:
-        NLP, Computer Vision, Reinforcement Learning, PhD
+        R, Power BI, A/B Testing, ETL
 
         Key Responsibilities:
-        Conduct ML research. Publish papers. Develop novel algorithms. Collaborate with engineers. Present at conferences. Mentor junior researchers"
-66,NLP Engineer,DATA-SCIENCE,Experienced,3-5,"Python, NLP, Transformers, BERT, spaCy, NLTK, Deep Learning, Model Deployment",Build NLP models. Fine-tune transformers. Deploy models. Build data pipelines. Collaborate with product. Evaluate model performance,"LLMs, RAG, Prompt Engineering, Speech Recognition",Master's in CS or related,Remote,"Job Title: NLP Engineer
+        Analyze business data. Create dashboards. Write SQL queries. Present findings. Collaborate with stakeholders. Automate reports"
+66,NLP Engineer,DATA-SCIENCE,Experienced,3-5,"Python, NLP, Transformers, Streamlit, spaCy, NLTK, Deep Learning, CI/CD",Build NLP models. Fine-tune transformers. Deploy models. Build data pipelines. Collaborate with product. Evaluate model performance,"LLMs, RAG, Prompt Engineering, Speech Recognition",Master's in CS or related,Remote,"Job Title: NLP Engineer
         Category: DATA-SCIENCE
         Experience Level: Experienced (3-5 years)
 
         Education Required: Master's in CS or related
 
         Required Skills:
-        Python, NLP, Transformers, BERT, spaCy, NLTK, Deep Learning, Model Deployment
+        Python, NLP, Transformers, Streamlit, spaCy, NLTK, Deep Learning, CI/CD
 
         Preferred Skills:
         LLMs, RAG, Prompt Engineering, Speech Recognition
@@ -1161,7 +1161,7 @@ JobID,Title,Category,ExperienceLevel,YearsOfExperience,Skills,Responsibilities,P
 
         Key Responsibilities:
         Design training programs. Deliver workshops. Manage LMS. Assess needs. Evaluate effectiveness. Collaborate with stakeholders"
-84,Compensation Analyst,HUMAN-RESOURCES,Experienced,3-5,"Compensation Analysis, Market Data, Excel, HRIS, Benchmarking, Job Evaluation, Reporting",Conduct market analysis. Benchmark positions. Design compensation structures. Analyze data. Support annual cycles. Ensure compliance,"Sales Compensation, Executive Compensation, SQL, Tableau",Bachelor's in HR or Finance,Chicago IL,"Job Title: Compensation Analyst
+84,Compensation Analyst,HUMAN-RESOURCES,Experienced,3-5,"Compensation Analysis, Market Data, Excel, HRIS, Benchmarking, Job Evaluation, Reporting",Conduct market analysis. Benchmark positions. Design compensation structures. Analyze data. Support annual cycles. Ensure compliance,"Sales Compensation, Executive Compensation, SQL, Git",Bachelor's in HR or Finance,Chicago IL,"Job Title: Compensation Analyst
         Category: HUMAN-RESOURCES
         Experience Level: Experienced (3-5 years)
 
@@ -1171,7 +1171,7 @@ JobID,Title,Category,ExperienceLevel,YearsOfExperience,Skills,Responsibilities,P
         Compensation Analysis, Market Data, Excel, HRIS, Benchmarking, Job Evaluation, Reporting
 
         Preferred Skills:
-        Sales Compensation, Executive Compensation, SQL, Tableau
+        Sales Compensation, Executive Compensation, SQL, Git
 
         Key Responsibilities:
         Conduct market analysis. Benchmark positions. Design compensation structures. Analyze data. Support annual cycles. Ensure compliance"
@@ -1189,7 +1189,7 @@ JobID,Title,Category,ExperienceLevel,YearsOfExperience,Skills,Responsibilities,P
 
         Key Responsibilities:
         Lead recruiting team. Develop talent strategy. Build employer brand. Manage vendors. Analyze metrics. Partner with executives"
-86,Financial Analyst,FINANCE,Experienced,3-5,"Financial Modeling, Excel, Forecasting, Budgeting, Variance Analysis, SQL, PowerPoint, Business Partnering",Build financial models. Prepare forecasts. Analyze variances. Support budgeting. Present to leadership. Collaborate with business,"FP&A, SaaS Metrics, SQL, Tableau",Bachelor's in Finance or Economics,New York NY,"Job Title: Financial Analyst
+86,Financial Analyst,FINANCE,Experienced,3-5,"Financial Modeling, Excel, Forecasting, Budgeting, Variance Analysis, SQL, PowerPoint, Business Partnering",Build financial models. Prepare forecasts. Analyze variances. Support budgeting. Present to leadership. Collaborate with business,"FP&A, SaaS Metrics, SQL, Git",Bachelor's in Finance or Economics,New York NY,"Job Title: Financial Analyst
         Category: FINANCE
         Experience Level: Experienced (3-5 years)
 
@@ -1199,11 +1199,11 @@ JobID,Title,Category,ExperienceLevel,YearsOfExperience,Skills,Responsibilities,P
         Financial Modeling, Excel, Forecasting, Budgeting, Variance Analysis, SQL, PowerPoint, Business Partnering
 
         Preferred Skills:
-        FP&A, SaaS Metrics, SQL, Tableau
+        FP&A, SaaS Metrics, SQL, Git
 
         Key Responsibilities:
         Build financial models. Prepare forecasts. Analyze variances. Support budgeting. Present to leadership. Collaborate with business"
-87,Senior Financial Analyst,FINANCE,Senior,5+,"Financial Modeling, Excel, VBA, SQL, Data Visualization, Forecasting, Strategic Analysis, Team Leadership",Lead financial planning. Build complex models. Mentor analysts. Drive strategic initiatives. Present to executives. Improve processes,"Python, Tableau, M&A, SaaS",Bachelor's or Master's in Finance,San Francisco CA,"Job Title: Senior Financial Analyst
+87,Senior Financial Analyst,FINANCE,Senior,5+,"Financial Modeling, Excel, VBA, SQL, Data Visualization, Forecasting, Strategic Analysis, Team Leadership",Lead financial planning. Build complex models. Mentor analysts. Drive strategic initiatives. Present to executives. Improve processes,"Python, Git, M&A, SaaS",Bachelor's or Master's in Finance,San Francisco CA,"Job Title: Senior Financial Analyst
         Category: FINANCE
         Experience Level: Senior (5+ years)
 
@@ -1213,7 +1213,7 @@ JobID,Title,Category,ExperienceLevel,YearsOfExperience,Skills,Responsibilities,P
         Financial Modeling, Excel, VBA, SQL, Data Visualization, Forecasting, Strategic Analysis, Team Leadership
 
         Preferred Skills:
-        Python, Tableau, M&A, SaaS
+        Python, Git, M&A, SaaS
 
         Key Responsibilities:
         Lead financial planning. Build complex models. Mentor analysts. Drive strategic initiatives. Present to executives. Improve processes"
