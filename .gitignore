@@ -15,4 +15,5 @@ __pycache__/
 *.egg-info/
 resumatch.egg-info/
 .eggs/
-
+build/
+dist/
