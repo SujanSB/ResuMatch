@@ -6,13 +6,13 @@
 
 ## Features
 
-- **Multi-Format Parsing:** Supports `.pdf`, `.docx`, and `.txt` resumes. 
-- **Hybrid Matching:** Uses bi-encoder retrieval and cross-encoder re-ranking.
-- **Skill Extraction:** Extracts contact details, experience, and skills.
+- **Multi-Format Parsing:** Supports `.pdf`, `.docx`, and `.txt` resumes.
+- **Hybrid Matching:** Combines semantic similarity with skill-based matching.
 - **Skill Gap Analysis:** Identifies matched, missing, and related skills.
-- **Recommendation:** Classifies candidates as *Strongly Recommended*, *Consider*, or *Not Recommended*.
-- **Visual Reports:** Generates reports with match scores and skill gaps.
-- **JSON Export:** Saves detailed matching results in JSON format.
+- **Candidate Recommendations:** Categorizes candidates based on their overall match.
+- **Visual Reports:** Generates candidate match and skill-gap reports.
+- **JSON Export:** Provides structured matching results for further analysis.
+
 
 ---
 
@@ -24,33 +24,30 @@
 
  *([View on Lucidchart](https://lucid.app/lucidchart/31e388a0-668d-48c1-838d-0a3df4a2aa01/edit?viewport_loc=-109%2C-220%2C1762%2C1151%2C0_0&invitationId=inv_ff8f7132-20d4-4184-84e6-53e8cc96c513))*
 
-
-The processing pipeline is organized into five modular layers:
+The pipeline consists of five modular layers:
 
 1. **Input Layer**
-   * **PDF Resume Directory:** Ingests candidate resumes in multiple formats (`.pdf`, `.docx`, `.txt`). 
-   * **Job Descriptions CSV:** Loads structured job description datasets.
+   - Loads candidate resumes and structured job descriptions.
 
-2. **Data Loading & Parsing Layer**
-   * **Resume Parser (`resumatch.parser`):** Extracts raw text from candidate document files.
-   * **Information Extractor (`resumatch.extractor`):** Parses unstructured resume text into structured candidate profile entities.
-   * **Job Loader (`resumatch.utils.job_loader`):** Standardizes CSV job records into normalized job dictionary objects.
+2. **Parsing Layer**
+   - Extracts resume text and converts it into structured candidate profiles.
+   - Normalizes job descriptions into a consistent format.
 
-3. **Hybrid Matching Engine (`resumatch.matcher`)**
-   * **Fast Semantic Retrieval (`retriever.py`):** Employs dense vector embeddings (`all-MiniLM-L6-v2`) for initial candidate selection.
-   * **Deep Re-ranking (`reranker.py`):** Uses Cross-Encoder models (`BAAI/bge-reranker-base`) to score semantic affinity.
-   * **Heuristic Skills Overlay (`heuristics.py`):** Performs exact and fuzzy skill matching to identify matched vs. missing skill sets.
-   * **Weighted Composite Score:** Synthesizes semantic relevancy and skill overlap into a unified candidate match score.
+3. **Matching Layer**
+   - Retrieves relevant candidates using dense embeddings.
+   - Re-ranks candidates with a cross-encoder.
+   - Compares candidate and job skills using exact and fuzzy matching.
+   - Produces a composite match score.
 
-4. **Recommendation & Reporting Layer (`resumatch.recommender`)**
-   * **Candidate Ranking:** Ranks candidates per target job position.
-   * **Recommendation Tiers:** Classifies candidates into *Strongly Recommended*, *Consider*, or *Not Recommended*.
-   * **Structured JSON Export:** Aggregates profile metrics and match diagnostics into standard JSON outputs.
+4. **Recommendation Layer**
+   - Ranks candidates for each job.
+   - Assigns recommendation categories.
+   - Exports detailed matching results as JSON.
 
-5. **Visualization & Analytics Layer (`resumatch.visualizer`)**
-   * **Job Directory Generation:** Automatically organizes output directories under `reports/` for each Job ID.
-   * **Candidate Visual Reports:** Renders visual match summaries, analytics charts, and individual candidate reports.
-
+5. **Reporting Layer**
+   - Organizes reports by Job ID.
+   - Generates visual candidate summaries and skill-gap analytics.
+   
 ---
 
 ## Requirements
@@ -136,7 +133,7 @@ reports/
 ResuMatch automatically generates individual candidate intelligence reports featuring match telemetry, skill gap ratios, profile word clouds, and recruiter decision summary cards.
 
 <p align="center">
-  <img src="assets/Sujan_Sharma_report.png" alt="Sample Candidate Report" width="50%">
+  <img src="assets/Sujan_Sharma_report.png" alt="Sample Candidate Report" width="60%">
 </p>
 
 ---
