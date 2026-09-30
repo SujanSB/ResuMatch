@@ -111,41 +111,42 @@
         },
         {
           "rank": 3,
-          "candidate_id": "DeSamuel_Okafor_DataAnalyst",
+          "candidate_id": "Cantosh_Acharya",
           "candidate_details": {
-            "name": "DeSamuel_Okafor_DataAnalyst",
-            "email": "samuel.okafor@example.com",
+            "name": "Cantosh_Acharya",
+            "email": "N/A",
             "phone": "2025",
-            "extracted_skills_count": 9,
+            "extracted_skills_count": 24,
             "top_skills": [
-              "and customer satisfaction.",
+              "business analysis",
+              "data analysis",
+              "data analytics",
+              "data engineering",
+              "data modeling",
               "data science",
+              "data validation",
               "data visualization",
-              "excel",
-              "pandas",
-              "python",
-              "response time",
-              "sql",
-              "tableau"
+              "dbt",
+              "etl"
             ]
           },
           "recommendation_tier": "Not Recommended",
           "match_scores": {
-            "overall_fit_percentage": 37.34,
-            "semantic_context_score": 50.49,
-            "skill_coverage_score": 6.67
+            "overall_fit_percentage": 40.05,
+            "semantic_context_score": 51.5,
+            "skill_coverage_score": 13.33
           },
           "skills_analysis": {
-            "matched_skills_count": 1,
-            "missing_skills_count": 14,
+            "matched_skills_count": 2,
+            "missing_skills_count": 13,
             "matched_skills": [
+              "data validation",
               "python"
             ],
             "missing_skills": [
               "aws",
               "ci/cd",
               "computer vision",
-              "data validation",
               "genai",
               "llms",
               "mathematics",
@@ -215,46 +216,47 @@
         },
         {
           "rank": 2,
-          "candidate_id": "DeSamuel_Okafor_DataAnalyst",
+          "candidate_id": "Cantosh_Acharya",
           "candidate_details": {
-            "name": "DeSamuel_Okafor_DataAnalyst",
-            "email": "samuel.okafor@example.com",
+            "name": "Cantosh_Acharya",
+            "email": "N/A",
             "phone": "2025",
-            "extracted_skills_count": 9,
+            "extracted_skills_count": 24,
             "top_skills": [
-              "and customer satisfaction.",
+              "business analysis",
+              "data analysis",
+              "data analytics",
+              "data engineering",
+              "data modeling",
               "data science",
+              "data validation",
               "data visualization",
-              "excel",
-              "pandas",
-              "python",
-              "response time",
-              "sql",
-              "tableau"
+              "dbt",
+              "etl"
             ]
           },
           "recommendation_tier": "Consider / Worth Interviewing",
           "match_scores": {
-            "overall_fit_percentage": 56.49,
-            "semantic_context_score": 72.9,
-            "skill_coverage_score": 18.18
+            "overall_fit_percentage": 63.43,
+            "semantic_context_score": 59.45,
+            "skill_coverage_score": 72.73
           },
           "skills_analysis": {
-            "matched_skills_count": 2,
-            "missing_skills_count": 9,
+            "matched_skills_count": 8,
+            "missing_skills_count": 3,
             "matched_skills": [
-              "python",
-              "sql"
-            ],
-            "missing_skills": [
-              "airflow",
               "data validation",
               "dbt",
-              "domain expertise",
               "git",
               "machine learning",
               "power bi",
-              "statistical modeling",
+              "python",
+              "sql",
+              "statistical modeling"
+            ],
+            "missing_skills": [
+              "airflow",
+              "domain expertise",
               "team leadership"
             ]
           }
@@ -361,6 +363,52 @@
         },
         {
           "rank": 2,
+          "candidate_id": "Cantosh_Acharya",
+          "candidate_details": {
+            "name": "Cantosh_Acharya",
+            "email": "N/A",
+            "phone": "2025",
+            "extracted_skills_count": 24,
+            "top_skills": [
+              "business analysis",
+              "data analysis",
+              "data analytics",
+              "data engineering",
+              "data modeling",
+              "data science",
+              "data validation",
+              "data visualization",
+              "dbt",
+              "etl"
+            ]
+          },
+          "recommendation_tier": "Consider / Worth Interviewing",
+          "match_scores": {
+            "overall_fit_percentage": 68.23,
+            "semantic_context_score": 71.76,
+            "skill_coverage_score": 60.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 6,
+            "missing_skills_count": 4,
+            "matched_skills": [
+              "data modeling",
+              "dbt",
+              "etl",
+              "git",
+              "power bi",
+              "sql"
+            ],
+            "missing_skills": [
+              "data governance",
+              "looker",
+              "mlflow",
+              "snowflake"
+            ]
+          }
+        },
+        {
+          "rank": 3,
           "candidate_id": "1Sujan_Sharma",
           "candidate_details": {
             "name": "1Sujan_Sharma",
@@ -402,51 +450,6 @@
               "etl",
               "looker",
               "power bi"
-            ]
-          }
-        },
-        {
-          "rank": 3,
-          "candidate_id": "DeSamuel_Okafor_DataAnalyst",
-          "candidate_details": {
-            "name": "DeSamuel_Okafor_DataAnalyst",
-            "email": "samuel.okafor@example.com",
-            "phone": "2025",
-            "extracted_skills_count": 9,
-            "top_skills": [
-              "and customer satisfaction.",
-              "data science",
-              "data visualization",
-              "excel",
-              "pandas",
-              "python",
-              "response time",
-              "sql",
-              "tableau"
-            ]
-          },
-          "recommendation_tier": "Not Recommended",
-          "match_scores": {
-            "overall_fit_percentage": 40.35,
-            "semantic_context_score": 53.35,
-            "skill_coverage_score": 10.0
-          },
-          "skills_analysis": {
-            "matched_skills_count": 1,
-            "missing_skills_count": 9,
-            "matched_skills": [
-              "sql"
-            ],
-            "missing_skills": [
-              "data governance",
-              "data modeling",
-              "dbt",
-              "etl",
-              "git",
-              "looker",
-              "mlflow",
-              "power bi",
-              "snowflake"
             ]
           }
         }
