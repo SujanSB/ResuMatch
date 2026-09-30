@@ -9,6 +9,57 @@
       "recommended_candidates": [
         {
           "rank": 1,
+          "candidate_id": "Arjun_Mehta_DataScience",
+          "candidate_details": {
+            "name": "Arjun_Mehta_DataScience",
+            "email": "arjun.mehta@example.com",
+            "phone": "2023",
+            "extracted_skills_count": 31,
+            "top_skills": [
+              "airflow",
+              "and tensorflow.",
+              "aws",
+              "ci/cd",
+              "data analyst",
+              "data modeling",
+              "data science",
+              "data validation",
+              "dbt",
+              "etl"
+            ]
+          },
+          "recommendation_tier": "Consider / Worth Interviewing",
+          "match_scores": {
+            "overall_fit_percentage": 61.2,
+            "semantic_context_score": 61.72,
+            "skill_coverage_score": 60.0
+          },
+          "skills_analysis": {
+            "matched_skills_count": 9,
+            "missing_skills_count": 6,
+            "matched_skills": [
+              "aws",
+              "ci/cd",
+              "data validation",
+              "mathematics",
+              "opencv",
+              "python",
+              "pytorch",
+              "rag",
+              "tensorflow"
+            ],
+            "missing_skills": [
+              "computer vision",
+              "genai",
+              "llms",
+              "nlp",
+              "phd",
+              "reinforcement learning"
+            ]
+          }
+        },
+        {
+          "rank": 2,
           "candidate_id": "1Sujan_Sharma",
           "candidate_details": {
             "name": "1Sujan_Sharma",
@@ -59,30 +110,29 @@
           }
         },
         {
-          "rank": 2,
-          "candidate_id": "Arjun_Mehta_DataScience",
+          "rank": 3,
+          "candidate_id": "DeSamuel_Okafor_DataAnalyst",
           "candidate_details": {
-            "name": "Arjun_Mehta_DataScience",
-            "email": "arjun.mehta@example.com",
-            "phone": "2023",
-            "extracted_skills_count": 10,
+            "name": "DeSamuel_Okafor_DataAnalyst",
+            "email": "samuel.okafor@example.com",
+            "phone": "2025",
+            "extracted_skills_count": 9,
             "top_skills": [
+              "and customer satisfaction.",
               "data science",
-              "github",
-              "machine learning",
-              "numpy",
+              "data visualization",
+              "excel",
               "pandas",
-              "power bi",
               "python",
-              "scikit-learn",
+              "response time",
               "sql",
-              "statistics"
+              "tableau"
             ]
           },
           "recommendation_tier": "Not Recommended",
           "match_scores": {
-            "overall_fit_percentage": 39.43,
-            "semantic_context_score": 53.47,
+            "overall_fit_percentage": 37.34,
+            "semantic_context_score": 50.49,
             "skill_coverage_score": 6.67
           },
           "skills_analysis": {
@@ -108,53 +158,6 @@
               "tensorflow"
             ]
           }
-        },
-        {
-          "rank": 3,
-          "candidate_id": "EthanMiller_Mechanical",
-          "candidate_details": {
-            "name": "EthanMiller_Mechanical",
-            "email": "ethan.miller@example.com",
-            "phone": "2023",
-            "extracted_skills_count": 7,
-            "top_skills": [
-              "autocad",
-              "d printing",
-              "design for manufacturing",
-              "fea",
-              "gd",
-              "solidworks",
-              "t standards."
-            ]
-          },
-          "recommendation_tier": "Not Recommended",
-          "match_scores": {
-            "overall_fit_percentage": 35.12,
-            "semantic_context_score": 50.17,
-            "skill_coverage_score": 0.0
-          },
-          "skills_analysis": {
-            "matched_skills_count": 0,
-            "missing_skills_count": 15,
-            "matched_skills": [],
-            "missing_skills": [
-              "aws",
-              "ci/cd",
-              "computer vision",
-              "data validation",
-              "genai",
-              "llms",
-              "mathematics",
-              "nlp",
-              "opencv",
-              "phd",
-              "python",
-              "pytorch",
-              "rag",
-              "reinforcement learning",
-              "tensorflow"
-            ]
-          }
         }
       ]
     },
@@ -170,32 +173,76 @@
             "name": "Arjun_Mehta_DataScience",
             "email": "arjun.mehta@example.com",
             "phone": "2023",
-            "extracted_skills_count": 10,
+            "extracted_skills_count": 31,
             "top_skills": [
+              "airflow",
+              "and tensorflow.",
+              "aws",
+              "ci/cd",
+              "data analyst",
+              "data modeling",
               "data science",
-              "github",
+              "data validation",
+              "dbt",
+              "etl"
+            ]
+          },
+          "recommendation_tier": "Strongly Recommended",
+          "match_scores": {
+            "overall_fit_percentage": 78.41,
+            "semantic_context_score": 73.06,
+            "skill_coverage_score": 90.91
+          },
+          "skills_analysis": {
+            "matched_skills_count": 10,
+            "missing_skills_count": 1,
+            "matched_skills": [
+              "airflow",
+              "data validation",
+              "dbt",
+              "git",
               "machine learning",
-              "numpy",
-              "pandas",
               "power bi",
               "python",
-              "scikit-learn",
               "sql",
-              "statistics"
+              "statistical modeling",
+              "team leadership"
+            ],
+            "missing_skills": [
+              "domain expertise"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "candidate_id": "DeSamuel_Okafor_DataAnalyst",
+          "candidate_details": {
+            "name": "DeSamuel_Okafor_DataAnalyst",
+            "email": "samuel.okafor@example.com",
+            "phone": "2025",
+            "extracted_skills_count": 9,
+            "top_skills": [
+              "and customer satisfaction.",
+              "data science",
+              "data visualization",
+              "excel",
+              "pandas",
+              "python",
+              "response time",
+              "sql",
+              "tableau"
             ]
           },
           "recommendation_tier": "Consider / Worth Interviewing",
           "match_scores": {
-            "overall_fit_percentage": 61.4,
-            "semantic_context_score": 72.13,
-            "skill_coverage_score": 36.36
+            "overall_fit_percentage": 56.49,
+            "semantic_context_score": 72.9,
+            "skill_coverage_score": 18.18
           },
           "skills_analysis": {
-            "matched_skills_count": 4,
-            "missing_skills_count": 7,
+            "matched_skills_count": 2,
+            "missing_skills_count": 9,
             "matched_skills": [
-              "machine learning",
-              "power bi",
               "python",
               "sql"
             ],
@@ -205,13 +252,15 @@
               "dbt",
               "domain expertise",
               "git",
+              "machine learning",
+              "power bi",
               "statistical modeling",
               "team leadership"
             ]
           }
         },
         {
-          "rank": 2,
+          "rank": 3,
           "candidate_id": "1Sujan_Sharma",
           "candidate_details": {
             "name": "1Sujan_Sharma",
@@ -256,49 +305,6 @@
               "team leadership"
             ]
           }
-        },
-        {
-          "rank": 3,
-          "candidate_id": "EthanMiller_Mechanical",
-          "candidate_details": {
-            "name": "EthanMiller_Mechanical",
-            "email": "ethan.miller@example.com",
-            "phone": "2023",
-            "extracted_skills_count": 7,
-            "top_skills": [
-              "autocad",
-              "d printing",
-              "design for manufacturing",
-              "fea",
-              "gd",
-              "solidworks",
-              "t standards."
-            ]
-          },
-          "recommendation_tier": "Not Recommended",
-          "match_scores": {
-            "overall_fit_percentage": 35.06,
-            "semantic_context_score": 50.08,
-            "skill_coverage_score": 0.0
-          },
-          "skills_analysis": {
-            "matched_skills_count": 0,
-            "missing_skills_count": 11,
-            "matched_skills": [],
-            "missing_skills": [
-              "airflow",
-              "data validation",
-              "dbt",
-              "domain expertise",
-              "git",
-              "machine learning",
-              "power bi",
-              "python",
-              "sql",
-              "statistical modeling",
-              "team leadership"
-            ]
-          }
         }
       ]
     },
@@ -314,41 +320,41 @@
             "name": "Arjun_Mehta_DataScience",
             "email": "arjun.mehta@example.com",
             "phone": "2023",
-            "extracted_skills_count": 10,
+            "extracted_skills_count": 31,
             "top_skills": [
+              "airflow",
+              "and tensorflow.",
+              "aws",
+              "ci/cd",
+              "data analyst",
+              "data modeling",
               "data science",
-              "github",
-              "machine learning",
-              "numpy",
-              "pandas",
-              "power bi",
-              "python",
-              "scikit-learn",
-              "sql",
-              "statistics"
+              "data validation",
+              "dbt",
+              "etl"
             ]
           },
           "recommendation_tier": "Consider / Worth Interviewing",
           "match_scores": {
-            "overall_fit_percentage": 55.31,
-            "semantic_context_score": 70.45,
-            "skill_coverage_score": 20.0
+            "overall_fit_percentage": 69.88,
+            "semantic_context_score": 69.83,
+            "skill_coverage_score": 70.0
           },
           "skills_analysis": {
-            "matched_skills_count": 2,
-            "missing_skills_count": 8,
+            "matched_skills_count": 7,
+            "missing_skills_count": 3,
             "matched_skills": [
+              "data modeling",
+              "dbt",
+              "etl",
+              "git",
+              "mlflow",
               "power bi",
               "sql"
             ],
             "missing_skills": [
               "data governance",
-              "data modeling",
-              "dbt",
-              "etl",
-              "git",
               "looker",
-              "mlflow",
               "snowflake"
             ]
           }
@@ -401,32 +407,36 @@
         },
         {
           "rank": 3,
-          "candidate_id": "EthanMiller_Mechanical",
+          "candidate_id": "DeSamuel_Okafor_DataAnalyst",
           "candidate_details": {
-            "name": "EthanMiller_Mechanical",
-            "email": "ethan.miller@example.com",
-            "phone": "2023",
-            "extracted_skills_count": 7,
+            "name": "DeSamuel_Okafor_DataAnalyst",
+            "email": "samuel.okafor@example.com",
+            "phone": "2025",
+            "extracted_skills_count": 9,
             "top_skills": [
-              "autocad",
-              "d printing",
-              "design for manufacturing",
-              "fea",
-              "gd",
-              "solidworks",
-              "t standards."
+              "and customer satisfaction.",
+              "data science",
+              "data visualization",
+              "excel",
+              "pandas",
+              "python",
+              "response time",
+              "sql",
+              "tableau"
             ]
           },
           "recommendation_tier": "Not Recommended",
           "match_scores": {
-            "overall_fit_percentage": 35.02,
-            "semantic_context_score": 50.03,
-            "skill_coverage_score": 0.0
+            "overall_fit_percentage": 40.35,
+            "semantic_context_score": 53.35,
+            "skill_coverage_score": 10.0
           },
           "skills_analysis": {
-            "matched_skills_count": 0,
-            "missing_skills_count": 10,
-            "matched_skills": [],
+            "matched_skills_count": 1,
+            "missing_skills_count": 9,
+            "matched_skills": [
+              "sql"
+            ],
             "missing_skills": [
               "data governance",
               "data modeling",
@@ -436,8 +446,7 @@
               "looker",
               "mlflow",
               "power bi",
-              "snowflake",
-              "sql"
+              "snowflake"
             ]
           }
         }
