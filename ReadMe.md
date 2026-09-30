@@ -141,7 +141,7 @@ uv run -m resumatch \
 | `--max_resumes` | Maximum number of resumes to process       | `3`                                          |
 
 
-### Dataset  
+## Dataset  
 The project includes sample candidate resumes and job descriptions under:
 ``` bash
 data/sample_data/
@@ -152,7 +152,7 @@ Resumes are provided as PDF files. Job descriptions are provided as a CSV file.
 
 ---
 
-### Output
+## Output
 The generated results are saved under the specified output directory:
 ``` bash 
 reports/
@@ -178,4 +178,17 @@ uv run ruff check .
 uv run pytest tests/test_overall_pipeline.py
 ```
 
+---
+## Limitations
 
+1. **Synthetic Data:** Default datasets may not fully represent real-world resumes and job descriptions.
+2. **Rule-Based Extraction:** Regex and static skill taxonomies may miss unconventional skills, formats, or sections.
+3. **Static Models:** Embeddings and skill weights are not fine-tuned for recruitment domains.
+
+---
+
+## Future Work
+
+1. **LLM-Based Extraction:** Use LLMs for flexible and contextual entity and skill extraction.
+2. **Domain Fine-Tuning:** Fine-tune retrieval and re-ranking models on real-world HR datasets.
+3. **Dynamic Skill Mapping:** Use knowledge graphs or GNNs to capture relationships between related skills.
