@@ -411,7 +411,7 @@ Skills
 * TikTok/Reels
 * Content Calendars
 * Analytics"
-10000011,DATA-SCIENCE,"DATA SCIENTIST
+10000011,DATA-SCIENCE,"DATA SCIENTIST / SENIOR DATA ANALYST
 
 Name: Arjun Mehta
 Email: arjun.mehta@example.com
@@ -420,40 +420,52 @@ LinkedIn: https://www.linkedin.com/in/arjunmehta/
 
 Summary
 
-Data Scientist with 4 years of experience applying statistical modeling and machine learning to customer, operational, and product datasets. Experienced in Python, SQL, feature engineering, model evaluation, and communicating analytical findings to business stakeholders.
+Data professional with 4+ years of experience in statistical modeling, machine learning, and business intelligence. Skilled in building predictive models, designing data models, creating BI dashboards, and leading analytics initiatives. Strong hands-on expertise in Python, SQL, R, Power BI, dbt, and modern ML frameworks (PyTorch, TensorFlow). Experienced in communicating insights to executives and mentoring junior analysts.
 
 Skills
 
-|  |  |
-| --- | --- |
-| * Python * SQL * Pandas & NumPy | * Scikit-Learn * Statistics * Power BI |
+|                                      |                                              |
+| ------------------------------------ | -------------------------------------------- |
+| * Python * SQL * R * Git             | * Power BI * Statistical Modeling * Data Validation |
+| * Pandas & NumPy * Scikit-Learn      | * PyTorch * TensorFlow * dbt * ETL           |
+| * Data Modeling * MLflow * Airflow   | * Team Leadership * AWS * CI/CD              |
+| * Feature Engineering * Mathematics  | * OpenCV * RAG * GenAI / LLMs basics         |
 
 Experience
 
-Finora Analytics    Data Scientist   02/2023 to Current
+Finora Analytics | Data Scientist / Analytics Lead | 02/2023 – Current
 
-* Develop predictive models for customer retention and operational forecasting using Python and scikit-learn.
-* Built reusable data-preparation pipelines that reduced manual analysis time for recurring reports.
-* Presented model results and business recommendations to product and operations teams.
+* Lead analytics projects and mentor junior analysts on statistical modeling and data validation practices.
+* Develop predictive models for customer retention and operational forecasting using Python, scikit-learn, PyTorch and TensorFlow.
+* Design data models and build reusable ETL pipelines with dbt; optimize SQL queries for large datasets.
+* Create executive-level Power BI dashboards and present findings to product and operations leadership.
+* Implement basic MLOps practices (MLflow) and support CI/CD for analytics workflows.
 
-MarketBridge    Data Analyst   07/2021 to 01/2023
+MarketBridge | Data Analyst | 07/2021 – 01/2023
 
-* Analyzed customer behavior and created SQL-based reporting dashboards for business stakeholders.
+* Built SQL-based reporting dashboards and performed customer behavior analysis.
+* Supported data modeling and ETL processes for recurring business reports.
+* Collaborated with stakeholders to gather requirements and document analytical solutions.
 
 Education and Training
 
-Master of Science : Data Science | 2021 | University of Maryland, College Park, MD; Bachelor of Engineering : Computer Engineering | 2019 | Rutgers University, New Brunswick, NJ
+Master of Science : Data Science | 2021 | University of Maryland, College Park, MD
+Bachelor of Engineering : Computer Engineering | 2019 | Rutgers University, New Brunswick, NJ
 
-Certification: Microsoft Certified: Power BI Data Analyst Associate
+Certification
+
+* Microsoft Certified: Power BI Data Analyst Associate
+* AWS Certified Cloud Practitioner (in progress)
 
 Skills
 
-* Python
-* SQL
-* Pandas & NumPy
-* Scikit-Learn
-* Statistics
-* Power BI"
+* Python, SQL, R, Git
+* Power BI, Statistical Modeling, Data Validation
+* Data Modeling, ETL, dbt, MLflow
+* PyTorch, TensorFlow, Scikit-Learn, Pandas, NumPy
+* Team Leadership, Feature Engineering, Mathematics
+* AWS, CI/CD, Airflow, OpenCV, RAG, GenAI/LLMs (working knowledge)"
+
 10000012,DATA-SCIENCE,"MACHINE LEARNING ENGINEER
 
 Name: Grace Thompson
