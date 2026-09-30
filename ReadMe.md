@@ -6,7 +6,7 @@
 
 ## Features
 
-- **Multi-Format Parsing:** Supports `.pdf`, `.docx`, and `.txt` resumes. (better on PDF)
+- **Multi-Format Parsing:** Supports `.pdf`, `.docx`, and `.txt` resumes. 
 - **Hybrid Matching:** Uses bi-encoder retrieval and cross-encoder re-ranking.
 - **Skill Extraction:** Extracts contact details, experience, and skills.
 - **Skill Gap Analysis:** Identifies matched, missing, and related skills.
@@ -125,6 +125,7 @@ uv pip install -e .
 ``` bash 
 uv run -m resumatch
 ```
+*It may take about 30 seconds for first start.*
 
 You can also specify custom input and output paths:
 
