@@ -14,49 +14,13 @@
 - **Visual Reports:** Generates reports with match scores and skill gaps.
 - **JSON Export:** Saves detailed matching results in JSON format.
 
-
-## Project Structure
-
-```text
-RESUMATCH/
-├── data/
-│   ├── data_preparation/       # Notebooks & processing scripts for raw datasets
-│   └── sample_data/            # Sample resumes and job description CSV files
-|       └── jobs
-        └── resumes
-├── reports/
-│   ├── jobs/                   # Generated visual analytics and candidate reports
-│       └── Job_101/
-|   └──batch_recommendations.json
-├── resumatch/                  # Core ResuMatch Application Package
-│   ├── extractor/
-│   │   ├── constants.py        # Regex definitions, skill taxonomies, and keywords
-│   │   └── resume_extractor.py # Candidate profile feature extraction
-│   ├── matcher/
-│   │   ├── heuristics.py       # Skill overlap and string matching logic
-│   │   ├── reranker.py         # Stage 2 Cross-Encoder re-ranking module
-│   │   ├── resume_matcher.py   # Hybrid matching orchestration engine
-│   │   └── retriever.py        # Stage 1 Bi-Encoder vector retrieval
-│   ├── parser/                 # Document parsing drivers (PDF/DOCX/TXT)
-|   |   └── resume_parser.py
-│   ├── utils/
-│   │   └── job_loader.py       # CSV job description loader and category filter
-|   |   └── models.py           # Data models and schema definitions
-│   ├── __main__.py             # Main CLI execution entry point
-|   ├── app.py                  # Main file of functions controlling overall pipeline             
-│   └── recommender.py          # Batch recommendation orchestrator
-|   └── visualizer.py           # Report and chart generation script
-├── tests/                      # Unit and integration tests
-├── pyproject.toml              # Dependency definitions and package configuration
-└── README.md
-
-```
-
----   
+---
 
 ## System Architecture
 
-![ResuMatch System Architecture](assets/architecture.png)
+<p align="center">
+  <img src="assets/architecture.png" alt="ResuMatch System Architecture" width="80%">
+</p>
 
  *([View on Lucidchart](https://lucid.app/lucidchart/31e388a0-668d-48c1-838d-0a3df4a2aa01/edit?viewport_loc=-109%2C-220%2C1762%2C1151%2C0_0&invitationId=inv_ff8f7132-20d4-4184-84e6-53e8cc96c513))*
 
@@ -86,15 +50,6 @@ The processing pipeline is organized into five modular layers:
 5. **Visualization & Analytics Layer (`resumatch.visualizer`)**
    * **Job Directory Generation:** Automatically organizes output directories under `reports/` for each Job ID.
    * **Candidate Visual Reports:** Renders visual match summaries, analytics charts, and individual candidate reports.
-
----   
-
-
-## Sample Visual Report
-
-ResuMatch automatically generates individual candidate intelligence reports featuring match telemetry, skill gap ratios, profile word clouds, and recruiter decision summary cards.
-
-![Sample Candidate Report](assets/Sujan_Sharma_report.png)
 
 ---
 
@@ -171,15 +126,70 @@ reports/
 - ```batch_recommendations.json``` contains the candidate matching and recommendation results.
 
 - PNG files contain the generated visual candidate reports.
+
+
+---   
+
+
+## Sample Visual Report
+
+ResuMatch automatically generates individual candidate intelligence reports featuring match telemetry, skill gap ratios, profile word clouds, and recruiter decision summary cards.
+
+<p align="center">
+  <img src="assets/Sujan_Sharma_report.png" alt="Sample Candidate Report" width="50%">
+</p>
+
 ---
 
-### Development
-The project uses Ruff for formatting and linting:
+## Project Structure
+
+```text
+RESUMATCH/
+├── data/
+│   ├── data_preparation/       # Notebooks & processing scripts for raw datasets
+│   └── sample_data/            # Sample resumes and job description CSV files
+|       └── jobs
+        └── resumes
+├── reports/
+│   ├── jobs/                   # Generated visual analytics and candidate reports
+│       └── Job_101/
+|   └──batch_recommendations.json
+├── resumatch/                  # Core ResuMatch Application Package
+│   ├── extractor/
+│   │   ├── constants.py        # Regex definitions, skill taxonomies, and keywords
+│   │   └── resume_extractor.py # Candidate profile feature extraction
+│   ├── matcher/
+│   │   ├── heuristics.py       # Skill overlap and string matching logic
+│   │   ├── reranker.py         # Stage 2 Cross-Encoder re-ranking module
+│   │   ├── resume_matcher.py   # Hybrid matching orchestration engine
+│   │   └── retriever.py        # Stage 1 Bi-Encoder vector retrieval
+│   ├── parser/                 # Document parsing drivers (PDF/DOCX/TXT)
+|   |   └── resume_parser.py
+│   ├── utils/
+│   │   └── job_loader.py       # CSV job description loader and category filter
+|   |   └── models.py           # Data models and schema definitions
+│   ├── __main__.py             # Main CLI execution entry point
+|   ├── app.py                  # Main file of functions controlling overall pipeline             
+│   └── recommender.py          # Batch recommendation orchestrator
+|   └── visualizer.py           # Report and chart generation script
+├── tests/                      # Unit and integration tests
+├── pyproject.toml              # Dependency definitions and package configuration
+└── README.md
+
+```
+
+---   
+
+
+### Development & Testing
+This project adheres to PEP 8 standard formatting and uses Ruff for linting:
 ``` bash 
 uv run ruff format .
 uv run ruff check .
 ``` 
-### Tests of the Overall Pipeline:
+### Running Integration Tests: 
+With pytest.
+
 ``` bash
 uv run pytest tests/test_overall_pipeline.py
 ```
